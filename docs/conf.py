@@ -46,7 +46,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'EMG-docs'
-copyright = u'2016, SCP'
+copyright = u'2016, EBI'
 author = u'SCP'
 
 # The version info for the project you're documenting, acts as replacement for
