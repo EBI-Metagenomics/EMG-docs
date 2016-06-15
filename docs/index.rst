@@ -23,6 +23,7 @@ Contents
 .. toctree::
    :maxdepth: 2
 
+   contact
 
 
 .. Indices and tables
