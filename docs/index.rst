@@ -10,8 +10,8 @@ Introduction
 
 Metagenomics is the study of all genomes present in any given environment
 without the need for prior individual identification or amplification. For
-example, in its simplest form, a metagenomic study might be the direct
-sequence results of DNA extracted from a bucket of sea water.
+example, in its simplest form, a metagenomic study might involve sequencing
+and analysing the DNA extracted from a bucket of sea water.
 
 The EBI Metagenomics service is an automated pipeline for the analysis
 and archiving of metagenomic data that aims to provide insights into the
