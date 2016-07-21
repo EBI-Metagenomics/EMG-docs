@@ -9,7 +9,7 @@ Frequently asked questions
 How do I run a BLAST search against the metagenomics datasets?
 --------------------------------------------------------------
 
-We don't offer BLAST searches against our metagenomic data sets via the web site. We do not have the resources to offer this service, owing to the size of the data. You would have to download the data and index it for BLAST searching yourself. We do provide scripts for bulk downloading the results files. See the `instructions <https://github.com/ProteinsWebTeam/ebi-metagenomics/wiki/Downloading-results-programmatically>`.
+We don't offer BLAST searches against our metagenomic data sets via the web site. We do not have the resources to offer this service, owing to the size of the data. You would have to download the data and index it for BLAST searching yourself. We do provide scripts for bulk downloading the results files. See the `instructions <https://github.com/ProteinsWebTeam/ebi-metagenomics/wiki/Downloading-results-programmatically>`_.
 
 What kind of data does the service accept?
 ------------------------------------------
