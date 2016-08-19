@@ -15,3 +15,8 @@ What kind of data does the service accept?
 ------------------------------------------
 
 EBI Metagenomics accepts sequencing data from a range of platforms, including Roche 454, Illumina and Ion Torrent. In addition to analysis of whole-genome shotgun (WGS) sequenced metagenomic and metatranscriptomic samples, it also provides analysis of 16S ribosomal RNA (rRNA) amplicon data.
+
+How do I use the comparison tool to compare taxonomies?
+-------------------------------------------------------
+
+The current version of the comparison tool only permits comparision of the GO content for runs from the same project. We are working on extending the functionality of the tool to address these issues. However, please look at the summary files provided on the project page. They summarize the feature counts across the runs and provide an alternative way to identify patterns.
