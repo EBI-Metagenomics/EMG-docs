@@ -19,4 +19,16 @@ EBI Metagenomics accepts sequencing data from a range of platforms, including Ro
 How do I use the comparison tool to compare taxonomies?
 -------------------------------------------------------
 
-The current version of the comparison tool only permits comparision of the GO content for runs from the same project. We are working on extending the functionality of the tool to address these issues. However, please look at the summary files provided on the project page. They summarize the feature counts across the runs and provide an alternative way to identify patterns.
+The current version of the comparison tool only permits comparision of the GO content for runs from the same project. We are working on extending the functionality of the tool to address these issues.
+However, please look at the files on the 'Analysis summary' tab on each project's page. They summarize the feature counts across the runs and provide an alternative way to identify patterns.
+
+Which tools do you use for analysing data?
+------------------------------------------
+
+Please see the `pipeline` page.
+
+
+How can I request that my data are re-analyzed with a different version of the pipeline?
+----------------------------------------------------------------------------------------
+
+We do not automatically re-analyse data with newer pipeline versions when these are released. However, if you would like us to do this, please send your request to us at metagenomics-help@ebi.ac.uk. Once this has been done, the website will show results from both versions of the results.
