@@ -10,4 +10,7 @@ EBI Metagenomics
    :maxdepth: 2
 
    about
+   website
+   pipeline
+   faq
 
