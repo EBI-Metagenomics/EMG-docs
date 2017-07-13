@@ -1,16 +1,23 @@
 .. EMG-docs documentation master file, created by
-   sphinx-quickstart on Tue Jun 14 17:10:09 2016.
+   sphinx-quickstart on Tue Jun 13 14:20:37 2017.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-EBI Metagenomics
-================
+EBI Metagenomics documentation
+==============================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
+   :caption: Contents:
 
    about
-   website
-   pipeline
-   faq
+   analysis
+   tutorials
+   faqs
 
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
