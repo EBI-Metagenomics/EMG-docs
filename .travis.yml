@@ -1,0 +1,15 @@
+language: python
+sudo: false
+dist: trusty
+
+python:
+  - "3.6"
+  - "3.5"
+  - "2.7"
+
+install:
+  - pip install -r requirements.txt
+
+script:
+  - cd docs
+  - make html linkcheck
