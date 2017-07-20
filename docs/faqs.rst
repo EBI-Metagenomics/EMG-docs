@@ -5,13 +5,13 @@ What kind of sequence data does the service accept?
 ---------------------------------------------------
 EBI Metagenomics accepts sequencing data from a wide range of platforms, including Roche 454, Illumina and Ion Torrent. In addition to analysis of whole-genome shotgun (WGS) sequenced metagenomic and metatranscriptomic samples, it also provides analysis of 16S ribosomal RNA (rRNA) amplicon data. If you would like to submit Oxford Nanopore sequences, we suggest you `contact us <metagenomics-help@ebi.ac.uk>`_ prior to submission.
 
-Can I submit 18S rRNA or ITS amplicon sequences?
-------------------------------------------------
-At the present moment, the pipeline does not provide taxonomic analysis of 18S rRNA or ITS sequences, so no meaningful analysis results will be returned for these data sets.
-
 Can I submit assembled metagenomic sequences for analysis?
 ----------------------------------------------------------
 Yes, we welcome submission of assembled data.
+
+Can I submit 18S rRNA or ITS amplicon sequences?
+------------------------------------------------
+At the present moment, the pipeline does not provide taxonomic analysis of 18S rRNA or ITS sequences, so no meaningful analysis results will be returned for these data sets.
 
 Can I submit viral sequences?
 -----------------------------
@@ -52,4 +52,16 @@ It is possible to analyse data sets with different versions of our analysis pipe
 Can I request that a dataset is analyzed if I am not the original submitter?
 ----------------------------------------------------------------------------
 We are currently working through the analysis of all publicly available metagenomic datasets in ENA, so if there is a publicly available study that you would like to see analysed in EBI Megagenomics, please get in touch and we will prioritise it.
+
+Can I request my data to not be analyzed by EBI Metagenomics?
+-------------------------------------------------------------
+We can only access private data for analysis if you gave us agreement to do so. If, for any reasons, you do not want EBI Metagenomics to analyze one of your datasets, please `contact us <metagenomics-help@ebi.ac.uk>`_ .
+If your data are public in ENA, then we can access them for analysis in any case.
+
+Can I compare the taxonomic assignments between runs of a project?
+---------------------------------------------------------------
+The current version of the comparison tool let you only compare the GO annotations for runs of the same project. We are currently working on extending the functionality to taxonomy but this is not yet ready for release.
+In the meantime, please have a look at the summary files provided on the project page. They summarized the counts per feature across the runs and provide an easy way to identify patterns.
+
+
 
