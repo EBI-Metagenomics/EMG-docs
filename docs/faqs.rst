@@ -43,7 +43,7 @@ While we currently do not have an API, we have Python scripts allowing users to 
 
 How can I bulk download meta-data?
 -----------------------------------
-Most of the meta-data associated with projects is taken from the ENA. While EBI Metagenmomics does not currently provide an API, the ENA do provide this service, which can be used as a stop gap until our API is in place (`ENA's API documentation <https://www.ebi.ac.uk/ena/portal/api/>`_)
+Most of the meta-data associated with projects is taken from the ENA. While EBI Metagenomics does not currently provide an API, the ENA do provide this service, which can be used as a stop gap until our API is in place (`ENA's API documentation <https://www.ebi.ac.uk/ena/portal/api/>`_)
 
 How can I re-analyse my data with a different version of the pipeline?
 ----------------------------------------------------------------------
