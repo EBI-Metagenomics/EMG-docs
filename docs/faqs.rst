@@ -51,7 +51,7 @@ It is possible to analyse data sets with different versions of our analysis pipe
 
 Can I request that a dataset is analyzed if I am not the original submitter?
 ----------------------------------------------------------------------------
-We are currently working through the analysis of all publicly available metagenomic datasets in ENA, so if there is a publicly available study that you would like to see analysed in EBI Megagenomics, please get in touch and we will prioritise it.
+We are currently working through the analysis of all publicly available metagenomic datasets in ENA, so if there is a publicly available study that you would like to see analysed in EBI Metagenomics, please get in touch and we will prioritise it.
 
 Can I request my data to not be analyzed by EBI Metagenomics?
 -------------------------------------------------------------
