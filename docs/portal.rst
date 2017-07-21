@@ -1,4 +1,4 @@
-.._ website:
+.. _website:
 
 Website and portal
 ==================
