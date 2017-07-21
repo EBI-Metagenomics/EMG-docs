@@ -44,7 +44,7 @@ As part of the metagenomic analysis pipeline, GO terms for molecular function, b
 ------------
 Output files
 ------------
-EBI Metagenomics analysis pipeline produces a number of files in supporting the charts displayed on the website. These files are available via the 'Download' tab accessible on the run page.
+EBI Metagenomics analysis pipeline produces a number of files underlying the charts displayed on the website. These files are available via the 'Download' tab accessible on the run page.
 The Download tab is organised in 3 sections: ‘Sequence data’, ‘Functional analysis’ (not available in the case of amplicon runs)  and ‘Taxonomic analysis’.
 The first and second sections contain a number of sequence files in FASTA format. To facilitate the download process, these files are compressed with `GZIP <http://www.gzip.org/>`_ and when too large to be easily transferable, chunked in manageable size. If it is the case, please download all chunks, decompress them and concatenate them to reconstitute the full file.
 
@@ -76,7 +76,7 @@ Description of taxonomic assignment files available to download
 -------------
 Summary files
 -------------
-In addition to the individual run output files, EBI Metagenomics provides a number of summary files available via the 'Analysis summary' tab on the project page. They summarized the counts per feature across all runs of a study and therefore provide an easy way to identify patterns. The summary files are split between functional (not available for amplicon-only study) and taxonomy sections.
+In addition to the output files for individual runs, EBI Metagenomics provides a number of summary files available via the 'Analysis summary' tab on the project page. They summarized the counts per feature across all runs of a study and therefore provide an easy way to identify patterns. The summary files are split between functional (not available for amplicon-only study) and taxonomy sections.
 
 functional summary files
 ^^^^^^^^^^^^^^^^^^^^^^^^
