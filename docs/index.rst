@@ -1,3 +1,5 @@
+.. _index:
+
 .. EMG-docs documentation master file, created by
    sphinx-quickstart on Tue Jun 13 14:20:37 2017.
    You can adapt this file completely to your liking, but it should at least
