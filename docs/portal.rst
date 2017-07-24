@@ -28,8 +28,7 @@ Comparing runs helps to identify feature associated with experimental factors. E
 
 **To start the comparison for your selection, simply click on ‘Compare’.** 
 
-The page will display the study and selected runs on top of 5 new comparison tabs: 
-
+The page will display the study and selected runs on top of 5 new comparison tabs:   
 - The first one is a barcharts representation with 3 dynamic graphs, corresponding to the 3 GO terms categories (see `Analysis pipeline`_). On each, the GO terms and their relative abundance in each selected run is displayed. Hovering the mouse pointer above a bar will display the relative abundance values for this term in the corresponding run. You can export these barcharts representation in PNF, PDF or SVG format using the tool on the top right hand side.   
 - The second tab contains stacked column representations with the same dynamic properties than in the barcharts with the addition of the possibility to hide one or more terms of choice by selecting them from the list displayed below each category graph.  
 - The third tab presents heatmaps allowing to quickly identified patterns between the selected runs based on the relative abundance of the GO terms. There is currently no export function for this page although the images, being static, can be directly copied.  
