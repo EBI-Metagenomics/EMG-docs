@@ -7,7 +7,7 @@ This table lists all samples and runs associated with a project as well as the e
 
 In addition, the last field displays links to analysis results and download pages (the latter being represented by the icon |test|). 
 
-.. |test| image:: download_icon.png
+.. |test| image:: images/download_icon.png
 
 The 'Analysis results' field could also displays two types of messages:
 
