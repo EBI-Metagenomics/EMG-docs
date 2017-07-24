@@ -1,8 +1,10 @@
 Website and portal
 ==================
 ---------------------------------------
-'Associated runs' table on project page *[not sure if we need this but it was in the Google spreadsheet]*
+'Associated runs' table on project page 
 ---------------------------------------
+*[not sure if we need this but it was in the Google spreadsheet]*
+
 This table lists all samples and runs associated with a project as well as the experiment type (Amplicon, Assembly, Metagenomic, Metabarcoding or Metatranscriptomic), sequencing instrument model and pipeline version for each individual run.  
 
 In addition, the last field displays links to analysis results and download pages (the latter being represented by the icon |test|). 
