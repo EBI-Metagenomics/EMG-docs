@@ -8,6 +8,7 @@ This table lists all samples and runs associated with a project as well as the e
 In addition, the last field displays links to analysis results and download pages ( the latter being represented by the icon '.. figure:: images/download_i.jpg').
 
 The 'Analysis results' field could also displays two types of messages:
+
 - 'QC not passed’: this message indicates that no sequences survived the filtering occurring during the QC steps. This could be due to base quality filtering, ambiguous base filtering or length filtering.
 - ‘Unable to process’: this message indicates that no data suitable for analysis were available for this run. The sequences may not be available in ENA, failed to merge, in the case of pair-end reads, or be in an insuitable format.
 
