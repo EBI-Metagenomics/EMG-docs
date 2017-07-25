@@ -133,7 +133,10 @@ Comparison tool
 ---------------
 Comparing runs helps to identify feature associated with experimental factors. EBI Metagenomics has developed a Comparison Tool that allows user to compare the GO-slim terms associated with the runs of a project (see `Analysis pipeline <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/analysis.rst>`__).
 
-**To use the current tool, select the corresponding tab from any EBI Metagenomics webpage:**
+**To use the current tool, select the corresponding tab from any EBI Metagenomics webpage (Figure 10 below):**
+
+.. image:: images/comp.PNG
+**Figure 10**. The 'Comparison tool' tab let the user select projects and associated runs to compare them based on the GO-slim distribution.
 
 - The first step is to select the project of interest. They are listed by title in alphabetical order. You can search the project list by entering the first letters of the title from the project you’re interested in.
 - Clicking on the ‘More info about selected project’ link, located below the Project list, after selecting a project, will open a new browser window displaying the project page.
