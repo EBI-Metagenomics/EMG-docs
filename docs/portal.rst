@@ -4,8 +4,8 @@ Website and portal
 Content of the 'Associated runs' table on project page 
 ------------------------------------------------------
 
-This table lists all samples and runs associated with a project as well as the experiment type ('Amplicon', 'Assembly','Metabarcoding' , 'Metagenomic' or 'Metatranscriptomic'), sequencing instrument model and pipeline version for each individual run.  
-In addition, the last field displays links to analysis results and download pages (the latter being represented by the icon |test|). 
+This table lists all samples and runs associated with a project as well as the experiment type ('Amplicon', 'Assembly', 'Metabarcoding', 'Metagenomic' or 'Metatranscriptomic'), sequencing instrument model and pipeline version for each individual run.  
+In addition, the last field displays links to analysis results and download pages (the latter being represented by the |test| icon). 
 
 .. |test| image:: images/download_IC.png
 
@@ -20,7 +20,7 @@ Finding quality control information about runs on the EBI Metagenomics website
 
 Quality control (Qc)analysis of runs within projects on the `EBI Metagenomics website <www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Quality control' tab found toward the top of any run page (see Figure Z below).
 
-Selecting this tab brings a page containing four graphical representations giving the number of reads after each QC step and the length, GC content and nucletotide distributions of the reads having passed the QC. These processed reads are available to download via the 'Download' tab found toward the top of any run page (see Figure Z below).
+Selecting this tab brings a page containing four graphical representations giving the number of reads after each QC step and the length, GC content and nucletotide distributions of the reads having passed the QC (processed reads). These are available to download via the 'Download' tab found toward the top of any run page (see Figure Z below). 
 
 -------------------------------------------------------------------------
 Finding functional information about runs on the EBI Metagenomics website
