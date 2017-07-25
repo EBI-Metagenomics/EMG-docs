@@ -22,18 +22,17 @@ Quality control (Qc) analysis of runs within projects on the `EBI Metagenomics w
 
 
 .. image:: images/QC1.PNG
-Figure 1. A 'Quality control' tab can be found towards the top of each run page.
+**Figure 1**. A 'Quality control' tab can be found towards the top of each run page.
 
 Selecting this tab brings a page containing four graphical representations giving the number of reads remaining, and filtered, after each QC step as well as the length, GC content and nucleotide distributions of the reads having passed the QC referred as processed reads. These are available to download via the 'Download' tab found toward the top of any run page (see Figure 8 below).
 
 An histogram is used to represent the nucleotide distribution for the first 500 nucleotides of the processed reads; while metagenome, metatranscriptome and assembly chart should indicate an even distribution (Figure 2 below), amplicon graph should indicate a clearly uneven pattern.
 
 .. image:: images/QC_metag.PNG
-Figure 2. Typical even nucleotide distribution expected for metagenome, metatranscriptome and assembly. Note that the stretch of uneven distribution observed until position 20 are indicative that the sequencing adapters had not been completely removed in the submitted reads.
+**Figure 2**. Typical even nucleotide distribution expected for metagenome, metatranscriptome and assembly. Note that the stretch of uneven distribution observed until position 20 are indicative that the sequencing adapters had not been completely removed in the submitted reads.
 
 .. image:: images/QC_ndamplicon.PNG
-
-Figure 3. Typical uneven nucleotide distribution expected for amplicon. 
+**Figure 3**. Typical uneven nucleotide distribution expected for amplicon. 
 
 -------------------------------------------------------------------------
 Finding functional information about runs on the EBI Metagenomics website
@@ -42,7 +41,7 @@ Finding functional information about runs on the EBI Metagenomics website
 Functional analysis of runs within projects on the `EBI Metagenomics website <www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Functional Analysis' tab found toward the top of any run page (see Figure 4 below). Note that this tab will be greyed for amplicon runs that have no functional results.
 
 .. image:: images/Func_1.PNG
-Figure 4. A Functional analysis tab can be found towards the top of each run page.
+**Figure 4**. A Functional analysis tab can be found towards the top of each run page.
 
 Selecting this tab brings up a page displaying sequence features ('number of reads with predicted CDS (pCDS)', 'number of reads with predicted RNA', 'number of reads with InterPro matches', 'number of pCDS' and 'number of pCDS with InterPro match'), InterPro match information and GO term annotation for the run, as shown in Figure 5A and 5B below.
 
@@ -53,7 +52,7 @@ Selecting this tab brings up a page displaying sequence features ('number of rea
 **B**
 
 .. image:: images/Func_3.PNG
-Figure 5. Functional analysis of metagenomics data, as shown on the EBI Metagenomics website. A) InterPro match information for the predicted coding sequences in the run is shown. The number of InterPro matches are displayed graphically, and as a table that has a text search facility.  B) The GO terms predicted for the sample are displayed. Different graphical representations are available, and can be selected by clicking on the ‘Switch view’ icons.
+**Figure 5**. Functional analysis of metagenomics data, as shown on the EBI Metagenomics website. A) InterPro match information for the predicted coding sequences in the run is shown. The number of InterPro matches are displayed graphically, and as a table that has a text search facility.  B) The GO terms predicted for the sample are displayed. Different graphical representations are available, and can be selected by clicking on the ‘Switch view’ icons.
 
 The Gene Ontology terms displayed graphically on the web site have been ‘slimmed’ with a special GO slim developed for metagenomic data sets. GO slims are cut-down versions of the Gene Ontology, containing a subset of the terms in the whole GO. They give a broad overview of the ontology content without the detail of the specific fine-grained terms.
  
@@ -66,7 +65,7 @@ Finding taxonomic information about runs on the EBI Metagenomics website
 Taxonomic analysis of runs within projects on the `EBI Metagenomics website <www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Taxonomic analysis' tab found toward the top of any run page (see Figure 7 below).
 
 .. image:: images/taxonomy.PNG
-Figure 7. A 'Taxonomic analysis' tab can be found towards the top of each run page.
+**Figure 7**. A 'Taxonomic analysis' tab can be found towards the top of each run page.
 
 Selecting this tab brings up a page displaying the taxonomic results displayed as a interactive `_Krona plot <https://github.com/marbl/Krona/wiki>`__. This tools allows users to explore their taxonomic results and zooming in on a particular taxonomic level by double clicking on it. The corresponding distribution charts will be displayed on the right hand side of the panel.
 
@@ -81,7 +80,7 @@ Files available to download on the EBI Metagenomics website
 EBI Metagenomics analysis pipeline produces a number of files underlying the charts displayed on the website. These files are available via the 'Download' tab found toward the top of any run page (see Figure 8 below).
 
 .. image:: images/Download_1.png
-Figure 8: The Download tab is organised in 3 sections: ‘Sequence data’, ‘Functional analysis’ (not available in the case of amplicon runs)  and ‘Taxonomic analysis’.
+**Figure 8**. The Download tab is organised in 3 sections: ‘Sequence data’, ‘Functional analysis’ (not available in the case of amplicon runs)  and ‘Taxonomic analysis’.
 
 Some of the files, particularly the sequence files in FASTA format, can be large. To facilitate their download process, these files are compressed with `GZIP <http://www.gzip.org/>`_ and when too large to be easily transferable, chunked in manageable size. If it is the case for your runs, please download all chunks, decompress them and concatenate them to reconstitute the full files.
 
