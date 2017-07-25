@@ -8,7 +8,7 @@ Website and portal
 This table lists all samples and runs associated with a project as well as the experiment type (Amplicon, Assembly, Metagenomic, Metabarcoding or Metatranscriptomic), sequencing instrument model and pipeline version for each individual run.  
 In addition, the last field displays links to analysis results and download pages (the latter being represented by the icon |test|). 
 
-.. |test| image:: images/download_IC.png 
+.. |test| image:: images/download_.png 
 
 The 'Analysis results' field could also displays two types of messages:
 
