@@ -162,7 +162,10 @@ EBI metagenomics is the largest metagenomic resource of public datasets. In orde
 
 Search tool
 ^^^^^^^^^^^
-The Search tool, underpinned by `EBI search <https://www.ebi.ac.uk/ebisearch/overview.ebi>`_, can be accessed from any page using the 'search' tab or the 'search' button located on the right of the EBI Metagenomics banner. The search space can be restricted using the 'search' field from the latter.
+The Search tool is underpinned by `EBI search <https://www.ebi.ac.uk/ebisearch/overview.ebi>`_  and accessible via any EBI Metagenomics page (Figure 11 below). 
+
+.. image:: images/search.PNG
+**Figure 11**. The 'Search tool' can be accessed using the 'search' tab or the 'search' button located on the right of the EBI Metagenomics banner. The search space can be restricted using the 'search' field located above the latter.
 
 The search page contains 3 tabs allowing users to navigate between project, sample and run search levels. In each tab, the left hand side panel provide a number of facets that can be used to restrict the search space.
 
