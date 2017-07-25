@@ -4,7 +4,7 @@ Website and portal
 Content of the 'Associated runs' table on project page 
 ------------------------------------------------------
 
-This table lists all samples and runs associated with a project as well as the experiment type (Amplicon, Assembly, Metagenomic, Metabarcoding or Metatranscriptomic), sequencing instrument model and pipeline version for each individual run.  
+This table lists all samples and runs associated with a project as well as the experiment type ('Amplicon', 'Assembly','Metabarcoding' , 'Metagenomic' or 'Metatranscriptomic'), sequencing instrument model and pipeline version for each individual run.  
 In addition, the last field displays links to analysis results and download pages (the latter being represented by the icon |test|). 
 
 .. |test| image:: images/download_IC.png
@@ -14,19 +14,19 @@ The 'Analysis results' field could also displays two types of messages:
 - 'QC not passed’: this message indicates that no sequences survived the filtering occurring during the QC steps. This could be due to base quality filtering, ambiguous base filtering or length filtering.
 - ‘Unable to process’: this message indicates that no data suitable for analysis were available for this run. The sequences may not be available in ENA, failed to merge, in the case of pair-end reads, or be in an insuitable format.
 
------------------------------------------------------------------
-Finding quality control information about runs on the EMG website
------------------------------------------------------------------
+------------------------------------------------------------------------------
+Finding quality control information about runs on the EBI Metagenomics website
+------------------------------------------------------------------------------
 
-Quality control (Qc)analysis of runs within projects on the `EMG website <www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Quality control' tab found toward the top of any run page (see Figure Z below).
+Quality control (Qc)analysis of runs within projects on the `EBI Metagenomics website <www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Quality control' tab found toward the top of any run page (see Figure Z below).
 
 Selecting this tab brings a page containing four graphical representations giving the number of reads after each QC step and the length, GC content and nucletotide distributions of the reads having passed the QC. These processed reads are available to download via the 'Download' tab found toward the top of any run page (see Figure Z below).
 
-------------------------------------------------------------
-Finding functional information about runs on the EMG website
-------------------------------------------------------------
+-------------------------------------------------------------------------
+Finding functional information about runs on the EBI Metagenomics website
+-------------------------------------------------------------------------
 
-Functional analysis of runs within projects on the `EMG website <www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Functional Analysis' tab found toward the top of any run page (see Figure Z below). Note that this tab will be greyed for amplicon runs which do not have functional results.
+Functional analysis of runs within projects on the `EBI Metagenomics website <www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Functional Analysis' tab found toward the top of any run page (see Figure Z below). Note that this tab will be greyed for amplicon runs which do not have functional results.
 
 []
 Figure Z. A Functional analysis tab can be found towards the top of each run page.
@@ -34,17 +34,17 @@ Figure Z. A Functional analysis tab can be found towards the top of each run pag
 Selecting this tab brings up a page displaying sequence features ('number of reads with predicted CDS (pCDS)', 'number of reads with predicted RNA', 'number of reads with InterPro matches', 'number of pCDS' and 'number of pCDS with InterPro match'), InterPro match information and GO term annotation for the run, as shown in Figure XX below.
 
 []
-Figure XX. Functional analysis of metagenomics data, as shown on the EMG website. A) InterPro match information for the predicted coding sequences in the run is shown. The number of InterPro matches are displayed graphically, and as a table that has a text search facility.  B) The GO terms predicted for the sample are displayed. Different graphical representations are available, and can be selected by clicking on the ‘Switch view’ icons.
+Figure XX. Functional analysis of metagenomics data, as shown on the EBI Metagenomics website. A) InterPro match information for the predicted coding sequences in the run is shown. The number of InterPro matches are displayed graphically, and as a table that has a text search facility.  B) The GO terms predicted for the sample are displayed. Different graphical representations are available, and can be selected by clicking on the ‘Switch view’ icons.
 
 The Gene Ontology terms displayed graphically on the web site have been ‘slimmed’ with a special GO slim developed for metagenomic data sets. GO slims are cut-down versions of the Gene Ontology, containing a subset of the terms in the whole GO. They give a broad overview of the ontology content without the detail of the specific fine-grained terms.
  
 The full data sets used to generate both the InterPro and GO overview charts, along with a host of additional data and intermediate files (processed reads, pCDS, reads encoding RNA and taxonomic analysis  results) can be downloaded for further analysis by clicking the Download tab, found towards the top of the page (see complete description `here <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/analysis.rst>`__).
 
------------------------------------------------------------
-Finding taxonomic information about runs on the EMG website
------------------------------------------------------------
+------------------------------------------------------------------------
+Finding taxonomic information about runs on the EBI Metagenomics website
+------------------------------------------------------------------------
 
-Taxonomic analysis of runs within projects on the `EMG website <www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Taxonomic analysis' tab found toward the top of any run page (see Figure Z below).
+Taxonomic analysis of runs within projects on the `EBI Metagenomics website <www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Taxonomic analysis' tab found toward the top of any run page (see Figure Z below).
 
 Figure Z. A 'Taxonomic analysis' tab can be found towards the top of each run page.
 
@@ -54,9 +54,9 @@ Pie, bar and stacked chart representations can be generated by clicking on the �
 
 The full data sets used to generate both Krona and other charts, along with a host of additional data and intermediate files (processed reads, pCDS, reads encoding RNA and functional analysis results) can be downloaded for further analysis by clicking the Download tab, found towards the top of the page (see complete description `here <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/analysis.rst>`__).
 
-----------------------------------------------
-Files available to download on the EMG website
-----------------------------------------------
+-----------------------------------------------------------
+Files available to download on the EBI Metagenomics website
+-----------------------------------------------------------
 
 EBI Metagenomics analysis pipeline produces a number of files underlying the charts displayed on the website. These files are available via the 'Download' tab found toward the top of any run page.
 The Download tab is organised in 3 sections: ‘Sequence data’, ‘Functional analysis’ (not available in the case of amplicon runs)  and ‘Taxonomic analysis’.
@@ -87,12 +87,28 @@ Description of taxonomic assignment files available to download
 - OTUs, reads and taxonomic assignments files: these  files contain the same data presented in 3 differnt format : tab-separated file (TSV) and two Biom file (HD5F and JSON). The TSV file contains 3 columns which headers are in the second line of the file. The first column is the OTU Id. The second column indicates the number of predicted 16S sequences associated with each OTU. The third column contains the taxonomic lineages provided by `GreenGenes database <http://greengenes.lbl.gov/cgi-bin/nph-index.cgi>`_. Note that the number of unannotated 16S sequences is not indicated in this file. This file can be directly imported into `Megan6 <http://ab.inf.uni-tuebingen.de/software/megan6/>`_ for visualisation and further analysis. The OTU id can be compared between runs for version 2 and 3 of the pipeline as they have been generated using `Qiime closed-reference protocol <http://qiime.org/tutorials/otu_picking.html>`_.The Biom files are `computer-readable files <http://biom-format.org>`_. The HD5F (Hierachical Data Format) format can be imported into analysis and visualisation tools such as Matlab and R. A larger number of commercial and freely available tools, such as MEGAN6, can consume the JavaScript Object Notation (JSON) format.
 - Phylogenetic tree (Newick format)’ file (only available up to version 3 of EBI Metagenomics pipeline): this file can be used to visualise the hierarchical distribution of the taxonomic lineages of each run. The `Newick format <https://en.wikipedia.org/wiki/Newick_format>`_ is a computer-readable format to represent the tree and can be directly imported into freely-available viewers such as `FigTree <http://tree.bio.ed.ac.uk/software/figtree>`_ and `ITOL (interactive Tree of Life) <http://itol.embl.de>`_.
 
+-------------
+Summary files
+-------------
+In addition to the output files for individual runs, described above, EBI Metagenomics provides a number of summary files available via the 'Analysis summary' tab on the project page. They summarized the counts per feature across all runs of a study and therefore provide an easy way to identify patterns. The summary files are split between functional (not available for amplicon-only study) and taxonomy sections.
+
+functional summary files
+^^^^^^^^^^^^^^^^^^^^^^^^
+- InterPro matches(TSV): this tab-separated file contains 2 designation columns followed by a column for each valid runs of the project. The first column lists the InterPro terms having been associated to the predicted CDSs. The second column gives the description of the InterPro terms. All columns labelled with a run identifier present the number of predicted CDSs having been annotated with each InterPro terms for this run.
+- Complete GO annotation (TSV): this file contains 3 designation columns followed by a column for each valid runs of the project. The first column lists the GO terms (labelled GO:XXXXXXX) having been associated to the predicted CDSs. The second column gives the GO term description while the third column indicates which category the GO term belong to. All columns labelled with a run identifier present the number of predicted CDSs having been annotated with each GO terms for this run.
+- The ‘GO slim annotation (TSV)’ file is derived from the ‘Complete GO annotation’ file and has the same format. The GO slim term set is a cut-down version of the GO terms containing a subset of the terms in the whole GO. They give a broad overview of the ontology content without the detail of the specific fine grained terms. 
+
+taxonomy summary files
+^^^^^^^^^^^^^^^^^^^^^^
+- Taxonomic assignments (TSV): this file contains one ‘Taxonomy’ column followed by a column for each valid runs of the project. The ‘Taxonomy’ column list the taxonomic lineages having been associated with the predicted 16S sequences. All columns labelled with a run identifier present the number of predicted 16S sequences having been annotated with the taxonomic lineages for this run. This file can be directly imported into `Megan6 <http://ab.inf.uni-tuebingen.de/software/megan6/>`_ for visualisation and further analysis.
+- The ‘Phylum level taxonomies (TSV)’ file is derived from the ‘Taxonomic assignments’ file and presents the assignments brought up to ‘phylum’ level in order to give a high level view of the taxonomic assignments. The two first columns of this file present the ‘kingdom’ and ‘phylum’ level assignments, respectively. All columns labelled with a run identifier present the number of predicted 16S sequences having been annotated with the ‘phylum’ level taxonomic lineages for this run.
+
 ---------------
 Comparison tool
 ---------------
 Comparing runs helps to identify feature associated with experimental factors. EBI Metagenomics has developed a Comparison Tool that allows user to compare the GO-slim terms associated with the runs of a project (see `Analysis pipeline <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/analysis.rst>`__).
 
-**To use the current tool, select the corresponding tab from any EMG webpage:**
+**To use the current tool, select the corresponding tab from any EBI Metagenomics webpage:**
 
 - The first step is to select the project of interest. They are listed by title in alphabetical order. You can search the project list by entering the first letters of the title from the project you’re interested in.
 - Clicking on the ‘More info about selected project’ link, located below the Project list, after selecting a project, will open a new browser window displaying the project page.
