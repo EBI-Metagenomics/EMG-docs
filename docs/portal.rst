@@ -47,9 +47,11 @@ Figure 4. A Functional analysis tab can be found towards the top of each run pag
 Selecting this tab brings up a page displaying sequence features ('number of reads with predicted CDS (pCDS)', 'number of reads with predicted RNA', 'number of reads with InterPro matches', 'number of pCDS' and 'number of pCDS with InterPro match'), InterPro match information and GO term annotation for the run, as shown in Figure 5A and 5B below.
 
 A
+
 .. image:: images/Func_2.png
 
 B
+
 .. image:: images/Func_3.PNG
 Figure 5. Functional analysis of metagenomics data, as shown on the EBI Metagenomics website. A) InterPro match information for the predicted coding sequences in the run is shown. The number of InterPro matches are displayed graphically, and as a table that has a text search facility.  B) The GO terms predicted for the sample are displayed. Different graphical representations are available, and can be selected by clicking on the ‘Switch view’ icons.
 
