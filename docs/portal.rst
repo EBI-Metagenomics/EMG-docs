@@ -1,9 +1,8 @@
 Website and portal
 ==================
----------------------------------------
-'Associated runs' table on project page 
----------------------------------------
-*[not sure if we need this but it was in the Google spreadsheet]*
+------------------------------------------------------
+Content of the 'Associated runs' table on project page 
+------------------------------------------------------
 
 This table lists all samples and runs associated with a project as well as the experiment type (Amplicon, Assembly, Metagenomic, Metabarcoding or Metatranscriptomic), sequencing instrument model and pipeline version for each individual run.  
 In addition, the last field displays links to analysis results and download pages (the latter being represented by the icon |test|). 
@@ -14,6 +13,24 @@ The 'Analysis results' field could also displays two types of messages:
 
 - 'QC not passed’: this message indicates that no sequences survived the filtering occurring during the QC steps. This could be due to base quality filtering, ambiguous base filtering or length filtering.
 - ‘Unable to process’: this message indicates that no data suitable for analysis were available for this run. The sequences may not be available in ENA, failed to merge, in the case of pair-end reads, or be in an insuitable format.
+
+------------------------------------------------------------
+Finding functional information about runs on the EMG website
+------------------------------------------------------------
+
+Functional analysis of runs within projects on the `_EMG website <www.ebi.ac.uk/metagenomics/>`__ can be accessed by clicking on the Functional Analysis tab found toward the top of any run page (see Figure Z below). Note that this tab will be greyed for amplicon runs.
+
+[]
+Figure Z. A Functional analysis tab can be found towards the top of each run page.
+
+Clicking on this tab brings up a page displaying sequence features ('number of reads with predicted CDS (pCDS)', 'number of reads with predicted RNA', 'number of reads with InterPro matches', 'number of pCDS' and 'number of pCDS with InterPro match'), InterPro match information and GO term annotation for the run, as shown in Figure XX below.
+
+[]
+Figure XX. Functional analysis of metagenomics data, as shown on the EMG website. A) InterPro match information for the predicted coding sequences in the run is shown. The number of InterPro matches are displayed graphically, and as a table that has a text search facility.  B) The GO terms predicted for the sample are displayed. Different graphical representations are available, and can be selected by clicking on the ‘Switch view’ icons.
+
+The Gene Ontology terms displayed graphically on the web site have been ‘slimmed’ with a special GO slim developed for metagenomic data sets. GO slims are cut-down versions of the Gene Ontology, containing a subset of the terms in the whole GO. They give a broad overview of the ontology content without the detail of the specific fine-grained terms.
+ 
+The full data sets used to generate both the InterPro and GO overview charts, along with a host of additional data and intermediate files (processed reads, pCDS, reads encoding RNA and taxonomic analysis  results) can be downloaded for further analysis by clicking the Download tab, found towards the top of the page (see complete description `here <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/analysis.rst>`__).
 
 ---------------
 Comparison tool
