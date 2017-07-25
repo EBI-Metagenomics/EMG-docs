@@ -6,7 +6,6 @@ Website and portal
 *[not sure if we need this but it was in the Google spreadsheet]*
 
 This table lists all samples and runs associated with a project as well as the experiment type (Amplicon, Assembly, Metagenomic, Metabarcoding or Metatranscriptomic), sequencing instrument model and pipeline version for each individual run.  
-
 In addition, the last field displays links to analysis results and download pages (the latter being represented by the icon |test|). 
 
 .. |test| image:: images/download_icon.png 
@@ -29,7 +28,6 @@ Comparing runs helps to identify feature associated with experimental factors. E
 - Users can select the ‘Advanced settings’ link to have the options to set the relative abundance threshold for the GO terms to appear in the stack columns, the format of heatmap generated and the number of GO terms with most variation to display in the representations.   
 
 **To start the comparison for your selection, simply click on ‘Compare’.** 
-
 The page will now display the study and selected runs on top of 5 new comparison tabs:  
 
 - The first one is a barcharts representation with 3 dynamic graphs, corresponding to the 3 GO terms categories (see `Analysis pipeline`_). On each, the GO terms and their relative abundance in each selected run is displayed. Hovering the mouse pointer above a bar will display the relative abundance values for this term in the corresponding run. You can export these barcharts representation in PNF, PDF or SVG format using the tool on the top right hand side.   
