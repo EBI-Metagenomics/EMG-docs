@@ -112,7 +112,10 @@ Description of taxonomic assignment files available to download
 -------------
 Summary files
 -------------
-In addition to the output files for individual runs, described above, EBI Metagenomics provides a number of summary files available via the 'Analysis summary' tab on the project page. They summarized the counts per feature across all runs of a study and therefore provide an easy way to identify patterns. The summary files are split between functional (not available for amplicon-only study) and taxonomy sections.
+In addition to the output files for individual runs, described above, EBI Metagenomics provides a number of summary files available via the 'Analysis summary' tab on the project page (Figure 9 below). They summarized the counts per feature across all runs of a study and therefore provide an easy way to identify patterns. The summary files are split between functional (not available for amplicon-only study) and taxonomy sections.
+
+.. image:: images/summary.PNG
+**Figure 9**. The 'Analysis summary' tab is organised in 2 sections: ‘Functional analysis for the project’ and ‘Taxonomic analysis for the project’ (the former is not available in the case of amplicon runs).
 
 functional summary files
 ^^^^^^^^^^^^^^^^^^^^^^^^
