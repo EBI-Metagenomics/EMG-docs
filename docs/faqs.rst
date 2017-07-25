@@ -65,6 +65,8 @@ Can I compare the taxonomic assignments between runs of a project?
 The current version of the comparison tool let you only compare the GO annotations for runs of the same project. We are currently working on extending the functionality to taxonomy but this is not yet ready for release.
 In the meantime, please have a look at the summary files provided on the project page. They summarized the counts per feature across the runs and provide an easy way to identify patterns.
 
+The 'OTUs, reads and taxonomic assignments.tsv' can be directly imported into  `Megan6 <http://ab.inf.uni-tuebingen.de/software/megan6/>`_ to perform comparison and visualisation. The Biom format can also be imported into third-party tools.
+
 Can I know which bacteria encodes particular pCDS in my dataset?
 ----------------------------------------------------------------
 The short answer is that it is generally not possible. The reason is that we annotate directly the reads and select the reads containing 16S for taxonomy assignments. The protein prediction is then performed on all reads after masking the tRNA and rRNA sequences. To link a predicted protein to a taxonomic assignments, the protein-coding gene would need to be on the same read than the annotated 16S sequence. It is possible to check if this is the case using the sequence headers from the 'Interpro matches.tsv' and 'Reads encoding 16S rRNA.fasta' files, both available on the 'Download' for each run.
