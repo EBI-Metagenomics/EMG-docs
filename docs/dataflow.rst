@@ -25,7 +25,6 @@ The graph below summarize the EBI Metagenomics data flow from submission to anal
 
 **(5) Upon completion of analysis, data will be uploaded on the website**
 
-   EBI Metagenomics pipeline will generate a number of charts and downloadable files (fully described :ref: here `Files available to download on the EBI Metagenomics website`.
-   `here <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/portal.rst>`_).
+   EBI Metagenomics pipeline will generate a number of charts and downloadable files (fully described :ref:`Files available to download on the EBI Metagenomics website`.
 
-   For private data, users will have to login on the EBI Metagenomics website to access their data until they become public. Submitters will receive an email from ENA prior to public release giving them the opportunity to extend the confidential period which is 2 years per default (see  :ref: FAQ `Can I change the release date of my project?`)
+   For private data, users will have to login on the EBI Metagenomics website to access their data until they become public. Submitters will receive an email from ENA prior to public release giving them the opportunity to extend the confidential period which is 2 years per default (see  :ref:`Can I change the release date of my project?`)
