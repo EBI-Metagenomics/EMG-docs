@@ -15,7 +15,7 @@ The graph below summarize the EBI Metagenomics data flow from submission to anal
 
 **(3 and 4): upload and submission.**
 
-   These steps are described in details in the :ref:`ENA online guides` `ENA tutorials <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/tutorials.rst>`_. EBI Metagenomics is also providing a step by step guide accessible on the same page. Please also check our `FAQ <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/faqs.rst>`_. 
+   These steps are described in details in the :ref:`ENA online guides`. EBI Metagenomics is providing a step by step guide to submission (:ref:`EBI Metagenomics online tutorials`. Please also check our `FAQ <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/faqs.rst>`_. 
 
    *Note that all queries concerning data submission should be directed to* `ENA dedicated help desk <mailto:datasubs@ebi.ac.uk>`_
 
@@ -25,6 +25,7 @@ The graph below summarize the EBI Metagenomics data flow from submission to anal
 
 **(5) Upon completion of analysis, data will be uploaded on the website**
 
-   EBI Metagenomics pipeline will generate a number of charts and downloadable files (fully described `here <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/portal.rst>`_).
+   EBI Metagenomics pipeline will generate a number of charts and downloadable files (fully described :ref: here `Files available to download on the EBI Metagenomics website`.
+   `here <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/portal.rst>`_).
 
-   For private data, users will have to login on the EBI Metagenomics website to access their data until they become public. Submitters will receive an email from ENA prior to public release giving them the opportunity to extend the confidential period which is 2 years per default (see  `FAQ <https://github.com/ProteinsWebTeam/EMG-docs/edit/master/docs/faqs.rst>`__).
+   For private data, users will have to login on the EBI Metagenomics website to access their data until they become public. Submitters will receive an email from ENA prior to public release giving them the opportunity to extend the confidential period which is 2 years per default (see  :ref: FAQ `Can I change the release date of my project?`)
