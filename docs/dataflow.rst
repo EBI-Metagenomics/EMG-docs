@@ -1,6 +1,6 @@
---------------------------
-EBI Metagenomics data flow
---------------------------
+------------------------------------
+Data flow from submission to results
+------------------------------------
 
 The graph below summarize the EBI Metagenomics data flow from submission to analysis results:
 
