@@ -17,7 +17,9 @@ The graph below summarize the EBI Metagenomics data flow from submission to anal
 
 *Note that all queries concerning data submission should be directed to* `ENA dedicated help desk <mailto:datasubs@ebi.ac.uk>`_
 
-Following completion of these two steps, and after data validation by ENA, we will be able to access the submitted data and they will be queued for analysis. The length of time requires for analysis varies according to the number of projects in the queue, the nature and the number of runs in the submission however we aim to have most analysis completed in less than a week once validated by ENA.
+Following completion of these two steps, and after data validation by ENA, we will be able to access the submitted data and they will be queued for analysis.
+
+The length of time requires for analysis varies according to the number of projects in the queue, the nature and the number of runs in the submission however we aim to have most analysis completed in less than a week once validated by ENA.
 
 **(5) Upon completion of analysis, data will be uploaded on the website**
 
