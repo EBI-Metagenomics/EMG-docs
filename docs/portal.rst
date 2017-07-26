@@ -56,7 +56,7 @@ Below this first bar chart, two other charts display the InterPro match informat
 
 The Gene Ontology terms displayed graphically on the web site have been ‘slimmed’ with a special GO slim developed for metagenomic data sets. GO slims are cut-down versions of the Gene Ontology, containing a subset of the terms in the whole GO. They give a broad overview of the ontology content without the detail of the specific fine-grained terms.
  
-The full data sets used to generate both the InterPro and GO overview charts, along with a host of additional data and intermediate files (processed reads, pCDS, reads encoding RNA and taxonomic analysis  results) can be downloaded for further analysis by clicking the Download tab, found towards the top of the page (see complete description `here : Files available to download on the EBI Metagenomics website`_
+The full data sets used to generate both the InterPro and GO overview charts, along with a host of additional data and intermediate files (processed reads, pCDS, reads encoding RNA and taxonomic analysis  results) can be downloaded for further analysis by clicking the Download tab, found towards the top of the page (see complete description here `Files available to download on the EBI Metagenomics website`_
 
 ------------------------------------------------------------------------
 Finding taxonomic information about runs on the EBI Metagenomics website
