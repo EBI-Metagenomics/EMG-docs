@@ -9,13 +9,13 @@ The graph below summarize the EBI Metagenomics data flow from submission to anal
 .. https://stackoverflow.com/questions/12297493/why-does-image-scale-not-work-in-restructuredtext-when-generating-html-files   
 **(1) Submissions are handled by the** `European Nucleotide Archive (ENA) <http://www.ebi.ac.uk/ena/>`_ **and therefore users have to have an ENA** `Webin account <https://www.ebi.ac.uk/ena/submit/sra/#registration>`_ .
 
-   In addition, users submitting private data have to provide an expressed agreement that EBI Metagenomics can access their data for analysis, as described* `here <https://www.ebi.ac.uk/metagenomics/submission>`_ *. Otherwise, we will not be able to access their data. EBI Metagenomics will, of course, handle these data confidentially.
+   In addition, users submitting private data have to provide an expressed agreement that EBI Metagenomics can access their data for analysis, as described `here <https://www.ebi.ac.uk/metagenomics/submission>`_. Otherwise, we will not be able to access their data. EBI Metagenomics will, of course, handle these data confidentially.
 
 **(2) Access to the** `ENA submission page <https://www.ebi.ac.uk/ena/submit/sra/#home>`_ **requires login in using a registered email address or a Webin identifier (Webin-XXXX).**
 
 **(3 and 4): upload and submission.**
 
-   These steps are described in details in the `ENA tutorials <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/tutorials.rst>`_. EBI Metagenomics is also providing a step by step guide accessible on the same page. Please also check our `FAQ <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/faqs.rst>`_. 
+   These steps are described in details in the :ref:`ENA online guides` `ENA tutorials <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/tutorials.rst>`_. EBI Metagenomics is also providing a step by step guide accessible on the same page. Please also check our `FAQ <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/faqs.rst>`_. 
 
    *Note that all queries concerning data submission should be directed to* `ENA dedicated help desk <mailto:datasubs@ebi.ac.uk>`_
 
