@@ -20,7 +20,7 @@ Protein signatures
 Protein signatures are obtained by modelling the conservation of amino acids at specific positions within a group of related proteins (i.e., a protein family), or within the domains/sites shared by a group of proteins. InterPro’s different member databases use different computational methods to produce protein signatures, and they each have their own particular focus of interest: structural and/or functional domains, protein families, or protein features, such as active sites or binding sites (see below).
 
 .. figure:: images/interpro.png
-   :scale: 10 %
+   :scale: 20 %
    :align: center
 
    **InterPro member databases grouped by the methods used to construct their signatures and focus of interest.**
