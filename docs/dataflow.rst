@@ -23,6 +23,6 @@ The length of time requires for analysis varies according to the number of proje
 
 **(5) Upon completion of analysis, data will be uploaded on the website**
 
-EBI Metagenomics pipeline will generate a number of charts and downloadable files (fully described `here <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/portal.rst>`_.
+EBI Metagenomics pipeline will generate a number of charts and downloadable files (fully described `here <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/portal.rst>`_).
 
 For private data, users will have to login on the EBI Metagenomics website to access their data until they become public. Submitters will receive an email from ENA prior to public release giving them the opportunity to extend the confidential period (see  `FAQ <https://github.com/ProteinsWebTeam/EMG-docs/edit/master/docs/faqs.rst>`__).
