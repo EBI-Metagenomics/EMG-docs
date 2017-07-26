@@ -5,9 +5,9 @@ EBI Metagenomics data flow
 The graph below summarize the EBI Metagenomics data flow from submission to analysis results:
 
 .. image:: images/submit_graph_08_web031.png
-   :scale: 75
+   :scale: 60
    
-**(1) Submissions are handled by the** `European Nucleotide Archive (ENA) <http://www.ebi.ac.uk/ena/>`_ **and therefore users have to have an ENA** `Webin account <https://www.ebi.ac.uk/ena/submit/sra/#registration>`_**.**
+**(1) Submissions are handled by the** `European Nucleotide Archive (ENA) <http://www.ebi.ac.uk/ena/>`_ **and therefore users have to have an ENA** `Webin account <https://www.ebi.ac.uk/ena/submit/sra/#registration>`_ **.**
 
 *In addition, users submitting private data for analysis by EBI Metagenomics have to provide an expressed agreement as described `here <https://www.ebi.ac.uk/metagenomics/submission>`_. Otherwise we will not be able to access their data for analysis*
 
