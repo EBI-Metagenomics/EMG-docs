@@ -15,7 +15,7 @@ The graph below summarize the EBI Metagenomics data flow from submission to anal
 
 **(3 and 4): upload and submission.**
 
-   These steps are described in details in the `ENA tutorials <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/tutorials.rst>`_. EBI Metagenomics is also providing a step by step guide accessible on the same page. Please also check our`_FAQ <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/faqs.rst>`_. 
+   These steps are described in details in the `ENA tutorials <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/tutorials.rst>`_. EBI Metagenomics is also providing a step by step guide accessible on the same page. Please also check our `FAQ <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/faqs.rst>`_. 
 
    *Note that all queries concerning data submission should be directed to* `ENA dedicated help desk <mailto:datasubs@ebi.ac.uk>`_
 
