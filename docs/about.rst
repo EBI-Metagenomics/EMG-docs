@@ -38,6 +38,7 @@ If you find this resource useful, please consider citing the following publicati
 Contact
 -------
 If you would like to get in touch, please contact us using the `helpdesk <metagenomics-help@ebi.ac.uk>`_. We will respond as quickly as possible, but please bear in mind that we do not have a member of staff dedicated to running the helpesk service.
+Please, check our `_FAQ <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/faqs.rst>`_ prior to contacting us.
 
 If you would like to keep up to date with developments with the EBI Metagenomics, please follow us on Twitter (`@EBImetagenomics <https://twitter.com/ebimetagenomics>`_).
 
