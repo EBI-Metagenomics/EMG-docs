@@ -13,7 +13,7 @@ EBI Metagenomics documentation
    :caption: Contents:
 
    about
-   data flow
+   dataflow
    analysis
    portal
    tutorials
