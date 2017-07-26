@@ -17,10 +17,12 @@ The graph below summarize the EBI Metagenomics data flow from submission to anal
 
 *Note that all queries concerning data submission should be directed to* `ENA dedicated help desk <mailto:datasubs@ebi.ac.uk>`_
 
-Following completion of these two steps, and after data validation by ENA, we will be able to access the submitted data and they will be queued for analysis.
+Following completion of these two steps, and after data validation by ENA, we will be able to access the submitted data and they will be queued for analysis (more details _`here <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/analysis.rst>`_.
 
 The length of time requires for analysis varies according to the number of projects in the queue, the nature and the number of runs in the submission however we aim to have most analysis completed in less than a week once validated by ENA.
 
 **(5) Upon completion of analysis, data will be uploaded on the website**
+
+EBI Metagenomics pipeline will generate a number of charts and downloadable files (fully described _`here <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/portal.rst>`_.
 
 For private data, users will have to login on the EBI Metagenomics website to access their data until they become public. Submitters will receive an email from ENA prior to public release giving them the opportunity to extend the confidential period (see  `FAQ <https://github.com/ProteinsWebTeam/EMG-docs/edit/master/docs/faqs.rst>`__).
