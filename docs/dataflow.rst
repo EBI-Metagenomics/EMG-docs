@@ -33,4 +33,4 @@ The graph below summarize the EBI Metagenomics data flow from submission to anal
 Submitters will receive an email from ENA prior to public release giving them the opportunity to extend the confidential period which is set to two years per default (as indicated at :ref:`Can I change the release date of my project?`).
 and you can try here_
 
-.. _here: http://emg-docs.readthedocs.io/en/latest/faqs.html#can-i-change-the-release-date-of-my-project
+.. _here: <http://emg-docs.readthedocs.io/en/latest/faqs.html#can-i-change-the-release-date-of-my-project>
