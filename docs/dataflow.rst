@@ -30,4 +30,6 @@ The graph below summarize the EBI Metagenomics data flow from submission to anal
 **(6) For private data, users will have to login on the EBI Metagenomics website to access their data until they become public**
 
 **(7) Private data will become public after an intital confidential period of two years.**
-Submitters will receive an email from ENA prior to public release giving them the opportunity to extend the confidential period which is set to two years per default (see  |quest|:ref:`Can I change the release date of my project?`)
+Submitters will receive an email from ENA prior to public release giving them the opportunity to extend the confidential period which is set to two years per default (see  |quest|)
+
+.. |quest| ref:`Can I change the release date of my project?`
