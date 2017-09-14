@@ -17,9 +17,9 @@ Version 4.0 of the pipeline was released in September 2017 and includes the foll
 
 Figure 1 gives you a visual overview of the main steps and tools included in this version:
 
-.. image:: images/pipeline_v3_overview.png
+.. image:: images/pipeline_v4.0_overview.png
 
-**Figure 1**. Overview of steps and tools included in pipeline v3: 
+**Figure 1**. Overview of steps and tools included in pipeline v4.0: 
 
 
 ------------------
