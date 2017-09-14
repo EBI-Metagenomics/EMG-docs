@@ -30,7 +30,7 @@ How to cite
 -----------
 If you find this resource useful, please consider citing the following publication:
 
-| `EBI metagenomics in 2016 - an expanding and evolving resource for the analysis and archiving of metagenomic data. <https://nar.oxfordjournals.org/content/44/D1/D595>`_
+| `EBI metagenomics in 2016 - an expanding and evolving resource for the analysis and archiving of metagenomic data. <https://academic.oup.com/nar/article/44/D1/D595/2502680/EBI-metagenomics-in-2016-an-expanding-and-evolving>`_
 | A Mitchell, F Bucchini, G Cochrane, H Denise, P ten Hoopen, M Fraser, S Pesseat, S Potter, M Scheremetjew, P Sterk and R D Finn.
 | **Nucleic Acids Research** (2016) Database Issue 44:D595-D603. `10.1093/nar/gkv1195 (PDF) <https://nar.oxfordjournals.org/content/44/D1/D595.full.pdf>`_
 
