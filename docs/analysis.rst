@@ -26,7 +26,7 @@ Taxonomic analysis
 ------------------
 EBI Metagenomics provides taxonomic analysis of sequences predicted to be 16S rRNAs using `Qiime <http://qiime.org/>`_ and the `GreenGenes <http://greengenes.secondgenome.com/>`_ database for annotation.
 
-The presence of 16S rRNA sequences in reads are predicted using `HMMER <http://www.hmmer.org>`_ and prokaryotic rRNA models from `Rfam <http://rfam.xfam.org>`_ in forward and reverse orientation. The predicted 16S rRNA sequences are extracted from the reads and annotated using the Qiime `closed-reference protocol <http://qiime.org/tutorials/otu_picking.html>`_ for version 2 and higher of the pipeline. The taxonomic lineages are provided in at the kingdom, phylum, class, order, family, genus and species taxonomic levels (labelled k, p, c, o, f, g and s, respectively). Predicted 16S rRNA sequences that were not annotated by Qiime are grouped at the ‘Root’ level.
+The presence of 16S rRNA sequences in reads are predicted using `HMMER <http://www.hmmer.org>`_ and prokaryotic rRNA models from `rRNASelector <https://www.ncbi.nlm.nih.gov/pubmed/21887657>`_ in forward and reverse orientation. The predicted 16S rRNA sequences are extracted from the reads and annotated using the Qiime `closed-reference protocol <http://qiime.org/tutorials/otu_picking.html>`_ for version 2 and higher of the pipeline. The taxonomic lineages are provided in at the kingdom, phylum, class, order, family, genus and species taxonomic levels (labelled k, p, c, o, f, g and s, respectively). Predicted 16S rRNA sequences that were not annotated by Qiime are grouped at the ‘Root’ level.
 
 ---------------------
 Other non-coding RNAs
