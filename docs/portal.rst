@@ -207,4 +207,4 @@ After you have successfully logged into our system, you will have direct access 
 
 **Figure 13**. Filter options on the projects list view. 
 
-The comparison tool will list all your non-amplicon projects in the private area, for you ready to compare, where else in the public area you will find a list of all publicly available projects in EMG.
+The comparison tool will list all your non-amplicon projects in the private area, for you ready to compare.  Currently we do not permit the comparison of public and private data. In the public area you will find a list of all publicly available projects in EMG.
