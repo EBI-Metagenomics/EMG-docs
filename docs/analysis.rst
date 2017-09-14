@@ -1,18 +1,19 @@
 .. _analysis:
 
-Analysis pipeline v3
-====================
+Analysis pipeline v4.0
+======================
 
 ------------------
 Overview
 ------------------
 
-Version 3 of the pipeline was released in June 2016 and includes the following updates and changes:
+Version 4.0 of the pipeline was released in September 2017 and includes the following updates and changes:
 
-* Updated tools: InterProScan, FraGeneScan, QIIME and Trimmomatic
-* Updated GO slim, based on the analysis of over 22 billion (22x10^9) billion functional annotations
-* Added identification and masking of transfer RNA genes
-* Improved quality control statistics (sequence length summary, GC and nucleotide distribution)
+* Updated tools: InterProScan
+* rRNASelector (used to identify 16S rRNA genes) was replaced with Infernal for SSU and LSU gene identification
+* The QIIME taxonomic classification component was replaced with MAPseq
+* The Greengenes reference database was replaced with SILVA SSU / LSU version 128, enabling classification of eukaryotes, remapped to a 7-level taxonomy
+* Prodigal was added to run alongside FragGeneScan as part of a combined gene caller when processing assembled sequences
 
 Figure 1 gives you a visual overview of the main steps and tools included in this version:
 
