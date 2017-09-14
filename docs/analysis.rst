@@ -1,7 +1,7 @@
 .. _analysis:
 
 Analysis pipeline v3
-=================
+====================
 
 ------------------
 Overview
@@ -17,6 +17,7 @@ Version 3 of the pipeline was released in June 2016 and includes the following u
 Figure 1 gives you a visual overview of the main steps and tools included in this version:
 
 .. image:: images/pipeline_v3_overview.png
+
 **Figure 1**. Overview of steps and tools included in pipeline v3: 
 
 
