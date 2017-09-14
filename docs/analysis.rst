@@ -25,14 +25,14 @@ Figure 1 gives you a visual overview of the main steps and tools included in thi
 ------------------
 Taxonomic analysis
 ------------------
-EBI Metagenomics provides taxonomic analysis of sequences predicted to be 16S rRNAs using `Qiime <http://qiime.org/>`_ and the `GreenGenes <http://greengenes.secondgenome.com/>`_ database for annotation.
+The analysis pipeline underwent a more substantial update in August 2017 to version 4.0, with the entire taxonomic profiling section replaced. The `rRNASelector <http://europepmc.org/abstract/MED/21887657>`_ based component, which was previously used to identify 16S rRNA genes, was replaced with `Infernal <http://europepmc.org/abstract/MED/24008419>`_ (running in hmm-only mode) using a library of ribosomal RNA hidden Markov models from `Rfam <http://europepmc.org/articles/PMC4383904>`_. This allows accurate identification of both large and small subunit (LSU and SSU) ribosomal ribonucleic acid genes, including the eukaryotic 18S rRNA gene. The QIIME taxonomic classification component was replaced with MAPseq version 1.2 (http://meringlab.org/software/mapseq/), which offers fast and accurate classification of reads, and provides corresponding confidence scores for assignment at each taxonomic level. The Greengenes reference database was replaced with SILVA SSU / LSU version 128 [23193283], which includes eukaryotic as well as prokaryotic sequences, thus enabling eukaryotic taxonomic classification. In order to make it compatible with MAPseq, the SILVA database was remapped to a flat, 8-level taxonomy, using in house scripts. The resulting classification system was compared to QIIME/Greengenes and benchmarked using both mock community and real world datasets to confirm accuracy of results. 
 
 The presence of 16S rRNA sequences in reads are predicted using `HMMER <http://www.hmmer.org>`_ and prokaryotic rRNA models from `rRNASelector <https://www.ncbi.nlm.nih.gov/pubmed/21887657>`_ in forward and reverse orientation. The predicted 16S rRNA sequences are extracted from the reads and annotated using the Qiime `closed-reference protocol <http://qiime.org/tutorials/otu_picking.html>`_ for version 2 and higher of the pipeline. The taxonomic lineages are provided in at the kingdom, phylum, class, order, family, genus and species taxonomic levels (labelled k, p, c, o, f, g and s, respectively). Predicted 16S rRNA sequences that were not annotated by Qiime are grouped at the ‘Root’ level.
 
 ---------------------
 Other non-coding RNAs
 ---------------------
-For the identification of tRNAs within metagenomics datasets we are using `HMMER <http://www.hmmer.org>`_ and `Rfam <http://rfam.xfam.org/>`_ tRNA models.
+For the identification of tRNAs within metagenomics datasets we are using `HMMER <http://www.hmmer.org>`_ and `Rfam <http://europepmc.org/articles/PMC4383904>`_ tRNA models.
 
 -------------------
 Functional analysis
