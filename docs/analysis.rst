@@ -15,7 +15,7 @@ Version 4.0 of the pipeline was released in September 2017 and includes the foll
 * The Greengenes reference database was replaced with SILVA SSU / LSU version 128, enabling classification of eukaryotes, remapped to a 8-level taxonomy
 * Prodigal was added to run alongside FragGeneScan as part of a combined gene caller when processing assembled sequences
 
-Figure 1 gives you a visual overview of the main steps and tools included in this version:
+Figure 1 gives a visual overview of the main steps and tools included in this version:
 
 .. image:: images/pipeline_v4.0_overview.png
 
