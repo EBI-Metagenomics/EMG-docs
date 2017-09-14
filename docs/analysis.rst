@@ -30,7 +30,7 @@ The analysis pipeline underwent a more substantial update in August 2017 to vers
 ---------------------
 Other non-coding RNAs
 ---------------------
-For the identification of non coding RNA, such as tRNA, within metagenomics datasets we are using `HMMER <http://www.hmmer.org>`_ and `Rfam <http://europepmc.org/articles/PMC4383904>`_ ncRNA models.
+For the identification of other non-coding RNAs, such as tRNAs, within metagenomics datasets we are using `HMMER <http://www.hmmer.org>`_ and `Rfam <http://europepmc.org/articles/PMC4383904>`_ ncRNA models.
 
 -------------------
 Functional analysis
