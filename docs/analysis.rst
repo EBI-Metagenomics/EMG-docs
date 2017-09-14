@@ -19,7 +19,7 @@ Figure 1 gives a visual overview of the main steps and tools included in this ve
 
 .. image:: images/pipeline_v4.0_overview.png
 
-**Figure 1**. Overview of steps and tools included in pipeline v4.0: 
+**Figure 1**. Overview of steps and tools included in pipeline v4.0
 
 
 ------------------
