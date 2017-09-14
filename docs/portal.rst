@@ -188,8 +188,11 @@ Privat area
 If you have given consent to the EBI Metagenomics team to analyse your data for which you have requested a pre-publication confidential hold, you can access the analysis results of those pre-published data sets by using your privat area. You can simply access this area by clicking on the 'Login' button, which you will find on the top right hand side of any page (see Figure 12 below).
 
 .. image:: images/how_to_login.png
-**Figure 12**. A login dialog will onces you clicked on the 'Login' button, which can be found on the right top corner of each page.
+**Figure 12**. A login dialog will open onces you have clicked on the 'Login' button, which can be found on the right top corner of each page.
 
-After you have successfully logged into our system, you will have direct access to all your privately (and publicly) submitted projects and samples. You will find a list of your latest submissions (projects and samples) on the home page, but you have also access to all your submitted projects on the projects list view. On that page you will find a drop down filter item 'My projects', which allows you to list all your projects.
+After you have successfully logged into our system, you will have direct access to all your privately (and publicly) submitted projects and samples. You will find a list of your latest submissions (projects and samples) on the home page, but you have also access to all your submitted projects so far on the projects list view (Figure 13 below). On that page you will find a drop down filter item 'My projects', which allows you to list all your projects.
+
+.. image:: images/my_projects_cu.png
+**Figure 13**. Filter options on the projects list view. 
 
 The comparison tool will list all your non-amplicon projects in the private area, for you ready to compare, where else in the public area you will find a list of all publicly available projects in EMG.
