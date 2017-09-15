@@ -30,7 +30,7 @@ The analysis pipeline underwent a substantial update in August 2017 to version 4
 The QIIME taxonomic classification component was replaced with `MAPSeq <http://www.biorxiv.org/content/early/2017/04/12/126953>`_ version 1.2, which offers fast and accurate classification of reads, and provides corresponding confidence scores for assignment at each taxonomic level. The Greengenes reference database was replaced with `SILVA <http://europepmc.org/articles/PMC3531112>`_ SSU / LSU version 128, which includes eukaryotic as well as prokaryotic sequences, thus enabling eukaryotic taxonomic classification. In order to make it compatible with MAPseq, the SILVA database was remapped to a flat, 8-level taxonomy, using in house scripts. The resulting classification system was compared to QIIME/Greengenes and benchmarked using both mock community and real world datasets to confirm accuracy of results. 
 
 Other non-coding RNAs
-~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^
 In addition to the ribosomal subunit RNAs we also identify other non-coding RNAs (ncRNAs) such as SRP RNA, tRNA, tmRNA and RNase. The following clans are used for the ncRNAs: CL00001 (tRNA), CL00002 (RNase P) and CL00003 (SRP RNA).
 
 -------------------
