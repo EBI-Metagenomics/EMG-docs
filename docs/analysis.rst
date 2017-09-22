@@ -1,37 +1,37 @@
 .. _analysis:
 
-Analysis pipeline v3
-====================
+Analysis pipeline v4.0
+======================
 
-------------------
+--------
 Overview
-------------------
+--------
 
-Version 3 of the pipeline was released in June 2016 and includes the following updates and changes:
+Version 4.0 of the pipeline was released in September 2017 and includes the following updates and changes:
 
-* Updated tools: InterProScan, FraGeneScan, QIIME and Trimmomatic
-* Updated GO slim, based on the analysis of over 22 billion (22x10^9) billion functional annotations
-* Added identification and masking of transfer RNA genes
-* Improved quality control statistics (sequence length summary, GC and nucleotide distribution)
+* Updated tools: InterProScan to version 5.25-64.0
+* rRNASelector (used to identify 16S rRNA genes) was replaced with Infernal for SSU and LSU gene identification
+* The QIIME taxonomic classification component was replaced with MAPseq
+* The Greengenes reference database was replaced with SILVA SSU / LSU version 128, enabling classification of eukaryotes, remapped to a 8-level taxonomy
+* Prodigal was added to run alongside FragGeneScan as part of a combined gene caller when processing assembled sequences
 
-Figure 1 gives you a visual overview of the main steps and tools included in this version:
+Figure 1 gives a visual overview of the main steps and tools included in this version:
 
-.. image:: images/pipeline_v3_overview.png
+.. image:: images/pipeline_v4.0_overview.png
 
-**Figure 1**. Overview of steps and tools included in pipeline v3: 
+**Figure 1**. Overview of steps and tools included in pipeline v4.0
 
 
 ------------------
 Taxonomic analysis
 ------------------
-EBI Metagenomics provides taxonomic analysis of sequences predicted to be 16S rRNAs using `Qiime <http://qiime.org/>`_ and the `GreenGenes <http://greengenes.secondgenome.com/>`_ database for annotation.
+The analysis pipeline underwent a substantial update in August 2017 to version 4.0, with the entire taxonomic profiling section replaced. The `rRNASelector <http://europepmc.org/abstract/MED/21887657>`_ based component, which was previously used to identify 16S rRNA genes, was replaced with `Infernal <http://europepmc.org/abstract/MED/24008419>`_ (running in hmm-only mode) using a library of ribosomal RNA hidden Markov models from `Rfam <http://europepmc.org/articles/PMC4383904>`_ 12.2. This allows accurate identification of both large and small subunit (LSU and SSU) ribosomal ribonucleic acid genes, including the eukaryotic 18S rRNA gene. To identify those we use the families found in the following clans: CL00111 (SSU) and CL00112 (LSU).
 
-The presence of 16S rRNA sequences in reads are predicted using `HMMER <http://www.hmmer.org>`_ and prokaryotic rRNA models from `rRNASelector <https://www.ncbi.nlm.nih.gov/pubmed/21887657>`_ in forward and reverse orientation. The predicted 16S rRNA sequences are extracted from the reads and annotated using the Qiime `closed-reference protocol <http://qiime.org/tutorials/otu_picking.html>`_ for version 2 and higher of the pipeline. The taxonomic lineages are provided in at the kingdom, phylum, class, order, family, genus and species taxonomic levels (labelled k, p, c, o, f, g and s, respectively). Predicted 16S rRNA sequences that were not annotated by Qiime are grouped at the ‘Root’ level.
+The QIIME taxonomic classification component was replaced with `MAPSeq <http://www.biorxiv.org/content/early/2017/04/12/126953>`_ version 1.2, which offers fast and accurate classification of reads, and provides corresponding confidence scores for assignment at each taxonomic level. The Greengenes reference database was replaced with `SILVA <http://europepmc.org/articles/PMC3531112>`_ SSU / LSU version 128, which includes eukaryotic as well as prokaryotic sequences, thus enabling eukaryotic taxonomic classification. In order to make it compatible with MAPseq, the SILVA database was remapped to a flat, 8-level taxonomy, using in house scripts. The resulting classification system was compared to QIIME/Greengenes and benchmarked using both mock community and real world datasets to confirm accuracy of results. 
 
----------------------
 Other non-coding RNAs
----------------------
-For the identification of tRNAs within metagenomics datasets we are using `HMMER <http://www.hmmer.org>`_ and `Rfam <http://rfam.xfam.org/>`_ tRNA models.
+^^^^^^^^^^^^^^^^^^^^^
+In addition to the ribosomal subunit RNAs we also identify other non-coding RNAs (ncRNAs) such as SRP RNA, tRNA, tmRNA and RNase. The following clans are used for the ncRNAs: CL00001 (tRNA), CL00002 (RNase P) and CL00003 (SRP RNA).
 
 -------------------
 Functional analysis
