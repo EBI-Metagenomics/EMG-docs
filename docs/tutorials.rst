@@ -21,7 +21,7 @@ The ENA also provides relevant online help and information on how to submit meta
 
 `Submitting read data to ENA <http://www.ebi.ac.uk/ena/submit/read-submission>`_
 
-`Submitting environmental samples to ENA <https://www.ebi.ac.uk/ena/submit/environmental-submissions>`_
+`Submitting environmental :term:`samples<sample>` to ENA <https://www.ebi.ac.uk/ena/submit/environmental-submissions>`_
 
 `Sample checklists <https://www.ebi.ac.uk/ena/submit/checklists>`_
 

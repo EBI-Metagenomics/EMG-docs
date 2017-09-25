@@ -2,7 +2,7 @@
 Data flow from submission to results
 ------------------------------------
 
-The graph below summarize the EBI Metagenomics data flow from submission to analysis results:
+The graph below summarize the EBI Metagenomics data flow from submission to :term:`analysis results<analysis result>`:
 
 .. figure:: images/submit_graph_08_web032.png
    :scale: 50 %
@@ -21,11 +21,11 @@ The graph below summarize the EBI Metagenomics data flow from submission to anal
 
    Following completion of these two steps, and after data validation by ENA, we will be able to access the submitted data and they will be queued for analysis (more details `here <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/analysis.rst>`_).
 
-   The length of time requires for analysis varies according to the number of projects in the queue, the nature and the number of runs in the submission however we aim to have most analysis completed in less than a week once validated by ENA.
+   The length of time requires for analysis varies according to the number of projects in the queue, the nature and the number of :term:`runs<run>` in the submission however we aim to have most analysis completed in less than a week once validated by ENA.
 
 **(5) Upon completion of analysis, data will be uploaded on the website**
 
-   EBI Metagenomics pipeline will generate a number of charts and downloadable files (fully described :ref:`Files available to download on the EBI Metagenomics website`.
+   EBI Metagenomics :term:`pipeline` will generate a number of charts and downloadable files (fully described :ref:`Files available to download on the EBI Metagenomics website`.
 
 **(6) For private data, users will have to login on the EBI Metagenomics website to access their data until they become public**
 
