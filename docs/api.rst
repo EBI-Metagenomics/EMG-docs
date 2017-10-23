@@ -22,8 +22,7 @@ Base URL
 
 The base address to the API is https://www.ebi.ac.uk/metagenomics/api/v0.2/.
 
-A GET request can be issued to the root endpoint to get all the top level
-categories that the API v1 supports.
+A GET request can be issued to the root endpoint to get all categories that the API supports.
 
 .. highlight:: bash
 
@@ -45,7 +44,7 @@ https://www.ebi.ac.uk/metagenomics/api/v0.2/studies/ERP009004/samples.
 HTTP methods
 ^^^^^^^^^^^^
 
-API provides read-only access to the resources that means only HTTP GET
+API provides read-only access to all resources, that means only HTTP GET
 method can be used with expetion of authentication endpoint.
 
 
@@ -54,8 +53,8 @@ Response
 
 Links to a resource return a JSON object formatted data structure that
 contains the resource type (in this example :term:`biomes<biome>`), associated
-object identifier (id) and attributes. Where appropriate, relationships and
-links are provided to other resources, allowing complex queries to be
+object identifier (*id*) and *attributes*. Where appropriate, *relationships*
+and links are provided to other resources, allowing complex queries to be
 constructed.
 
 .. highlight:: json
@@ -185,8 +184,9 @@ Parameters
 
 Lists of resources can be filtered and sorted by selected parameters, allowing
 the construction of more complex queries. For instance, in order to retrieve
-oceanographic samples from metagenomic studies taken at temperature less than
-10C, the following query could be constructed:
+oceanographic :term:`samples<sample>` from :term:`metagenomic`
+:term:`studies<study>` taken at temperature less than 10C, the following query
+could be constructed:
 
 .. highlight:: bash
 
@@ -280,6 +280,16 @@ For example::
       },
     ]
   }
+
+
+Errors
+^^^^^^
+
+There are three possible types of client errors on API calls:
+
+* 400 Bad requests
+* 404 Not found.
+* 403 Authentication failed.
 
 
 Cross Origin Resource Sharing
