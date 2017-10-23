@@ -16,6 +16,7 @@ EBI Metagenomics documentation
    dataflow
    analysis
    portal
+   api
    tutorials
    faqs
    glossary
