@@ -18,6 +18,7 @@ EBI Metagenomics documentation
    portal
    tutorials
    faqs
+   glossary
 
 Indices and tables
 ==================
@@ -25,3 +26,4 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+* :ref:`glossary`

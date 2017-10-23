@@ -1,5 +1,3 @@
-.. _about:
-
 About
 =====
 
@@ -7,7 +5,7 @@ About
 The EBI Metagenomics service
 ----------------------------
 
-EBI metagenomics is a freely available hub for the analysis and exploration of metagenomic, metatranscriptomic, amplicon and assembly data. The resource provides rich functional and taxonomic analyses of user-submitted sequences, as well as analysis of publicly available metagenomic datasets held within the European Nucleotide Archive (`ENA <http://www.ebi.ac.uk/ena>`_). 
+EBI metagenomics is a freely available hub for the analysis and exploration of :term:`metagenomic`, :term:`metatranscriptomic`, :term:`amplicon` and :term:`assembly` data. The resource provides rich functional and taxonomic analyses of user-submitted sequences, as well as analysis of publicly available metagenomic datasets held within the European Nucleotide Archive (`ENA <https://www.ebi.ac.uk/ena>`_). 
 
 --------------------------------
 What does EBI Metagenomics offer
