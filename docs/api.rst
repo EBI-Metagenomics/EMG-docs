@@ -1,7 +1,5 @@
-.. _api:
-
-EMG RESTful API
-===============
+RESTful API
+===========
 
 With the rapid expansion in the number of datasets deposited in EBI
 Metagenomics, it has become increasingly important to provide programmatic
