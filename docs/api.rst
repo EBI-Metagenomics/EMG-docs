@@ -14,7 +14,7 @@ Overview
 Current version
 ^^^^^^^^^^^^^^^
 
-Current API version is **v0.3**
+Current API version is **latest**
 
 .. note::
 
@@ -214,7 +214,7 @@ relations as parameters in the initial query.
 
 For example::
 
-    curl -X GET "https://www.ebi.ac.uk/metagenomics/api/latest/studies/ERP005831/samples?include=metadata&fields[samples]=accession,longitude,latitude,metadata"
+    curl -X GET "https://www.ebi.ac.uk/metagenomics/api/latest/studies/ERP005831?include=samples&fields[studies]=accession,study_name,biomes,samples&fields[samples]=accession,longitude,latitude,biome"
 
 
 .. highlight:: json
@@ -222,24 +222,70 @@ For example::
 ::
 
   {
-    "data": [
-        {
-          "type": "samples",
-          "id": "ERS456668",
-          "attributes": {
-            "accession": "ERS456668",
-            "longitude": -1.56,
-            "latitude": 52.38
-          },
-          "relationships": {
-            "metadata": {
+    "data": {
+      "type": "studies",
+      "id": "ERP005831",
+      "attributes": {
+        "accession": "ERP005831",
+        "study-name": "Stable isotope probing/metagenomics of terrestrial dimethylsulfide degrading microorganisms"
+      },
+      "relationships": {
+        "biomes": {
+            "links": {
+                "related": "https://www.ebi.ac.uk/metagenomics/api/v0.3/studies/ERP005831/biomes"
+            },
+          "data": [
+            {
+              "type": "biomes",
+              "id": "root:Environmental:Aquatic:Freshwater:Lentic:Sediment",
               "links": {
-                "related": "https://www.ebi.ac.uk/metagenomics/api/latest/samples/ERS456668/metadata"
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v0.3/biomes/root:Environmental:Aquatic:Freshwater:Lentic:Sediment"
+              }
+            },
+            {
+              "type": "biomes",
+              "id": "root:Environmental:Terrestrial:Soil:Loam:Agricultural",
+              "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v0.3/biomes/root:Environmental:Terrestrial:Soil:Loam:Agricultural"
               }
             }
+          ],
+          "meta": {
+            "count": 2
+          }
+        },
+        "samples": {
+          "links": {
+            "related": "https://www.ebi.ac.uk/metagenomics/api/v0.3/studies/ERP005831/samples"
+          }
+        }
+      },
+      "links": {
+          "self": "https://www.ebi.ac.uk/metagenomics/api/v0.3/studies/ERP005831"
+      }
+    },
+    "included": [
+      {
+        "type": "samples",
+        "id": "ERS456668",
+        "attributes": {
+          "accession": "ERS456668",
+          "longitude": -1.56,
+          "latitude": 52.38
+        },
+        "relationships": {
+          "biome": {
+            "links": {
+              "related": "https://www.ebi.ac.uk/metagenomics/api/v0.3/biomes/root:Environmental:Aquatic:Freshwater:Lentic:Sediment"
+            },
+            "data": {
+              "type": "biomes",
+              "id": "root:Environmental:Aquatic:Freshwater:Lentic:Sediment"
+            }
+          }
           },
           "links": {
-            "self": "https://www.ebi.ac.uk/metagenomics/api/latest/samples/ERS456668"
+            "self": "https://www.ebi.ac.uk/metagenomics/api/v0.3/samples/ERS456668"
           }
         },
         {
@@ -251,38 +297,20 @@ For example::
             "latitude": 52.19
           },
           "relationships": {
-            "metadata": {
+            "biome": {
               "links": {
-                "related": "https://www.ebi.ac.uk/metagenomics/api/latest/samples/ERS456669/metadata"
+                "related": "https://www.ebi.ac.uk/metagenomics/api/v0.3/biomes/root:Environmental:Terrestrial:Soil:Loam:Agricultural"
+              },
+              "data": {
+                "type": "biomes",
+                "id": "root:Environmental:Terrestrial:Soil:Loam:Agricultural"
               }
             }
           },
           "links": {
-            "self": "https://www.ebi.ac.uk/metagenomics/api/latest/samples/ERS456669"
+            "self": "https://www.ebi.ac.uk/metagenomics/api/v0.3/samples/ERS456669"
           }
         }
-    ],
-    "included": [
-      {
-        "type": "sample-anns",
-        "id": "instrument model/Illumina HiSeq 2000",
-        "attributes": {
-          "var-name": "instrument model",
-          "var-value": "Illumina HiSeq 2000",
-          "unit": null
-        },
-        "relationships": {
-          "sample": {
-            "data": {
-              "type": "samples",
-              "id": "ERS456668"
-            },
-            "links": {
-              "related": "https://www.ebi.ac.uk/metagenomics/api/latest/samples/ERS456668"
-            }
-          }
-        }
-      },
     ]
   }
 
@@ -292,10 +320,11 @@ Errors
 
 There are three possible types of client errors on API calls:
 
-* 400 Bad requests
+* 200 Successful.
+* 400 Bad requests.
 * 404 Not found.
 * 403 Authentication failed.
-
+* 500 Server error.
 
 Cross Origin Resource Sharing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
