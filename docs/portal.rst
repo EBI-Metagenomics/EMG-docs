@@ -18,7 +18,7 @@ The 'Analysis results' field could also displays two types of messages:
 Finding quality control information about runs on the EBI Metagenomics website
 ------------------------------------------------------------------------------
 
-Quality control (Qc) analysis of runs within projects on the `EBI Metagenomics website <www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Quality control' tab found toward the top of any run page (see Figure 1 below).
+Quality control (Qc) analysis of runs within projects on the `EBI Metagenomics website <https://www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Quality control' tab found toward the top of any run page (see Figure 1 below).
 
 
 .. image:: images/QC1.PNG
@@ -41,7 +41,7 @@ An histogram is used to represent the nucleotide distribution for the first 500 
 Finding functional information about runs on the EBI Metagenomics website
 -------------------------------------------------------------------------
 
-Functional analysis of runs within projects on the `EBI Metagenomics website <www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Functional Analysis' tab found toward the top of any run page (see Figure 4 below). Note that this tab will be greyed for amplicon runs that have no functional results.
+Functional analysis of runs within projects on the `EBI Metagenomics website <https://www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Functional Analysis' tab found toward the top of any run page (see Figure 4 below). Note that this tab will be greyed for amplicon runs that have no functional results.
 
 .. image:: images/Func_1.PNG
 
@@ -67,7 +67,7 @@ The full data sets used to generate both the :term:`InterPro` and GO overview ch
 Finding taxonomic information about runs on the EBI Metagenomics website
 ------------------------------------------------------------------------
 
-Taxonomic analysis of runs within projects on the `EBI Metagenomics website <www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Taxonomic analysis' tab found toward the top of any run page (see Figure 7 below).
+Taxonomic analysis of runs within projects on the `EBI Metagenomics website <https://www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Taxonomic analysis' tab found toward the top of any run page (see Figure 7 below).
 
 .. image:: images/taxonomy.PNG
 
