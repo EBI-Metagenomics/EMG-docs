@@ -14,13 +14,13 @@ Overview
 Current version
 ^^^^^^^^^^^^^^^
 
-Current API version is **v0.2**
+Current API version is **v0.3**
 
 
 Base URL
 ^^^^^^^^
 
-The base address to the API is https://www.ebi.ac.uk/metagenomics/api/v0.2/.
+The base address to the API is https://www.ebi.ac.uk/metagenomics/api/latest/.
 
 A GET request can be issued to the root endpoint to get all categories that the API supports.
 
@@ -28,17 +28,17 @@ A GET request can be issued to the root endpoint to get all categories that the 
 
 ::
 
-    curl -X GET "https://www.ebi.ac.uk/metagenomics/api/v0.2/"
+    curl -X GET "https://www.ebi.ac.uk/metagenomics/api/latest/"
 
 
 There are several easy-to-use top-levels resources, such as
 :term:`studies<study>`, :term:`samples<sample>`, :term:`runs<run>`,
 experiment-types, :term:`biomes<biome>`, and annotations. For example
-https://www.ebi.ac.uk/metagenomics/api/v0.2/studies retrieves a list
-of all studies, while https://www.ebi.ac.uk/metagenomics/api/v0.2/studies/ERP009004
+https://www.ebi.ac.uk/metagenomics/api/latest/studies retrieves a list
+of all studies, while https://www.ebi.ac.uk/metagenomics/api/latest/studies/ERP009004
 retrieves a single study, with the accession ERP009004. The samples contained
 within this study can be retrieved using the relationship URL:
-https://www.ebi.ac.uk/metagenomics/api/v0.2/studies/ERP009004/samples. 
+https://www.ebi.ac.uk/metagenomics/api/latest/studies/ERP009004/samples.
 
 
 HTTP methods
@@ -84,26 +84,26 @@ constructed.
                 "type": "biomes",
                 "id": "root:Environmental:Aquatic:Freshwater",
                 "links": {
-                  "self": "https://www.ebi.ac.uk/metagenomics/api/v0.2/biomes/root:Environmental:Aquatic:Freshwater"
+                  "self": "https://www.ebi.ac.uk/metagenomics/api/latest/biomes/root:Environmental:Aquatic:Freshwater"
                 }
               },
               {
                 "type": "biomes",
                 "id": "root:Environmental:Aquatic:Marine",
                 "links": {
-                  "self": "https://www.ebi.ac.uk/metagenomics/api/v0.2/biomes/root:Environmental:Aquatic:Marine"
+                  "self": "https://www.ebi.ac.uk/metagenomics/api/latest/biomes/root:Environmental:Aquatic:Marine"
                 }
               },
               {
                 "type": "biomes",
                 "id": "root:Environmental:Terrestrial:Soil",
                 "links": {
-                  "self": "https://www.ebi.ac.uk/metagenomics/api/v0.2/biomes/root:Environmental:Terrestrial:Soil"
+                  "self": "https://www.ebi.ac.uk/metagenomics/api/latest/biomes/root:Environmental:Terrestrial:Soil"
                 }
               }
             ],
             "links": {
-              "related": "https://www.ebi.ac.uk/metagenomics/api/v0.2/studies/ERP009004/biomes"
+              "related": "https://www.ebi.ac.uk/metagenomics/api/latest/studies/ERP009004/biomes"
             },
             "meta": {
               "count": 3
@@ -111,17 +111,17 @@ constructed.
           },
           "publications": {
             "links": {
-              "related": "https://www.ebi.ac.uk/metagenomics/api/v0.2/studies/ERP009004/publications"
+              "related": "https://www.ebi.ac.uk/metagenomics/api/latest/studies/ERP009004/publications"
             }
           },
           "samples": {
             "links": {
-              "related": "https://www.ebi.ac.uk/metagenomics/api/v0.2/studies/ERP009004/samples"
+              "related": "https://www.ebi.ac.uk/metagenomics/api/latest/studies/ERP009004/samples"
             }
           }
         },
         "links": {
-          "self": "https://www.ebi.ac.uk/metagenomics/api/v0.2/studies/ERP009004"
+          "self": "https://www.ebi.ac.uk/metagenomics/api/latest/studies/ERP009004"
         }
       }
     }
@@ -152,7 +152,7 @@ increased up to 100:
 
 ::
 
-    curl -X GET "https://www.ebi.ac.uk/metagenomics/api/v0.2/studies?page_size=100"
+    curl -X GET "https://www.ebi.ac.uk/metagenomics/api/latest/studies?page_size=100"
 
 
 Navigation through pages:
@@ -163,10 +163,10 @@ Navigation through pages:
 
     {
       "links": {
-        "first": "https://www.ebi.ac.uk/metagenomics/api/v0.2/studies?page=1",
-        "last": "https://www.ebi.ac.uk/metagenomics/api/v0.2/studies?page=63",
-        "next": "https://www.ebi.ac.uk/metagenomics/api/v0.2/studies?page=26",
-        "prev": "https://www.ebi.ac.uk/metagenomics/api/v0.2/studies?page=24"
+        "first": "https://www.ebi.ac.uk/metagenomics/api/latest/studies?page=1",
+        "last": "https://www.ebi.ac.uk/metagenomics/api/latest/studies?page=63",
+        "next": "https://www.ebi.ac.uk/metagenomics/api/latest/studies?page=26",
+        "prev": "https://www.ebi.ac.uk/metagenomics/api/latest/studies?page=24"
       },
       "data": [ ],
       "meta": {
@@ -186,13 +186,13 @@ Lists of resources can be filtered and sorted by selected parameters, allowing
 the construction of more complex queries. For instance, in order to retrieve
 oceanographic :term:`samples<sample>` from :term:`metagenomic`
 :term:`studies<study>` taken at temperature less than 10C, the following query
-could be constructed:
+could be constructed https://www.ebi.ac.uk/metagenomics/api/latest/biomes/root:Environmental:Aquatic:Marine/samples?experiment_type=metagenomic&metadata_key=temperature&metadata_value_lte=10&ordering=accession:
 
 .. highlight:: bash
 
 ::
 
-    curl -X GET "https://www.ebi.ac.uk/metagenomics/api/v0.2/biomes/root:Environmental:Aquatic:Marine/samples?experiment_type=metagenomic&metadata_key=temperature&metadata_value_lte=10&ordering=accession"
+    curl -X GET "https://www.ebi.ac.uk/metagenomics/api/latest/biomes/root:Environmental:Aquatic:Marine/samples?experiment_type=metagenomic&metadata_key=temperature&metadata_value_lte=10&ordering=accession"
 
 The provision of such complex queries allows metadata to be combined with
 annotation for powerful data analysis and visualisation.
@@ -209,7 +209,7 @@ relations as parameters in the initial query.
 
 For example::
 
-    curl -X GET "https://www.ebi.ac.uk/metagenomics/api/v0.2/studies/ERP005831/samples?include=metadata&fields[samples]=accession,longitude,latitude,metadata"
+    curl -X GET "https://www.ebi.ac.uk/metagenomics/api/latest/studies/ERP005831/samples?include=metadata&fields[samples]=accession,longitude,latitude,metadata"
 
 
 .. highlight:: json
@@ -229,12 +229,12 @@ For example::
           "relationships": {
             "metadata": {
               "links": {
-                "related": "https://www.ebi.ac.uk/metagenomics/api/v0.2/samples/ERS456668/metadata"
+                "related": "https://www.ebi.ac.uk/metagenomics/api/latest/samples/ERS456668/metadata"
               }
             }
           },
           "links": {
-            "self": "https://www.ebi.ac.uk/metagenomics/api/v0.2/samples/ERS456668"
+            "self": "https://www.ebi.ac.uk/metagenomics/api/latest/samples/ERS456668"
           }
         },
         {
@@ -248,12 +248,12 @@ For example::
           "relationships": {
             "metadata": {
               "links": {
-                "related": "https://www.ebi.ac.uk/metagenomics/api/v0.2/samples/ERS456669/metadata"
+                "related": "https://www.ebi.ac.uk/metagenomics/api/latest/samples/ERS456669/metadata"
               }
             }
           },
           "links": {
-            "self": "https://www.ebi.ac.uk/metagenomics/api/v0.2/samples/ERS456669"
+            "self": "https://www.ebi.ac.uk/metagenomics/api/latest/samples/ERS456669"
           }
         }
     ],
@@ -273,7 +273,7 @@ For example::
               "id": "ERS456668"
             },
             "links": {
-              "related": "https://www.ebi.ac.uk/metagenomics/api/v0.2/samples/ERS456668"
+              "related": "https://www.ebi.ac.uk/metagenomics/api/latest/samples/ERS456668"
             }
           }
         }
