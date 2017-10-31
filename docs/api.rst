@@ -14,7 +14,7 @@ Overview
 Current version
 ^^^^^^^^^^^^^^^
 
-Current API version is **latest**
+Current API version is **v0.3**
 
 .. note::
 
