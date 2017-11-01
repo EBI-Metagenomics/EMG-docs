@@ -37,7 +37,7 @@ There is no manual way to trigger analysis. If you have provided `access agreeme
 
 Do you have an API?
 -------------------
-Not yet, but we are actively working on it. Watch this space.
+To provide a richer search and retrieval interface, we have begun development of a :ref:`restapi`, providing programmatic access to the data.
 
 How can I download several sets of data?
 ----------------------------------------
