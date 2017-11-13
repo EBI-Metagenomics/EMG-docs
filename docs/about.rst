@@ -1,5 +1,3 @@
-.. _about:
-
 About
 =====
 
@@ -7,7 +5,7 @@ About
 The EBI Metagenomics service
 ----------------------------
 
-EBI metagenomics is a freely available hub for the analysis and exploration of metagenomic, metatranscriptomic, amplicon and assembly data. The resource provides rich functional and taxonomic analyses of user-submitted sequences, as well as analysis of publicly available metagenomic datasets held within the European Nucleotide Archive (`ENA <http://www.ebi.ac.uk/ena>`_). 
+EBI metagenomics is a freely available hub for the analysis and exploration of :term:`metagenomic`, :term:`metatranscriptomic`, :term:`amplicon` and :term:`assembly` data. The resource provides rich functional and taxonomic analyses of user-submitted sequences, as well as analysis of publicly available metagenomic datasets held within the European Nucleotide Archive (`ENA <https://www.ebi.ac.uk/ena>`_). 
 
 --------------------------------
 What does EBI Metagenomics offer
@@ -15,9 +13,11 @@ What does EBI Metagenomics offer
 **Standards-compliant data**
     The service provides submission tools that help ensure sequence data and metadata comply with the European Nucleotide Archive (ENA) data schemes and the Genomic Standards Consortium (`GSC <http://gensc.org>`_) metadata guidelines, allowing harmonisation of analysis efforts across the wider genomics community.
 **Powerful analysis**
-     The service provides powerful taxonomic and functional analysis of sequence data. Functional analysis results can be summarized and compared using Gene Ontology (`GO <http://www.geneontology.org>`_) terms.
+    The service provides powerful taxonomic and functional analysis of sequence data. Functional analysis results can be summarized and compared using Gene Ontology (`GO <http://www.geneontology.org>`_) terms.
 **Data Archiving**
-      Data submitted to the service is automatically archived in the ENA. Accession numbers are supplied for sequence data as part of the archiving process, which is a prerequisite for publication in many journals.
+    Data submitted to the service is automatically archived in the ENA. Accession numbers are supplied for sequence data as part of the archiving process, which is a prerequisite for publication in many journals.
+**Programmatic access to the data**
+    Data deposited in the service are discoverable and querable via RESTful API using unique URLs constructed from accession numbers supplied during archiving process.
 
 -------
 Funding
