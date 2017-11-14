@@ -17,7 +17,7 @@ What does EBI Metagenomics offer
 **Data Archiving**
     Data submitted to the service is automatically archived in the ENA. Accession numbers are supplied for sequence data as part of the archiving process, which is a prerequisite for publication in many journals.
 **Programmatic access to the data**
-    Data deposited in the service are discoverable and querable via RESTful API using unique URLs constructed from accession numbers supplied during archiving process.
+    Data deposited in the service are discoverable and queryable via RESTful API using unique URLs constructed from accession numbers supplied during archiving process.
 
 -------
 Funding
