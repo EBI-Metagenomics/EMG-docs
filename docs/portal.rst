@@ -139,7 +139,7 @@ taxonomy summary files
 ---------------
 Comparison tool
 ---------------
-Comparing runs helps to identify feature associated with experimental factors. EBI Metagenomics has developed a Comparison Tool that allows user to compare the GO-slim terms associated with the runs of a project (see `Analysis pipeline <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/analysis.rst>`__).
+Comparing runs helps to identify feature associated with experimental factors. EBI Metagenomics has developed a Comparison Tool that allows user to compare the GO-slim terms associated with the runs of a project (see `Analysis pipeline <https://github.com/EBI-Metagenomics/EMG-docs/blob/master/docs/analysis.rst>`__).
 
 **To use the current tool, select the corresponding tab from any EBI Metagenomics webpage (Figure 10 below):**
 
@@ -155,7 +155,7 @@ Comparing runs helps to identify feature associated with experimental factors. E
 **To start the comparison for your selection, simply click on ‘Compare’.** 
 The page will now display the study and selected runs on top of 5 new comparison tabs:  
 
-- The first one is a barcharts representation with 3 dynamic graphs, corresponding to the 3 GO terms categories (see `Analysis pipeline <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/analysis.rst>`__). On each, the GO terms and their relative abundance in each selected run is displayed. Hovering the mouse pointer above a bar will display the relative abundance values for this term in the corresponding run. You can export these barcharts representation in PNF, PDF or SVG format using the tool on the top right hand side.   
+- The first one is a barcharts representation with 3 dynamic graphs, corresponding to the 3 GO terms categories (see `Analysis pipeline <https://github.com/EBI-Metagenomics/EMG-docs/blob/master/docs/analysis.rst>`__). On each, the GO terms and their relative abundance in each selected run is displayed. Hovering the mouse pointer above a bar will display the relative abundance values for this term in the corresponding run. You can export these barcharts representation in PNF, PDF or SVG format using the tool on the top right hand side.   
 - The second tab contains stacked column representations with the same dynamic properties than in the barcharts with the addition of the possibility to hide one or more terms of choice by selecting them from the list displayed below each category graph.  
 - The third tab presents heatmaps allowing to quickly identified patterns between the selected runs based on the relative abundance of the GO terms. There is currently no export function for this page although the images, being static, can be directly copied.  
 - The fourth tab contains dynamic Principal Component Analysis graphs which represent the amount of variance between runs, based on the relative abundance of the GO terms, between the runs for each GO category. Selecting a rectangular region with the mouse pointer will zoom in, which help to separate clustered run markers. The export function allows to download all or the enlarged region.  
