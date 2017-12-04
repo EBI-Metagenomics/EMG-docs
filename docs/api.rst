@@ -16,12 +16,7 @@ Overview
 Current version
 ^^^^^^^^^^^^^^^
 
-Current API version is **v0.4**
-
-.. note::
-
-    API is under development and any endpoint can change without notice until
-    stable version 1 is released
+Current API version is **v1**
 
 
 Base URL
