@@ -13,7 +13,7 @@ Version 4.1 of the pipeline was released in Januray 2018 and includes the follow
 * Upgraded MAPseq to v1.2.2
 * Rebuilt taxonomic reference database based on  SILVA v132
 * Taxonomic assignments now also available in HDF5 format
-* Applied fix to the coding sequence prediction step - CDS regions containing predicted RNAs are filtered on both strands
+* Applied fix to the coding sequence prediction step - CDS regions containing predicted RNAs are filtered out on both strands
 
 Figure 1 gives a visual overview of the main steps and tools included in this version:
 
