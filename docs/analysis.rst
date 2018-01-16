@@ -1,6 +1,6 @@
 .. _analysis:
 
-Analysis pipeline v4.0
+Analysis pipeline v4.1
 ======================
 
 --------
