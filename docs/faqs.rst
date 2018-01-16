@@ -37,7 +37,7 @@ There is no manual way to trigger analysis. If you have provided `access agreeme
 
 Do you have an API?
 -------------------
-Yes, we do. In the beginning of December 2017 we have released a first version of our new `RESTful API <http://emg-docs.readthedocs.io/en/latest/api.html>`_, which provides a rich search and retrieval interface for programmatic access to our data.
+Yes, we do. In the beginning of December 2017 we have released a first version of our new :ref:`RESTful API <restapi>`, which provides a rich search and retrieval interface for programmatic access to our data.
 
 How can I download several sets of data?
 ----------------------------------------
@@ -45,7 +45,7 @@ While our API is currently not supporting this, we have Python scripts allowing 
 
 How can I bulk download metadata?
 -----------------------------------
-It is possible to access all the metadata associated with projects, samples and runs programmatically using our `RESTful API <http://emg-docs.readthedocs.io/en/latest/api.html>`_.
+It is possible to access all the metadata associated with projects, samples and runs programmatically using our :ref:`RESTful API <restapi>`.
 
 How can I re-analyse my data with a different version of the pipeline?
 ----------------------------------------------------------------------
