@@ -7,19 +7,19 @@ Analysis pipeline v4.0
 Overview
 --------
 
-Version 4.0 of the pipeline was released in September 2017 and includes the following updates and changes:
+Version 4.1 of the pipeline was released in Januray 2018 and includes the following updates and changes:
 
-* Updated tools: InterProScan to version 5.25-64.0
-* rRNASelector (used to identify 16S rRNA genes) was replaced with Infernal for SSU and LSU gene identification
-* The QIIME taxonomic classification component was replaced with MAPseq
-* The Greengenes reference database was replaced with SILVA SSU / LSU version 128, enabling classification of eukaryotes, remapped to a 8-level taxonomy
-* Prodigal was added to run alongside FragGeneScan as part of a combined gene caller when processing assembled sequences
+* Upgraded SeqPrep to v1.2 with increased sequence length parameter to deal with longer reads
+* Upgraded MAPseq to v1.2.2
+* Rebuilt taxonomic reference database based on  SILVA v132
+* Taxonomic assignments now also available in HDF5 format
+* Applied fix to the coding sequence prediction step - CDS regions containing predicted RNAs are filtered on both strands
 
 Figure 1 gives a visual overview of the main steps and tools included in this version:
 
-.. image:: images/pipeline_v4.0_overview.png
+.. image:: images/pipeline_v4.1_overview.png
 
-**Figure 1**. Overview of steps and tools included in pipeline v4.0
+**Figure 1**. Overview of steps and tools included in pipeline v4.1
 
 
 ------------------
