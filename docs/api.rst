@@ -16,12 +16,7 @@ Overview
 Current version
 ^^^^^^^^^^^^^^^
 
-Current API version is **v0.3**
-
-.. note::
-
-    API is under development and any endpoint can change without notice until
-    stable version 1 is released
+Current API version is **v1**
 
 
 Base URL
@@ -234,21 +229,21 @@ For example::
       "relationships": {
         "biomes": {
             "links": {
-                "related": "https://www.ebi.ac.uk/metagenomics/api/v0.3/studies/ERP005831/biomes"
+                "related": "https://www.ebi.ac.uk/metagenomics/api/v0.4/studies/ERP005831/biomes"
             },
           "data": [
             {
               "type": "biomes",
               "id": "root:Environmental:Aquatic:Freshwater:Lentic:Sediment",
               "links": {
-                "self": "https://www.ebi.ac.uk/metagenomics/api/v0.3/biomes/root:Environmental:Aquatic:Freshwater:Lentic:Sediment"
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v0.4/biomes/root:Environmental:Aquatic:Freshwater:Lentic:Sediment"
               }
             },
             {
               "type": "biomes",
               "id": "root:Environmental:Terrestrial:Soil:Loam:Agricultural",
               "links": {
-                "self": "https://www.ebi.ac.uk/metagenomics/api/v0.3/biomes/root:Environmental:Terrestrial:Soil:Loam:Agricultural"
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v0.4/biomes/root:Environmental:Terrestrial:Soil:Loam:Agricultural"
               }
             }
           ],
@@ -258,12 +253,12 @@ For example::
         },
         "samples": {
           "links": {
-            "related": "https://www.ebi.ac.uk/metagenomics/api/v0.3/studies/ERP005831/samples"
+            "related": "https://www.ebi.ac.uk/metagenomics/api/v0.4/studies/ERP005831/samples"
           }
         }
       },
       "links": {
-          "self": "https://www.ebi.ac.uk/metagenomics/api/v0.3/studies/ERP005831"
+          "self": "https://www.ebi.ac.uk/metagenomics/api/v0.4/studies/ERP005831"
       }
     },
     "included": [
@@ -278,7 +273,7 @@ For example::
         "relationships": {
           "biome": {
             "links": {
-              "related": "https://www.ebi.ac.uk/metagenomics/api/v0.3/biomes/root:Environmental:Aquatic:Freshwater:Lentic:Sediment"
+              "related": "https://www.ebi.ac.uk/metagenomics/api/v0.4/biomes/root:Environmental:Aquatic:Freshwater:Lentic:Sediment"
             },
             "data": {
               "type": "biomes",
@@ -287,7 +282,7 @@ For example::
           }
           },
           "links": {
-            "self": "https://www.ebi.ac.uk/metagenomics/api/v0.3/samples/ERS456668"
+            "self": "https://www.ebi.ac.uk/metagenomics/api/v0.4/samples/ERS456668"
           }
         },
         {
@@ -301,7 +296,7 @@ For example::
           "relationships": {
             "biome": {
               "links": {
-                "related": "https://www.ebi.ac.uk/metagenomics/api/v0.3/biomes/root:Environmental:Terrestrial:Soil:Loam:Agricultural"
+                "related": "https://www.ebi.ac.uk/metagenomics/api/v0.4/biomes/root:Environmental:Terrestrial:Soil:Loam:Agricultural"
               },
               "data": {
                 "type": "biomes",
@@ -310,7 +305,7 @@ For example::
             }
           },
           "links": {
-            "self": "https://www.ebi.ac.uk/metagenomics/api/v0.3/samples/ERS456669"
+            "self": "https://www.ebi.ac.uk/metagenomics/api/v0.4/samples/ERS456669"
           }
         }
     ]

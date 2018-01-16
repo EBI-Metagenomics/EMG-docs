@@ -17,7 +17,7 @@ What does EBI Metagenomics offer
 **Data Archiving**
     Data submitted to the service is automatically archived in the ENA. Accession numbers are supplied for sequence data as part of the archiving process, which is a prerequisite for publication in many journals.
 **Programmatic access to the data**
-    Data deposited in the service are discoverable and querable via RESTful API using unique URLs constructed from accession numbers supplied during archiving process.
+    Data deposited in the service are discoverable and queryable via RESTful API using unique URLs constructed from accession numbers supplied during archiving process.
 
 -------
 Funding
@@ -39,7 +39,7 @@ Contact
 -------
 If you would like to get in touch, please contact us using the `helpdesk <metagenomics-help@ebi.ac.uk>`_. We will respond as quickly as possible, but please bear in mind that we do not have a member of staff dedicated to running the helpesk service.
 
-   **Please, check our** `FAQ <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/faqs.rst>`_ **prior to contacting us.**
+   **Please, check our** `FAQ <https://github.com/EBI-Metagenomics/EMG-docs/blob/master/docs/faqs.rst>`_ **prior to contacting us.**
 
 If you would like to keep up to date with developments with the EBI Metagenomics, please follow us on Twitter (`@EBImetagenomics <https://twitter.com/ebimetagenomics>`_).
 
