@@ -139,7 +139,7 @@ taxonomy summary files
 ---------------
 Comparison tool
 ---------------
-Comparing runs helps to identify feature associated with experimental factors. EBI Metagenomics has developed a Comparison Tool that allows user to compare the GO-slim terms associated with the runs of a project (see `Analysis pipeline <https://github.com/EBI-Metagenomics/EMG-docs/blob/master/docs/analysis.rst>`__).
+Comparing runs helps to identify feature associated with experimental factors. EBI Metagenomics has developed a Comparison Tool that allows user to compare the GO-slim terms associated with the runs of a project (see `Analysis pipeline <http://emg-docs.readthedocs.io/en/latest/analysis.html>`__).
 
 **To use the current tool, select the corresponding tab from any EBI Metagenomics webpage (Figure 10 below):**
 
