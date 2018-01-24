@@ -17,7 +17,7 @@ Version 4.1 of the pipeline was released in Januray 2018 and includes the follow
 
 Figure 1 gives a visual overview of the main steps and tools included in this version:
 
-.. image:: images/pipeline_v4.1_overview.png
+.. image:: images/pipeline_v4.1b_overview.png
 
 **Figure 1**. Overview of steps and tools included in pipeline v4.1
 
