@@ -21,10 +21,10 @@ the sequence identifier. The mapping to UniProt identifiers and EBI
 Metagenomics run/sample accessions can be switched on by selecting
 'Customize' on the results page and checking the appropriate
 boxes. At this time, it is not possible to link directly to the
-matching sequence from the results table However, in the download
+matching sequence from the results table. However, in the download
 tab, the 'Full length FASTA’ link will provide all the matching
 sequences. Alternatively, the sequences are available on our
-`ftp server <ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database>`_.
+`FTP server <ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database>`_.
 
 Build process
 """""""""""""
