@@ -19,7 +19,7 @@ Since identical peptides could be derived
 from different samples and runs, we use a unique hash sum (SHA256) as
 the sequence identifier. The mapping to UniProt identifiers and EBI
 Metagenomics run/sample accessions can be switched on by selecting
-'Customize' on the results parge and checking the appropriate
+'Customize' on the results page and checking the appropriate
 boxes. At this time, it is not possible to link directly to the
 matching sequence from the results table However, in the download
 tab, the 'Full length FASTA’ link will provide all the matching
