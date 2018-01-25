@@ -18,7 +18,7 @@ The 'Analysis results' field could also displays two types of messages:
 Finding quality control information about runs on the EBI Metagenomics website
 ------------------------------------------------------------------------------
 
-Quality control (Qc) analysis of runs within projects on the `EBI Metagenomics website <https://www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Quality control' tab found toward the top of any run page (see Figure 1 below).
+Quality control (QC) analysis of runs within projects on the `EBI Metagenomics website <https://www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Quality control' tab found toward the top of any run page (see Figure 1 below).
 
 
 .. image:: images/QC1.PNG
@@ -100,7 +100,7 @@ Description of fasta files available to download
 - Predicted CDS with annotation : this file contains all the predicted proteins having been annotated by InterProScan. The sequence headers are: <run_id>_<start of pCDS>_<end of pCDS>_<strand of pCDS><space><InterPro term>/<member database ID>/<start of hit in predicted protein>-<end of hit in predicted protein>.
 - Predicted CDS without annotation: this file contains all the predicted proteins not annotated by InterProScan. The sequence headers are <run_id>_<start of pCDS>_<end of pCDS>_<strand of pCDS>.
 - Predicted ORF without annotation: this file contains all the pCDS coding for predicted proteins that were not annotated by InterProScan. The sequence headers are <run_id>_<start of pCDS>_<end of pCDS>_<strand of pCDS>.
-- Predicted tRNAs: this file contains all the sequences predicted to encode tRNAs. The prediction was done using models from `Rfam <http://rfam.xfam.org>`_ with `Hmmer tools <http://hmmer.org>`_.
+- Predicted tRNAs: this file contains all the sequences predicted to encode tRNAs. The prediction was done using models from `Rfam <http://rfam.xfam.org>`_ with `HMMER tools <http://hmmer.org>`_.
 - Reads encoding 5S rRNA: this file contains all reads predicted to encode for 5S rRNA by rRNASelector.
 - Reads encoding 16S rRNA: this file contains all reads predicted to encode for 16S rRNA by rRNASelector.
 - Reads encoding 23S rRNA: this file contains all reads predicted to encode for 23S rRNA by rRNASelector.

@@ -47,7 +47,7 @@ HTTP methods
 ^^^^^^^^^^^^
 
 API provides read-only access to all resources, that means only HTTP GET
-method can be used with expetion of authentication endpoint.
+method can be used with exception of authentication endpoint.
 
 
 Response
