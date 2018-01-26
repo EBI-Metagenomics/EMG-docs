@@ -31,7 +31,7 @@ Build process
 
 The database is updated periodically and is created as follows:
 
-* Short reads from runs are assembled into contigs using metaSPAdes, minia or MEGAHIT
+* Short reads from runs are assembled into contigs using metaSPAdes, Minia or MEGAHIT
 * Contigs are filtered by length (minimum 500 base pairs)
 * Peptides are predicted using a combined gene caller (Prodigal and FragGeneScan)
 * Resulting peptides are made non-redundant to produce a set of unique sequences
@@ -45,7 +45,7 @@ uses all predicted peptides available at that time.
 Partial and full length peptides
 """"""""""""""""""""""""""""""""
 
-In common with some other CDS predictors, Prodigal provides an indication
+In common with some other protein coding sequence predictors, Prodigal provides an indication
 as to whether a gene is full length or extends beyond the contig. To
 indicate this, the sequence ID has two digits appended (one for each end of
 the sequence), each of which is either 0 (the gene is
