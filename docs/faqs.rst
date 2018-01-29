@@ -37,15 +37,15 @@ There is no manual way to trigger analysis. If you have provided `access agreeme
 
 Do you have an API?
 -------------------
-To provide a richer search and retrieval interface, we have begun development of a :ref:`restapi`, providing programmatic access to the data.
+Yes, we do. In the beginning of December 2017 we have released a first version of our new :ref:`RESTful API <restapi>`, which provides a rich search and retrieval interface for programmatic access to our data.
 
 How can I download several sets of data?
 ----------------------------------------
-While we currently do not have an API, we have Python scripts allowing users to automatically download most processed files from the EBI Metagenomics website. The scripts and instructions for bulk downloading from the latter resource can be found `here <https://github.com/ProteinsWebTeam/ebi-metagenomics/wiki/Downloading-results-programmatically>`_. 
+While our API is currently not supporting this, we have Python scripts allowing users to automatically download most processed files from the EBI Metagenomics website. The scripts and instructions for bulk downloading from the latter resource can be found `here <https://github.com/ProteinsWebTeam/ebi-metagenomics/wiki/Downloading-results-programmatically>`_. 
 
-How can I bulk download meta-data?
+How can I bulk download metadata?
 -----------------------------------
-Most of the meta-data associated with projects is taken from the ENA. While EBI Metagenomics does not currently provide an API, the ENA do provide this service, which can be used as a stop gap until our API is in place (`ENA's API documentation <https://www.ebi.ac.uk/ena/portal/api/>`_)
+It is possible to access all the metadata associated with projects, samples and runs programmatically using our :ref:`RESTful API <restapi>`.
 
 How can I re-analyse my data with a different version of the pipeline?
 ----------------------------------------------------------------------

@@ -1,26 +1,26 @@
 .. _analysis:
 
-Analysis pipeline v4.0
+Analysis pipeline v4.1
 ======================
 
 --------
 Overview
 --------
 
-Version 4.0 of the pipeline was released in September 2017 and includes the following updates and changes:
+Version 4.1 of the pipeline was released in Januray 2018 and includes the following updates and changes:
 
-* Updated tools: InterProScan to version 5.25-64.0
-* rRNASelector (used to identify 16S rRNA genes) was replaced with Infernal for SSU and LSU gene identification
-* The QIIME taxonomic classification component was replaced with MAPseq
-* The Greengenes reference database was replaced with SILVA SSU / LSU version 128, enabling classification of eukaryotes, remapped to a 8-level taxonomy
-* Prodigal was added to run alongside FragGeneScan as part of a combined gene caller when processing assembled sequences
+* Upgraded SeqPrep to v1.2 with increased sequence length parameter to deal with longer reads
+* Upgraded MAPseq to v1.2.2
+* Rebuilt taxonomic reference database based on  SILVA v132
+* Taxonomic assignments now also available in HDF5 format
+* Applied fix to the coding sequence prediction step - CDS regions containing predicted RNAs are filtered out on both strands
 
 Figure 1 gives a visual overview of the main steps and tools included in this version:
 
 .. figure:: images/pipeline_v4.0_overview.png
    :scale: 80 %
 
-**Figure 1**. Overview of steps and tools included in pipeline v4.0
+**Figure 1**. Overview of steps and tools included in pipeline v4.1
 
 
 ------------------
@@ -63,6 +63,6 @@ The GO is made up of 3 structured controlled vocabularies that describe gene pro
 
    **An example of GO terms organised into a hierarchy.**
 
-Terms in the GO are ordered into hierarchies, with less specific terms towards the top and more specific terms towards the bottom.  (e.g., alpha-tubulin binding is a type of cytoskeletal binding, which is a type of protein binding). Note that a GO term can have more than one parent term. The Gene Ontology also allows for different types of relationships between terms (such as ‘has part of’ or ‘regulates’). The EMG analysis pipeline only uses the straightforward ‘is a’ relationships. More information about the GO can be found on the GO consortium `documentation page <http://www.geneontology.org/page/documentation>`_.
+Terms in the GO are ordered into hierarchies, with less specific terms towards the top and more specific terms towards the bottom.  (e.g., alpha-tubulin binding is a type of cytoskeletal binding, which is a type of protein binding). Note that a GO term can have more than one parent term. The Gene Ontology also allows for different types of relationships between terms (such as ‘has part of’ or ‘regulates’). The EMG analysis pipeline only uses the straightforward ‘is a’ relationships. More information about the GO can be found on the GO consortium `documentation page <http://www.geneontology.org/page/introduction-go>`_.
 
 As part of the metagenomic analysis pipeline, GO terms for molecular function, biological process and cellular component are assigned to :term:`pCDS<Predicted coding sequences (pCDS)>` in a sample by via the InterPro2GO mapping service. This works as follows: :term:`InterPro` entries are given GO terms by curators if the terms can be accurately applied to all of the proteins matching that entry. Sequences searched against InterPro are then associated with GO terms by virtue of the entries they match - a protein that matches one InterPro entry with the GO term ‘kinase activity’ and another InterPro entry with the GO term ‘zinc ion binding’ will be annotated with both GO terms.

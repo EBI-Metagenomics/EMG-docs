@@ -18,7 +18,7 @@ The 'Analysis results' field could also displays two types of messages:
 Finding quality control information about runs on the EBI Metagenomics website
 ------------------------------------------------------------------------------
 
-Quality control (Qc) analysis of runs within projects on the `EBI Metagenomics website <https://www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Quality control' tab found toward the top of any run page (see Figure 1 below).
+Quality control (QC) analysis of runs within projects on the `EBI Metagenomics website <https://www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Quality control' tab found toward the top of any run page (see Figure 1 below).
 
 
 .. image:: images/QC1.PNG
@@ -89,7 +89,7 @@ EBI Metagenomics analysis pipeline produces a number of files underlying the cha
 
 **Figure 8**. The Download tab is organised in 3 sections: ‘Sequence data’, ‘Functional analysis’ (not available in the case of amplicon runs)  and ‘Taxonomic analysis’.
 
-Some of the files, particularly the sequence files in FASTA format, can be large. To facilitate their download process, these files are compressed with `GZIP <http://www.gzip.org/>`_ and when too large to be easily transferable, chunked in manageable size. If it is the case for your runs, please download all chunks, decompress them and concatenate them to reconstitute the full files.
+Some of the files, particularly the sequence files in FASTA format, can be large. To facilitate their download process, these files are compressed with `GZIP <https://en.wikipedia.org/wiki/Gzip>`_ and when too large to be easily transferable, chunked in manageable size. If it is the case for your runs, please download all chunks, decompress them and concatenate them to reconstitute the full files.
 
 Description of fasta files available to download
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -100,7 +100,7 @@ Description of fasta files available to download
 - Predicted CDS with annotation : this file contains all the predicted proteins having been annotated by InterProScan. The sequence headers are: <run_id>_<start of pCDS>_<end of pCDS>_<strand of pCDS><space><InterPro term>/<member database ID>/<start of hit in predicted protein>-<end of hit in predicted protein>.
 - Predicted CDS without annotation: this file contains all the predicted proteins not annotated by InterProScan. The sequence headers are <run_id>_<start of pCDS>_<end of pCDS>_<strand of pCDS>.
 - Predicted ORF without annotation: this file contains all the pCDS coding for predicted proteins that were not annotated by InterProScan. The sequence headers are <run_id>_<start of pCDS>_<end of pCDS>_<strand of pCDS>.
-- Predicted tRNAs: this file contains all the sequences predicted to encode tRNAs. The prediction was done using models from `Rfam <http://rfam.xfam.org>`_ with `Hmmer tools <http://hmmer.org>`_.
+- Predicted tRNAs: this file contains all the sequences predicted to encode tRNAs. The prediction was done using models from `Rfam <http://rfam.xfam.org>`_ with `HMMER tools <http://hmmer.org>`_.
 - Reads encoding 5S rRNA: this file contains all reads predicted to encode for 5S rRNA by rRNASelector.
 - Reads encoding 16S rRNA: this file contains all reads predicted to encode for 16S rRNA by rRNASelector.
 - Reads encoding 23S rRNA: this file contains all reads predicted to encode for 23S rRNA by rRNASelector.
@@ -113,7 +113,7 @@ Description of functional annotation files available to download
 
 Description of taxonomic assignment files available to download
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-- :term:`OTUs<OTU>`, reads and taxonomic assignments files: these  files contain the same data presented in 3 different format : tab-separated file (TSV) and two Biom file (HD5F and JSON). The TSV file contains 3 columns which headers are in the second line of the file. The first column is the OTU Id. The second column indicates the number of predicted 16S sequences associated with each OTU. The third column contains the taxonomic lineages provided by `GreenGenes database <http://greengenes.secondgenome.com/>`_. Note that the number of unannotated 16S sequences is not indicated in this file. This file can be directly imported into `Megan6 <http://ab.inf.uni-tuebingen.de/software/megan6/>`_ for visualisation and further analysis. The OTU id can be compared between runs for version 2 and 3 of the pipeline as they have been generated using `Qiime closed-reference protocol <http://qiime.org/tutorials/otu_picking.html>`_.The Biom files are `computer-readable files <http://biom-format.org>`_. The HD5F (Hierachical Data Format) format can be imported into analysis and visualisation tools such as Matlab and R. A larger number of commercial and freely available tools, such as MEGAN6, can consume the JavaScript Object Notation (JSON) format.
+- :term:`OTUs<OTU>`, reads and taxonomic assignments files: these  files contain the same data presented in 3 different format : tab-separated file (TSV) and two Biom file (HD5F and JSON). The TSV file contains 3 columns which headers are in the second line of the file. The first column is the OTU Id. The second column indicates the number of predicted 16S sequences associated with each OTU. The third column contains the taxonomic lineages provided by `GreenGenes database <http://greengenes.lbl.gov/Download/>`_. Note that the number of unannotated 16S sequences is not indicated in this file. This file can be directly imported into `Megan6 <http://ab.inf.uni-tuebingen.de/software/megan6/>`_ for visualisation and further analysis. The OTU id can be compared between runs for version 2 and 3 of the pipeline as they have been generated using `Qiime closed-reference protocol <http://qiime.org/tutorials/otu_picking.html>`_.The Biom files are `computer-readable files <http://biom-format.org>`_. The HD5F (Hierachical Data Format) format can be imported into analysis and visualisation tools such as Matlab and R. A larger number of commercial and freely available tools, such as MEGAN6, can consume the JavaScript Object Notation (JSON) format.
 - Phylogenetic tree (Newick format)’ file (only available up to version 3 of EBI Metagenomics pipeline): this file can be used to visualise the hierarchical distribution of the taxonomic lineages of each run. The `Newick format <https://en.wikipedia.org/wiki/Newick_format>`_ is a computer-readable format to represent the tree and can be directly imported into freely-available viewers such as `FigTree <http://tree.bio.ed.ac.uk/software/figtree>`_ and `ITOL (interactive Tree of Life) <http://itol.embl.de>`_.
 
 -------------
@@ -139,7 +139,7 @@ taxonomy summary files
 ---------------
 Comparison tool
 ---------------
-Comparing runs helps to identify feature associated with experimental factors. EBI Metagenomics has developed a Comparison Tool that allows user to compare the GO-slim terms associated with the runs of a project (see `Analysis pipeline <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/analysis.rst>`__).
+Comparing runs helps to identify feature associated with experimental factors. EBI Metagenomics has developed a Comparison Tool that allows user to compare the GO-slim terms associated with the runs of a project (see `Analysis pipeline <http://emg-docs.readthedocs.io/en/latest/analysis.html>`__).
 
 **To use the current tool, select the corresponding tab from any EBI Metagenomics webpage (Figure 10 below):**
 
@@ -155,7 +155,7 @@ Comparing runs helps to identify feature associated with experimental factors. E
 **To start the comparison for your selection, simply click on ‘Compare’.** 
 The page will now display the study and selected runs on top of 5 new comparison tabs:  
 
-- The first one is a barcharts representation with 3 dynamic graphs, corresponding to the 3 GO terms categories (see `Analysis pipeline <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/analysis.rst>`__). On each, the GO terms and their relative abundance in each selected run is displayed. Hovering the mouse pointer above a bar will display the relative abundance values for this term in the corresponding run. You can export these barcharts representation in PNF, PDF or SVG format using the tool on the top right hand side.   
+- The first one is a barcharts representation with 3 dynamic graphs, corresponding to the 3 GO terms categories (see `Analysis pipeline <https://github.com/EBI-Metagenomics/EMG-docs/blob/master/docs/analysis.rst>`__). On each, the GO terms and their relative abundance in each selected run is displayed. Hovering the mouse pointer above a bar will display the relative abundance values for this term in the corresponding run. You can export these barcharts representation in PNF, PDF or SVG format using the tool on the top right hand side.
 - The second tab contains stacked column representations with the same dynamic properties than in the barcharts with the addition of the possibility to hide one or more terms of choice by selecting them from the list displayed below each category graph.  
 - The third tab presents heatmaps allowing to quickly identified patterns between the selected runs based on the relative abundance of the GO terms. There is currently no export function for this page although the images, being static, can be directly copied.  
 - The fourth tab contains dynamic Principal Component Analysis graphs which represent the amount of variance between runs, based on the relative abundance of the GO terms, between the runs for each GO category. Selecting a rectangular region with the mouse pointer will zoom in, which help to separate clustered run markers. The export function allows to download all or the enlarged region.  
@@ -197,7 +197,7 @@ Browsing options
 Privat area
 -----------------------------------------
 
-If you have given consent to the EBI Metagenomics team to analyse your data for which you have requested a pre-publication confidential hold, you can access the analysis results of those pre-published data sets by using your privat area. You can simply access this area by clicking on the 'Login' button, which you will find on the top right hand side of any page (see Figure 12 below).
+If you have given consent to the EBI Metagenomics team to analyse your data for which you have requested a pre-publication confidential hold, you can access the analysis results of those pre-published data sets by using your private area. You can simply access this area by clicking on the 'Login' button, which you will find on the top right hand side of any page (see Figure 12 below).
 
 .. image:: images/how_to_login.png
 

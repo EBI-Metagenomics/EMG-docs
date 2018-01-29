@@ -17,7 +17,7 @@ What does EBI Metagenomics offer
 **Data Archiving**
     Data submitted to the service is automatically archived in the ENA. Accession numbers are supplied for sequence data as part of the archiving process, which is a prerequisite for publication in many journals.
 **Programmatic access to the data**
-    Data deposited in the service are discoverable and querable via RESTful API using unique URLs constructed from accession numbers supplied during archiving process.
+    Data deposited in the service are discoverable and queryable via RESTful API using unique URLs constructed from accession numbers supplied during archiving process.
 
 -------
 Funding
@@ -30,16 +30,16 @@ How to cite
 -----------
 If you find this resource useful, please consider citing the following publication:
 
-| `EBI metagenomics in 2016 - an expanding and evolving resource for the analysis and archiving of metagenomic data. <https://academic.oup.com/nar/article/44/D1/D595/2502680/EBI-metagenomics-in-2016-an-expanding-and-evolving>`_
-| A Mitchell, F Bucchini, G Cochrane, H Denise, P ten Hoopen, M Fraser, S Pesseat, S Potter, M Scheremetjew, P Sterk and R D Finn.
-| **Nucleic Acids Research** (2016) Database Issue 44:D595-D603. `10.1093/nar/gkv1195 (PDF) <https://nar.oxfordjournals.org/content/44/D1/D595.full.pdf>`_
+| `EBI Metagenomics in 2017: enriching the analysis of microbial communities, from sequence reads to assemblies. <https://academic.oup.com/nar/article/46/D1/D726/4561650>`_
+| A Mitchell, M Scheremetjew, H Denise, S Potter, A Tarkowska, M Qureshi, G A Salazar, S Pesseat, M A Boland, F M I Hunter, P ten Hoopen, B Alako, C Amid, D J Wilkinson, T P Curtis, G Cochrane, R D Finn.
+| **Nucleic Acids Research** (2017) Database Issue 46:D726–D735. `10.1093/nar/gkx967 (PDF) <https://academic.oup.com/nar/article-pdf/46/D1/D726/23162872/gkx967.pdf>`_
 
 -------
 Contact
 -------
 If you would like to get in touch, please contact us using the `helpdesk <metagenomics-help@ebi.ac.uk>`_. We will respond as quickly as possible, but please bear in mind that we do not have a member of staff dedicated to running the helpesk service.
 
-   **Please, check our** `FAQ <https://github.com/ProteinsWebTeam/EMG-docs/blob/master/docs/faqs.rst>`_ **prior to contacting us.**
+   **Please, check our** `FAQ <https://github.com/EBI-Metagenomics/EMG-docs/blob/master/docs/faqs.rst>`_ **prior to contacting us.**
 
 If you would like to keep up to date with developments with the EBI Metagenomics, please follow us on Twitter (`@EBImetagenomics <https://twitter.com/ebimetagenomics>`_).
 
