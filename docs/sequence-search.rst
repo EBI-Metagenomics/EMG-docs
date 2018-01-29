@@ -4,15 +4,10 @@ Sequence search
 The sequence search (accessed by following the 'Sequence search' link from menu bar)
 provides a search against a catalogue of predicted peptides.
 
-.. figure:: images/sequence_search_link.png
-   :scale: 50 %
-
-**Figure 1**. How to access the Sequence search tool
-
 .. figure:: images/sequence_search_landing.png
    :scale: 50 %
 
-**Figure 2**. The landing page of the Sequence search tool
+**Figure 1**. The landing page of the Sequence search tool
 
 These sequences comprise a non-redundant set of proteins predicted from contigs that
 have been assembled from sequencing runs. The HMMER search
@@ -26,18 +21,21 @@ a list of matching sequences is shown in order of E-value significance.
 .. figure:: images/sequence_search_input_seq.png
    :scale: 50 %
 
-**Figure 3**. Example of a well-formatted input sequence
+**Figure 2**. Example of a well-formatted input sequence
 
 .. figure:: images/sequence_search_results_page.png
    :scale: 50 %
 
-**Figure 4**. Initial result page after a triggered sequence search
+**Figure 3**. Initial result page after triggering a sequence search
 
 You can search against all of the sequences in the database ('All'),
 or restrict your search to full length sequences partial
 sequences only (see ref:`Partial and full length peptides`).
 
-**Figure 5**. How to select the peptide database?
+.. figure:: images/sequence_search_db_selection.png
+   :scale: 50 %
+
+**Figure 4**. How to select the peptide database?
 
 Since identical peptides could be derived
 from different samples and runs, we use a unique hash sum (SHA256) as
