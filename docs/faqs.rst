@@ -61,7 +61,7 @@ We can only access private data for analysis if you gave us agreement to do so. 
 If your data are public in ENA, then we can access them for analysis in any case.
 
 Can I compare the taxonomic assignments between runs of a project?
-------------------------------------------------------------------
+-------------------------------------------------------------------
 The current version of the comparison tool let you only compare the GO annotations for runs of the same project. We are currently working on extending the functionality to taxonomy but this is not yet ready for release.
 In the meantime, please have a look at the summary files provided on the project page. They summarized the counts per feature across the runs and provide an easy way to identify patterns.
 
