@@ -1,13 +1,17 @@
 Sequence search
 ^^^^^^^^^^^^^^^
 
+------------
+Landing page
+------------
+
 The sequence search (accessed by following the 'Sequence search' link from menu bar)
 provides a search against a catalogue of predicted peptides.
 
 .. figure:: images/sequence_search_landing.png
    :scale: 50 %
 
-**Figure 1**. The landing page of the Sequence search tool
+**Figure 1**. The landing page of the sequence search tool
 
 These sequences comprise a non-redundant set of proteins predicted from contigs that
 have been assembled from sequencing runs. The HMMER search
@@ -15,13 +19,19 @@ engine has been adapted to provide fast searches against this database.
 The results can be linked back to the sample and run from which the peptide was derived
 and also to sequences with an exact match in the UniProt database.
 
-The search takes a FASTA-formatted amino acid sequence and on completion
-a list of matching sequences is shown in order of E-value significance.
+The search takes a FASTA-formatted amino acid sequence.
 
 .. figure:: images/sequence_search_input_seq.png
    :scale: 50 %
 
 **Figure 2**. Example of a well-formatted input sequence
+
+
+-----------
+Result page
+-----------
+
+On completion a list of matching sequences is shown in order of E-value significance.
 
 .. figure:: images/sequence_search_results_page.png
    :scale: 50 %
