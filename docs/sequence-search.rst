@@ -2,8 +2,19 @@ Sequence search
 ^^^^^^^^^^^^^^^
 
 The sequence search (accessed by following the 'Sequence search' link from menu bar)
-provides a search against a catalogue of predicted peptides. These sequences comprise
-a non-redundant set of proteins predicted from contigs that
+provides a search against a catalogue of predicted peptides.
+
+.. figure:: images/sequence_search_link.png
+   :scale: 50 %
+
+**Figure 1**. How to access the Sequence search tool
+
+.. figure:: images/sequence_search_landing.png
+   :scale: 50 %
+
+**Figure 2**. The landing page of the Sequence search tool
+
+These sequences comprise a non-redundant set of proteins predicted from contigs that
 have been assembled from sequencing runs. The HMMER search
 engine has been adapted to provide fast searches against this database.
 The results can be linked back to the sample and run from which the peptide was derived
@@ -11,16 +22,33 @@ and also to sequences with an exact match in the UniProt database.
 
 The search takes a FASTA-formatted amino acid sequence and on completion
 a list of matching sequences is shown in order of E-value significance.
+
+.. figure:: images/sequence_search_input_seq.png
+   :scale: 50 %
+
+**Figure 3**. Example of a well-formatted input sequence
+
+.. figure:: images/sequence_search_results_page.png
+   :scale: 50 %
+
+**Figure 4**. Initial result page after a triggered sequence search
+
 You can search against all of the sequences in the database ('All'),
 or restrict your search to full length sequences partial
 sequences only (see ref:`Partial and full length peptides`).
+
+**Figure 5**. How to select the peptide database?
 
 Since identical peptides could be derived
 from different samples and runs, we use a unique hash sum (SHA256) as
 the sequence identifier. The mapping to UniProt identifiers and EBI
 Metagenomics run/sample accessions can be switched on by selecting
 'Customize' on the results page and checking the appropriate
-boxes. At this time, it is not possible to link directly to the
+boxes.
+
+
+
+At this time, it is not possible to link directly to the
 matching sequence from the results table. However, in the download
 tab, the 'Full length FASTA’ link will provide all the matching
 sequences. Alternatively, the sequences are available on our
