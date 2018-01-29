@@ -60,7 +60,7 @@ Availability
 """""""""""""
 
 As well as searches via a web server, we
-provide all data for download from our ftp server. This includes
+provide all data for download from our FTP server. This includes
 the sequence database, run, sample, SwissProt and Trembl mappings,
 Pfam architectures, and counts of the number of times each sequences
 was observed in the database as a whole.
@@ -68,7 +68,7 @@ was observed in the database as a whole.
 Further information
 """""""""""""""""""
 
-`Full documentation <http://hmmer-web-docs.readthedocs.io/en/latest/>_`
+`Full documentation <https://hmmer-web-docs.readthedocs.io/en/latest/>_`
 regarding the HMMER webserver is available. Note that some of the documented
 features (such as the taxonomy view) are not relevant to the peptide search
 and are therefore disabled.
