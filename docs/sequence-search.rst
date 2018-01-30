@@ -62,7 +62,7 @@ Build process
 
 The database is updated periodically and is created as follows:
 
-* Short reads from runs are assembled into contigs using metaSPAdes, Minia or MEGAHIT
+* Short reads from runs are assembled into contigs using metaSPAdes
 * Contigs are filtered by length (minimum 500 base pairs)
 * Peptides are predicted using a combined gene caller (Prodigal and FragGeneScan)
 * Resulting peptides are made non-redundant to produce a set of unique sequences
@@ -110,14 +110,14 @@ Availability
 
 As well as searches via a web server, we
 provide all data for download from our FTP server (ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database).
-This includes the sequence database, run, sample, SwissProt and Trembl mappings,
+This includes the sequence database, run, sample, UniProtKB/SwissProt and UniProtKB/TrEMBL mappings,
 Pfam architectures, and counts of the number of times each sequences
 was observed in the database as a whole.
 
 .. figure:: images/sequence_search_ftp.png
    :scale: 50 %
 
-**Figure 5**. Different features on the result page after triggering a sequence search
+**Figure 5**. List of available files on the FTP server
 
 -------------------
 Further information
@@ -127,5 +127,3 @@ Further information
 regarding the HMMER webserver is available. Note that some of the documented
 features (such as the taxonomy view) are not relevant to the peptide search
 and are therefore disabled.
-Other features (such as the jackhmmer iterative search and batch search)
-will be added at a later date.
