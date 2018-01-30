@@ -127,4 +127,4 @@ Further information
 regarding the HMMER webserver is available. Note that some of the documented
 features (such as the taxonomy view) are not relevant to the peptide search
 and are therefore disabled. If there are additional features or feedback on this
-search service, please get in contact with us.
+search service, please get in `contact with us <https://www.ebi.ac.uk/support/metagenomics>`_.
