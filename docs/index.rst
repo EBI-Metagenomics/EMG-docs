@@ -17,6 +17,7 @@ EBI Metagenomics documentation
    analysis
    portal
    api
+   sequence-search
    tutorials
    faqs
    glossary
