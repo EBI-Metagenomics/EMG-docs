@@ -117,7 +117,7 @@ the sequence database, run, sample, SwissProt and Trembl mappings,
 Pfam architectures, and counts of the number of times each sequences
 was observed in the database as a whole.
 
-.. figure:: images/sequence_search_result_custom.png
+.. figure:: images/sequence_search_ftp.png
    :scale: 50 %
 
 **Figure 5**. Different features on the result page after triggering a sequence search
