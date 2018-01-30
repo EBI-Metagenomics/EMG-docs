@@ -1,9 +1,9 @@
 Sequence search
 ^^^^^^^^^^^^^^^
 
-------------
-Landing page
-------------
+---------------
+I) Landing page
+---------------
 
 The sequence search (accessed by following the 'Sequence search' link from menu bar)
 provides a search against a catalogue of predicted peptides.
@@ -26,35 +26,32 @@ The search takes a FASTA-formatted amino acid sequence.
 
 **Figure 2**. Example of a well-formatted input sequence
 
-
------------
-Result page
------------
-
-On completion a list of matching sequences is shown in order of E-value significance.
-
-.. figure:: images/sequence_search_results_page.png
-   :scale: 50 %
-
-**Figure 3**. Initial result page after triggering a sequence search
-
 You can search against all of the sequences in the database ('All'),
 or restrict your search to full length sequences partial
 sequences only (see ref:`Partial and full length peptides`).
 
-.. figure:: images/sequence_search_db_selection.png
+.. figure:: images/sequence_search_db_select.png
    :scale: 50 %
 
-**Figure 4**. How to select the peptide database?
+**Figure 3**. How to select the peptide database to search against?
 
+
+---------------
+II) Result page
+---------------
+
+On completion a list of matching sequences is shown in order of E-value significance (1.).
 Since identical peptides could be derived
 from different samples and runs, we use a unique hash sum (SHA256) as
-the sequence identifier. The mapping to UniProt identifiers and EBI
+the sequence identifier (2.). The mapping to UniProt identifiers and EBI
 Metagenomics run/sample accessions can be switched on by selecting
-'Customize' on the results page and checking the appropriate
-boxes.
+'Customize' (3.) on the results page and checking the appropriate
+boxes (4.).
 
+.. figure:: images/sequence_search_result_custom.png
+   :scale: 50 %
 
+**Figure 4**. Different features on the result page after triggering a sequence search
 
 At this time, it is not possible to link directly to the
 matching sequence from the results table. However, in the download
