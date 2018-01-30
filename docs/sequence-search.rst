@@ -40,13 +40,13 @@ sequences only (see ref:`Partial and full length peptides`).
 Result page
 -----------
 
-On completion a list of matching sequences is shown in order of E-value significance (1.).
+On completion a list of matching sequences is shown in order of E-value significance (**1.**).
 Since identical peptides could be derived
 from different samples and runs, we use a unique hash sum (SHA256) as
-the sequence identifier (2.). The mapping to UniProt identifiers and EBI
+the sequence identifier (**2.**). The mapping to UniProt identifiers and EBI
 Metagenomics run/sample accessions can be switched on by selecting
-'Customize' (3.) on the results page and checking the appropriate
-boxes (4.).
+'Customize' (**3.**) on the results page and checking the appropriate
+boxes (**4.**).
 
 .. figure:: images/sequence_search_result_custom.png
    :scale: 50 %
@@ -55,7 +55,7 @@ boxes (4.).
 
 At this time, it is not possible to link directly to the
 matching sequence from the results table. However, in the download
-tab (5.), the 'Full length FASTA’ link will provide all the matching
+tab (**5.**), the 'Full length FASTA’ link will provide all the matching
 sequences. Alternatively, the sequences are available on our `FTP server <ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database>`_.
 
 -------------
