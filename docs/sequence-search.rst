@@ -126,7 +126,7 @@ was observed in the database as a whole.
 Further information
 -------------------
 
-`Full documentation <https://hmmer-web-docs.readthedocs.io/en/latest/>_`
+`Full documentation <https://hmmer-web-docs.readthedocs.io/en/latest/>`_
 regarding the HMMER webserver is available. Note that some of the documented
 features (such as the taxonomy view) are not relevant to the peptide search
 and are therefore disabled.
