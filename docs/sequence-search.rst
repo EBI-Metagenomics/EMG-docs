@@ -90,7 +90,7 @@ is truncated at only one end. Based on this information, three peptide
 sequence sets are available for searching: peptides derived from full
 length genes, peptides derived from partial genes, and all peptides.
 
-.. highlight:: fasta
+.. highlight:: bash
 
 Example::
 >seq_1 # 3 # 371 # 1 # ID=1_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.501
