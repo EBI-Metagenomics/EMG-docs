@@ -56,7 +56,7 @@ boxes (**4.**).
 At this time, it is not possible to link directly to the
 matching sequence from the results table. However, in the download
 tab (**5.**), the 'Full length FASTA’ link will provide all the matching
-sequences. Alternatively, the sequences are available on our `FTP server <ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database>`_.
+sequences. Alternatively, the sequences are available on our FTP server (ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database).
 
 -------------
 Build process
