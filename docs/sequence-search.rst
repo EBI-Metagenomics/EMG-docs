@@ -91,6 +91,8 @@ sequence sets are available for searching: peptides derived from full
 length genes, peptides derived from partial genes, and all peptides.
 
 .. highlight:: bash
+::
+
    >seq_1 # 3 # 371 # 1 # ID=1_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.501
    SEGCEYLAAYLDKRIASGETINESSAVMTLSQGYLMKGRNKDAGKKFITTPAITKEIREA
    QT
