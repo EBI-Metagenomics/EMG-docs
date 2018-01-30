@@ -1,9 +1,9 @@
 Sequence search
 ^^^^^^^^^^^^^^^
 
----------------
-I) Landing page
----------------
+------------
+Landing page
+------------
 
 The sequence search (accessed by following the 'Sequence search' link from menu bar)
 provides a search against a catalogue of predicted peptides.
@@ -36,9 +36,9 @@ sequences only (see ref:`Partial and full length peptides`).
 **Figure 3**. How to select the peptide database to search against?
 
 
----------------
-II) Result page
----------------
+-----------
+Result page
+-----------
 
 On completion a list of matching sequences is shown in order of E-value significance (1.).
 Since identical peptides could be derived
@@ -55,12 +55,12 @@ boxes (4.).
 
 At this time, it is not possible to link directly to the
 matching sequence from the results table. However, in the download
-tab, the 'Full length FASTA’ link will provide all the matching
-sequences. Alternatively, the sequences are available on our
-`FTP server <ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database>`_.
+tab (5.), the 'Full length FASTA’ link will provide all the matching
+sequences. Alternatively, the sequences are available on our `FTP server <ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database>`_.
 
+-------------
 Build process
-"""""""""""""
+-------------
 
 The database is updated periodically and is created as follows:
 
@@ -75,10 +75,11 @@ The database is updated periodically and is created as follows:
 Each update (versioned using the release year/month) is cumulative and
 uses all predicted peptides available at that time.
 
+--------------------------------
 Partial and full length peptides
-""""""""""""""""""""""""""""""""
+--------------------------------
 
-In common with some other protein coding sequence predictors, Prodigal provides an indication
+In common with some other protein coding sequence predictors, `Prodigal <https://github.com/hyattpd/prodigal/wiki/introduction>`_ provides an indication
 as to whether a gene is full length or extends beyond the contig. To
 indicate this, the sequence ID has two digits appended (one for each end of
 the sequence), each of which is either 0 (the gene is
@@ -89,8 +90,26 @@ is truncated at only one end. Based on this information, three peptide
 sequence sets are available for searching: peptides derived from full
 length genes, peptides derived from partial genes, and all peptides.
 
+.. highlight:: fasta
+
+Example::
+>seq_1 # 3 # 371 # 1 # ID=1_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.501
+SEGCEYLAAYLDKRIASGETINESSAVMTLSQGYLMKGRNKDAGKKFITTPAITKEIREA
+QT
+>seq_2 # 4738 # 5193 # -1 # ID=1_9;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.568
+MSAYWYAVIWGGSFGAVLAAAGPRFRKAIPAIRGRMKNSIKWSTSAKAINGISWAGPFAA
+QT
+>seq_3 # 7546 # 8232 # -1 # ID=1_11;partial=00;start_type=TTG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.541
+MKKKVLSIQNIACETLGTLEGMFRKDGLEVENVSAQEGGIPIKSSEYSAVVVLGGPMAVY
+QT
+>seq_4 # 32 # 103 # -1 # ID=37115_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.542
+WILDGIDIDAMIRHPVRQYQIAG
+
+
+
+------------
 Availability
-"""""""""""""
+------------
 
 As well as searches via a web server, we
 provide all data for download from our FTP server. This includes
@@ -98,8 +117,14 @@ the sequence database, run, sample, SwissProt and Trembl mappings,
 Pfam architectures, and counts of the number of times each sequences
 was observed in the database as a whole.
 
+.. figure:: images/sequence_search_result_custom.png
+   :scale: 50 %
+
+**Figure 5**. Different features on the result page after triggering a sequence search
+
+-------------------
 Further information
-"""""""""""""""""""
+-------------------
 
 `Full documentation <https://hmmer-web-docs.readthedocs.io/en/latest/>_`
 regarding the HMMER webserver is available. Note that some of the documented
