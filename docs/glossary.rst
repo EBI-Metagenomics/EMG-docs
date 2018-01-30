@@ -24,7 +24,7 @@ Glossary
 
 
     Pipeline
-        A prescribed set of succesive steps needed to transform an input (raw reads for EBI Metagenomics) into an output with added information (annotated files with taxonomy and functional assignments for EBI Metagenomics) pipeline tool	a software or script used during the individual step of an analysis pipeline.
+        A prescribed set of successive steps needed to transform an input (raw reads for EBI Metagenomics) into an output with added information (annotated files with taxonomy and functional assignments for EBI Metagenomics) pipeline tool	a software or script used during the individual step of an analysis pipeline.
 
 
     Go Term
@@ -60,7 +60,7 @@ Glossary
 
 
     Predicted coding sequences (pCDS)
-        Partial or complete gene sequence as predicted by the gene calller (FragGenScan for read submissions, Prodigal and FragGenScan for assembly submissions)
+        Partial or complete gene sequence as predicted by the gene caller (FragGenScan for read submissions, Prodigal and FragGenScan for assembly submissions)
 
 
     16S rRNA genes
