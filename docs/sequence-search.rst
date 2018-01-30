@@ -111,8 +111,8 @@ Availability
 ------------
 
 As well as searches via a web server, we
-provide all data for download from our FTP server. This includes
-the sequence database, run, sample, SwissProt and Trembl mappings,
+provide all data for download from our FTP server (ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database).
+This includes the sequence database, run, sample, SwissProt and Trembl mappings,
 Pfam architectures, and counts of the number of times each sequences
 was observed in the database as a whole.
 
