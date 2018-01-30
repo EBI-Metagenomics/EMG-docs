@@ -28,7 +28,7 @@ The search takes a FASTA-formatted amino acid sequence.
 
 You can search against all of the sequences in the database ('All'),
 or restrict your search to full length sequences partial
-sequences only (see ref:`Partial and full length peptides`).
+sequences only (see :ref:`Partial and full length peptides`).
 
 .. figure:: images/sequence_search_db_select.png
    :scale: 50 %
@@ -56,7 +56,7 @@ boxes.
 At this time, it is not possible to link directly to the
 matching sequence from the results table. However, in the download
 tab, the 'Full length FASTA’ link will provide all the matching
-sequences. Alternatively, the sequences are available on our `FTP server <ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database>`_.
+sequences. Alternatively, the sequences are available on our FTP server (ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database).
 
 -------------
 Build process
@@ -91,6 +91,8 @@ sequence sets are available for searching: peptides derived from full
 length genes, peptides derived from partial genes, and all peptides.
 
 .. highlight:: bash
+::
+
    >seq_1 # 3 # 371 # 1 # ID=1_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.501
    SEGCEYLAAYLDKRIASGETINESSAVMTLSQGYLMKGRNKDAGKKFITTPAITKEIREA
    QT
@@ -109,8 +111,8 @@ Availability
 ------------
 
 As well as searches via a web server, we
-provide all data for download from our FTP server. This includes
-the sequence database, run, sample, SwissProt and Trembl mappings,
+provide all data for download from our FTP server (ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database).
+This includes the sequence database, run, sample, SwissProt and Trembl mappings,
 Pfam architectures, and counts of the number of times each sequences
 was observed in the database as a whole.
 
