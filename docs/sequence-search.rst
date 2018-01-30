@@ -1,3 +1,5 @@
+.. _seqsearch:
+
 Sequence search
 ^^^^^^^^^^^^^^^
 
