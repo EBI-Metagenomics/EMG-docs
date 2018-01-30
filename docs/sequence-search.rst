@@ -28,7 +28,7 @@ The search takes a FASTA-formatted amino acid sequence.
 
 You can search against all of the sequences in the database ('All'),
 or restrict your search to full length sequences partial
-sequences only (see ref:`Partial and full length peptides`).
+sequences only (see :ref:`Partial and full length peptides`).
 
 .. figure:: images/sequence_search_db_select.png
    :scale: 50 %
