@@ -126,6 +126,5 @@ Further information
 `Full documentation <https://hmmer-web-docs.readthedocs.io/en/latest/>`_
 regarding the HMMER webserver is available. Note that some of the documented
 features (such as the taxonomy view) are not relevant to the peptide search
-and are therefore disabled.
-Other features (such as the jackhmmer iterative search and batch search)
-will be added at a later date.
+and are therefore disabled. If there are additional features or feedback on this 
+search service, please get in contact with us.
