@@ -27,26 +27,24 @@ The search takes a FASTA-formatted amino acid sequence.
 **Figure 2**. Example of a well-formatted input sequence
 
 You can search against all of the sequences in the database ('All'),
-or restrict your search to full length sequences partial
+or restrict your search to full length sequences or partial
 sequences only (see :ref:`Partial and full length peptides`).
 
 .. figure:: images/sequence_search_db_select.png
    :scale: 50 %
 
-**Figure 3**. How to select the peptide database to search against?
+**Figure 3**. How to select the peptide database to search against
 
 
 -----------
 Result page
 -----------
 
-On completion a list of matching sequences is shown in order of E-value significance.
-Since identical peptides could be derived
-from different samples and runs, we use a unique hash sum (SHA256) as
-the sequence identifier. The mapping to UniProt identifiers and EBI
-Metagenomics run/sample accessions can be switched on by selecting
-'Customize' on the results page and checking the appropriate
-boxes.
+On completion, a list of matching sequences is shown in order of E-value significance.
+Since identical peptides could be derived from different samples and runs, we use a
+unique hash sum (SHA256) as the sequence identifier. The mapping to UniProt identifiers
+and EBI Metagenomics run/sample accessions can be switched on by selecting ‘Customise’
+on the results page and checking the appropriate boxes.
 
 .. figure:: images/sequence_search_result_custom2.png
    :scale: 50 %
