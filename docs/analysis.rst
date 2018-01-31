@@ -7,7 +7,7 @@ Analysis pipeline v4.1
 Overview
 --------
 
-Version 4.1 of the pipeline was released in Januray 2018 and includes the following updates and changes:
+Version 4.1 of the pipeline was released in January 2018 and includes the following updates and changes:
 
 * Upgraded SeqPrep to v1.2 with increased sequence length parameter to deal with longer reads
 * Upgraded MAPseq to v1.2.2
