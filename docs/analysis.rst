@@ -7,7 +7,7 @@ Analysis pipeline v4.1
 Overview
 --------
 
-Version 4.1 of the pipeline was released in Januray 2018 and includes the following updates and changes:
+Version 4.1 of the pipeline was released in January 2018 and includes the following updates and changes:
 
 * Upgraded SeqPrep to v1.2 with increased sequence length parameter to deal with longer reads
 * Upgraded MAPseq to v1.2.2
@@ -17,7 +17,8 @@ Version 4.1 of the pipeline was released in Januray 2018 and includes the follow
 
 Figure 1 gives a visual overview of the main steps and tools included in this version:
 
-.. image:: images/pipeline_v4.1b_overview.png
+.. figure:: images/pipeline_v4.1b_overview.png
+   :scale: 50 %
 
 **Figure 1**. Overview of steps and tools included in pipeline v4.1
 
@@ -62,6 +63,6 @@ The GO is made up of 3 structured controlled vocabularies that describe gene pro
 
    **An example of GO terms organised into a hierarchy.**
 
-Terms in the GO are ordered into hierarchies, with less specific terms towards the top and more specific terms towards the bottom.  (e.g., alpha-tubulin binding is a type of cytoskeletal binding, which is a type of protein binding). Note that a GO term can have more than one parent term. The Gene Ontology also allows for different types of relationships between terms (such as ‘has part of’ or ‘regulates’). The EMG analysis pipeline only uses the straightforward ‘is a’ relationships. More information about the GO can be found on the GO consortium `documentation page <http://www.geneontology.org/page/introduction-go>`_.
+Terms in the GO are ordered into hierarchies, with less specific terms towards the top and more specific terms towards the bottom.  (e.g., alpha-tubulin binding is a type of cytoskeletal binding, which is a type of protein binding). Note that a GO term can have more than one parent term. The Gene Ontology also allows for different types of relationships between terms (such as ‘has part of’ or ‘regulates’). The EMG analysis pipeline only uses the straightforward ‘is a’ relationships. More information about the GO can be found on the GO consortium `documentation page <http://www.geneontology.org/page/introduction-go-resource>`_.
 
 As part of the metagenomic analysis pipeline, GO terms for molecular function, biological process and cellular component are assigned to :term:`pCDS<Predicted coding sequences (pCDS)>` in a sample by via the InterPro2GO mapping service. This works as follows: :term:`InterPro` entries are given GO terms by curators if the terms can be accurately applied to all of the proteins matching that entry. Sequences searched against InterPro are then associated with GO terms by virtue of the entries they match - a protein that matches one InterPro entry with the GO term ‘kinase activity’ and another InterPro entry with the GO term ‘zinc ion binding’ will be annotated with both GO terms.
