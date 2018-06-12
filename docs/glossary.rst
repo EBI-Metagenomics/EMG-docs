@@ -20,11 +20,11 @@ Glossary
 
 
     Biome
-        An ecological community type. in EBI Metagenomics, :term:`biomes<biome>` are organised hierarchically going from large types (such as soil, host-associated or aquatic) to more precise types (such as forest soil, skin or coastal) based on the `GOLD classification <https://gold.jgi.doe.gov/distribution#Classification>`_
+        An ecological community type. in MGnify, :term:`biomes<biome>` are organised hierarchically going from large types (such as soil, host-associated or aquatic) to more precise types (such as forest soil, skin or coastal) based on the `GOLD classification <https://gold.jgi.doe.gov/distribution#Classification>`_
 
 
     Pipeline
-        A prescribed set of successive steps needed to transform an input (raw reads for EBI Metagenomics) into an output with added information (annotated files with taxonomy and functional assignments for EBI Metagenomics) pipeline tool	a software or script used during the individual step of an analysis pipeline.
+        A prescribed set of successive steps needed to transform an input (raw reads for MGnify) into an output with added information (annotated files with taxonomy and functional assignments for MGnify) pipeline tool	a software or script used during the individual step of an analysis pipeline.
 
 
     Go Term
@@ -32,7 +32,7 @@ Glossary
 
 
     Go slim
-        Go slim terms are cut-down version of the GO hierarchy to be able to give an overview of the functional results. It is used on EBI Metagenomics website. The GO slim hierarchy lacks the fine granularity of the full GO hierarchy.
+        Go slim terms are cut-down version of the GO hierarchy to be able to give an overview of the functional results. It is used on MGnify website. The GO slim hierarchy lacks the fine granularity of the full GO hierarchy.
 
 
     InterPro

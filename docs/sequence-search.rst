@@ -45,7 +45,7 @@ Result page
 On completion, a list of matching sequences is shown in order of E-value significance.
 Since identical peptides could be derived from different samples and runs, we use a
 unique hash sum (SHA256) as the sequence identifier. The mapping to UniProt identifiers
-and EBI Metagenomics run/sample accessions can be switched on by selecting ‘Customise’
+and MGnify run/sample accessions can be switched on by selecting ‘Customise’
 on the results page and checking the appropriate boxes.
 
 .. figure:: images/sequence_search_result_custom2.png
@@ -68,7 +68,7 @@ The database is updated periodically and is created as follows:
 * Contigs are filtered by length (minimum 500 base pairs)
 * Peptides are predicted using a combined gene caller (Prodigal and FragGeneScan)
 * Resulting peptides are made non-redundant to produce a set of unique sequences
-* Sequences are mapped back to EBI Metagenomics run and sample accessions
+* Sequences are mapped back to MGnify run and sample accessions
 * Sequences are compared to UniProt and accessions for matching sequences are mapped
 * Domain architectures are identified using the Pfam database
 
