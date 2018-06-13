@@ -24,7 +24,7 @@ Glossary
 
 
     Pipeline
-        A prescribed set of successive steps needed to transform an input (raw reads for MGnify) into an output with added information (annotated files with taxonomy and functional assignments for MGnify) pipeline tool	a software or script used during the individual step of an analysis pipeline.
+        A prescribed set of successive steps needed to transform an input (raw reads and contigs for MGnify) into an output with added information (annotated files with taxonomy and functional assignments for MGnify) pipeline tool	a software or script used during the individual step of an analysis pipeline.
 
 
     Go Term
