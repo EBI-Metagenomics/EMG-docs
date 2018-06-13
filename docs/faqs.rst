@@ -34,7 +34,7 @@ We aim to analyze submitted data as quickly as possible. However, submitted data
 I have submitted my data - how do I trigger the analysis?
 ---------------------------------------------------------
 There is no manual way to trigger analysis. If you have provided `access agreement <https://www.ebi.ac.uk/metagenomics/submission>`_ for MGnify, we will pick up your sequences from ENA automatically and queue them for analysis. 
-Access agreements provided to EBI Metagenomics will apply to MGnify.
+Access agreements previously provided to EBI Metagenomics will apply to MGnify.
 
 Do you have an API?
 -------------------
