@@ -28,7 +28,7 @@ Taxonomic analysis
 ------------------
 The :term:`analysis pipeline<pipeline>` underwent a substantial update in August 2017 to version 4.0, with the entire taxonomic profiling section replaced. The `rRNASelector <http://europepmc.org/abstract/MED/21887657>`_ based component, which was previously used to identify :term:`16S rRNA genes<16S rRNA genes>`, was replaced with `Infernal <http://europepmc.org/abstract/MED/24008419>`_ (running in hmm-only mode) using a library of ribosomal RNA hidden Markov models from `Rfam <http://europepmc.org/articles/PMC4383904>`_ 12.2. This allows accurate identification of both large and small subunit (:term:`LSU and SSU<LSU, SSU>`) ribosomal ribonucleic acid genes, including the eukaryotic :term:`18S rRNA gene<18S rRNA genes>`. To identify those we use the families found in the following clans: CL00111 (SSU) and CL00112 (LSU).
 
-The QIIME taxonomic classification component was replaced with `MAPSeq <https://www.biorxiv.org/content/early/2017/04/12/126953>`_ version 1.2, which offers fast and accurate classification of reads, and provides corresponding confidence scores for assignment at each taxonomic level. The Greengenes reference database was replaced with `SILVA <http://europepmc.org/articles/PMC3531112>`_ SSU / LSU version 128, which includes eukaryotic as well as prokaryotic sequences, thus enabling eukaryotic taxonomic classification. In order to make it compatible with MAPseq, the SILVA database was remapped to a flat, 8-level taxonomy, using in house scripts. The resulting classification system was compared to QIIME/Greengenes and benchmarked using both mock community and real world datasets to confirm accuracy of results. 
+The QIIME taxonomic classification component was replaced with `MAPSeq <https://www.biorxiv.org/content/early/2017/04/12/126953>`_ version 1.2, which offers fast and accurate classification of reads, and provides corresponding confidence scores for assignment at each taxonomic level. The Greengenes reference database was replaced with `SILVA <http://europepmc.org/articles/PMC3531112>`_ SSU / LSU version 128, which includes eukaryotic as well as prokaryotic sequences, thus enabling eukaryotic taxonomic classification. In order to make it compatible with MAPseq, the SILVA database was remapped to a flat, 8-level taxonomy, using in house scripts. The resulting classification system was compared to QIIME/Greengenes and benchmarked using both mock community and real world datasets to confirm accuracy of results.
 
 Other non-coding RNAs
 ^^^^^^^^^^^^^^^^^^^^^
@@ -49,12 +49,12 @@ Protein signatures are obtained by modelling the conservation of amino acids at 
 
    **InterPro member databases grouped by the methods used to construct their signatures and focus of interest.**
 
-Only a subset of the InterPro member databases are used by EBI Metagenomics: Gene3D, TIGRFAMs, Pfam, PRINTS and PROSITE patterns. These databases were selected since, together, they provide both high coverage and offer detailed functional analysis, and have underlying algorithms that can cope with the vast amounts of fragmentary sequence data found in metagenomic datasets. 
+Only a subset of the InterPro member databases are used by MGnify: Gene3D, TIGRFAMs, Pfam, PRINTS and PROSITE patterns. These databases were selected since, together, they provide both high coverage and offer detailed functional analysis, and have underlying algorithms that can cope with the vast amounts of fragmentary sequence data found in metagenomic datasets. 
 
 
 Assigning GO terms to metagenomic sequences
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-While :term:`InterPro` matches to metagenomic sequence sets are informative in their own right, EBI Metagenomics offers an additional type of annotation in the form of :term:`Gene Ontology (GO) terms<Go Term>`.
+While :term:`InterPro` matches to metagenomic sequence sets are informative in their own right, MGnify offers an additional type of annotation in the form of :term:`Gene Ontology (GO) terms<Go Term>`.
 
 The GO is made up of 3 structured controlled vocabularies that describe gene products in terms of their associated biological processes, cellular components and molecular functions in a species-independent manner. By using GO terms, scientists working on different species or using different databases can compare datasets, since they have a precisely defined name and meaning for a particular concept.
 

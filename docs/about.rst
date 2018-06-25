@@ -2,13 +2,14 @@ About
 =====
 
 ----------------------------
-The EBI Metagenomics service
+The MGnify service
 ----------------------------
 
-EBI metagenomics is a freely available hub for the analysis and exploration of :term:`metagenomic`, :term:`metatranscriptomic`, :term:`amplicon` and :term:`assembly` data. The resource provides rich functional and taxonomic analyses of user-submitted sequences, as well as analysis of publicly available metagenomic datasets held within the European Nucleotide Archive (`ENA <https://www.ebi.ac.uk/ena>`_). 
+MGnify is a freely available hub for the analysis and exploration of :term:`metagenomic`, :term:`metatranscriptomic`, :term:`amplicon` and :term:`assembly` data. The resource provides rich functional and taxonomic analyses of user-submitted sequences, as well as analysis of publicly available metagenomic datasets held within the European Nucleotide Archive (`ENA <https://www.ebi.ac.uk/ena>`_).
+MGnify resource was previously known as EBI Metagenomics, but was rebranded to reflect its growing remit.
 
 --------------------------------
-What does EBI Metagenomics offer
+What does MGnify offer
 --------------------------------
 **Standards-compliant data**
     The service provides submission tools that help ensure sequence data and metadata comply with the European Nucleotide Archive (ENA) data schemes and the Genomic Standards Consortium (`GSC <http://gensc.org>`_) metadata guidelines, allowing harmonisation of analysis efforts across the wider genomics community.
@@ -22,7 +23,7 @@ What does EBI Metagenomics offer
 -------
 Funding
 -------
-EBI Metagenomics was initiated with funding from EMBL. It continues to be developed with EMBL support and funding gratefully received from the Biotechnology and Biological Sciences Research Council (BBSRC grant BB/M011755/1) and [ELIXIR GRANT INFO]. It previously received funding from BBSRC grant BB/I02612X/1 and the EU's Seventh Framework Programme for Research (FP7 grant MICROB3).
+MGnify was initiated with funding from EMBL. It continues to be developed with EMBL support and funding gratefully received from the Biotechnology and Biological Sciences Research Council (BBSRC grant BB/M011755/1) and [ELIXIR GRANT INFO]. It previously received funding from BBSRC grant BB/I02612X/1 and the EU's Seventh Framework Programme for Research (FP7 grant MICROB3).
 
 
 -----------
@@ -41,5 +42,5 @@ If you would like to get in touch, please contact us using the `helpdesk <metage
 
    **Please, check our** :ref:`FAQ <faq>` **prior to contacting us.**
 
-If you would like to keep up to date with developments with the EBI Metagenomics, please follow us on Twitter (`@EBImetagenomics <https://twitter.com/ebimetagenomics>`_).
+If you would like to keep up to date with developments with the MGnify, please follow us on Twitter (`@EBImetagenomics <https://twitter.com/ebimetagenomics>`_).
 

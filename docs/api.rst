@@ -3,8 +3,7 @@
 RESTful API
 ===========
 
-With the rapid expansion in the number of datasets deposited in EBI
-Metagenomics, it has become increasingly important to provide programmatic
+With the rapid expansion in the number of datasets deposited in MGnify, it has become increasingly important to provide programmatic
 access to the data for cross-database complex queries.
 
 
@@ -317,11 +316,9 @@ Errors
 
 There are three possible types of client errors on API calls:
 
-* 200 Successful.
 * 400 Bad requests.
 * 404 Not found.
 * 403 Authentication failed.
-* 500 Server error.
 
 Cross Origin Resource Sharing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

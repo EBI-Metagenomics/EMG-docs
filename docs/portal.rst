@@ -15,10 +15,10 @@ The 'Analysis results' field could also displays two types of messages:
 - ‘Unable to process’: this message indicates that no data suitable for analysis were available for this run. The sequences may not be available in ENA, failed to merge, in the case of pair-end reads, or be in an unsuitable format.
 
 ------------------------------------------------------------------------------
-Finding quality control information about runs on the EBI Metagenomics website
+Finding quality control information about runs on the MGnify website
 ------------------------------------------------------------------------------
 
-Quality control (QC) analysis of runs within projects on the `EBI Metagenomics website <https://www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Quality control' tab found toward the top of any run page (see Figure 1 below).
+Quality control (QC) analysis of runs within projects on the `MGnify website <https://www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Quality control' tab found toward the top of any run page (see Figure 1 below).
 
 
 .. image:: images/QC1.PNG
@@ -38,10 +38,10 @@ An histogram is used to represent the nucleotide distribution for the first 500 
 **Figure 3**. Typical uneven nucleotide distribution expected for amplicon. 
 
 -------------------------------------------------------------------------
-Finding functional information about runs on the EBI Metagenomics website
+Finding functional information about runs on the MGnify website
 -------------------------------------------------------------------------
 
-Functional analysis of runs within projects on the `EBI Metagenomics website <https://www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Functional Analysis' tab found toward the top of any run page (see Figure 4 below). Note that this tab will be greyed for amplicon runs that have no functional results.
+Functional analysis of runs within projects on the `MGnify website <https://www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Functional Analysis' tab found toward the top of any run page (see Figure 4 below). Note that this tab will be greyed for amplicon runs that have no functional results.
 
 .. image:: images/Func_1.PNG
 
@@ -57,17 +57,17 @@ Below this first bar chart, two other charts display the InterPro match informat
 
 .. image:: images/Func_3.PNG
 
-**Figure 5**. Functional analysis of metagenomics data, as shown on the EBI Metagenomics website. A) InterPro match information for the predicted coding sequences in the run is shown. The number of InterPro matches are displayed graphically, and as a table that has a text search facility.  B) The GO terms predicted for the sample are displayed. Different graphical representations are available, and can be selected by clicking on the ‘Switch view’ icons.
+**Figure 5**. Functional analysis of metagenomics data, as shown on the MGnify website. A) InterPro match information for the predicted coding sequences in the run is shown. The number of InterPro matches are displayed graphically, and as a table that has a text search facility.  B) The GO terms predicted for the sample are displayed. Different graphical representations are available, and can be selected by clicking on the ‘Switch view’ icons.
 
 The Gene Ontology terms displayed graphically on the web site have been 'slimmed' with a special :term:`Go slim` developed for metagenomic data sets. GO slims are cut-down versions of the Gene Ontology, containing a subset of the terms in the whole GO. They give a broad overview of the ontology content without the detail of the specific fine-grained terms.
  
-The full data sets used to generate both the :term:`InterPro` and GO overview charts, along with a host of additional data and intermediate files (processed reads, pCDS, reads encoding RNA and taxonomic analysis  results) can be downloaded for further analysis by clicking the Download tab, found towards the top of the page (see complete description here: `Files available to download on the EBI Metagenomics website`_)
+The full data sets used to generate both the :term:`InterPro` and GO overview charts, along with a host of additional data and intermediate files (processed reads, pCDS, reads encoding RNA and taxonomic analysis  results) can be downloaded for further analysis by clicking the Download tab, found towards the top of the page (see complete description here: `Files available to download on the MGnify website`_)
 
 ------------------------------------------------------------------------
-Finding taxonomic information about runs on the EBI Metagenomics website
+Finding taxonomic information about runs on the MGnify website
 ------------------------------------------------------------------------
 
-Taxonomic analysis of runs within projects on the `EBI Metagenomics website <https://www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Taxonomic analysis' tab found toward the top of any run page (see Figure 7 below).
+Taxonomic analysis of runs within projects on the `MGnify website <https://www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Taxonomic analysis' tab found toward the top of any run page (see Figure 7 below).
 
 .. image:: images/taxonomy.PNG
 
@@ -77,13 +77,13 @@ The taxonomic analysis results are displayed as Krona plot. This feature allows 
 
 Alternative pie, bar and stacked chart representations can be generated by clicking on the ‘Switch view’ icons located above the Krona plot however data are then presented at the phylum level for clarity.
 
-The full data sets used to generate both Krona and other charts, along with a host of additional data and intermediate files (processed reads, pCDS, reads encoding RNA and functional analysis results) can be downloaded for further analysis by clicking the Download tab, found towards the top of the page (see complete description here: `Files available to download on the EBI Metagenomics website`_)
+The full data sets used to generate both Krona and other charts, along with a host of additional data and intermediate files (processed reads, pCDS, reads encoding RNA and functional analysis results) can be downloaded for further analysis by clicking the Download tab, found towards the top of the page (see complete description here: `Files available to download on the MGnify website`_)
 
 -----------------------------------------------------------
-Files available to download on the EBI Metagenomics website
+Files available to download on the MGnify website
 -----------------------------------------------------------
 
-EBI Metagenomics analysis pipeline produces a number of files underlying the charts displayed on the website. These files are available via the 'Download' tab found toward the top of any run page (see Figure 8 below).
+MGnify analysis pipeline produces a number of files underlying the charts displayed on the website. These files are available via the 'Download' tab found toward the top of any run page (see Figure 8 below).
 
 .. image:: images/Download_1.png
 
@@ -114,12 +114,12 @@ Description of functional annotation files available to download
 Description of taxonomic assignment files available to download
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 - :term:`OTUs<OTU>`, reads and taxonomic assignments files: these  files contain the same data presented in 3 different format : tab-separated file (TSV) and two Biom file (HDF5 and JSON). The TSV file contains 3 columns which headers are in the second line of the file. The first column is the OTU Id. The second column indicates the number of predicted 16S sequences associated with each OTU. The third column contains the taxonomic lineages provided by `GreenGenes database <http://greengenes.lbl.gov/Download/>`_. Note that the number of unannotated 16S sequences is not indicated in this file. This file can be directly imported into `Megan6 <http://ab.inf.uni-tuebingen.de/software/megan6/>`_ for visualisation and further analysis. The OTU id can be compared between runs for version 2 and 3 of the pipeline as they have been generated using `Qiime closed-reference protocol <http://qiime.org/tutorials/otu_picking.html>`_.The Biom files are `computer-readable files <http://biom-format.org>`_. The HDF5 (Hierachical Data Format) format can be imported into analysis and visualisation tools such as Matlab and R. A larger number of commercial and freely available tools, such as MEGAN6, can consume the JavaScript Object Notation (JSON) format.
-- Phylogenetic tree (Newick format)’ file (only available up to version 3 of EBI Metagenomics pipeline): this file can be used to visualise the hierarchical distribution of the taxonomic lineages of each run. The `Newick format <https://en.wikipedia.org/wiki/Newick_format>`_ is a computer-readable format to represent the tree and can be directly imported into freely-available viewers such as `FigTree <http://tree.bio.ed.ac.uk/software/figtree>`_ and `ITOL (interactive Tree of Life) <http://itol.embl.de>`_.
+- Phylogenetic tree (Newick format)’ file (only available up to version 3 of MGnify pipeline): this file can be used to visualise the hierarchical distribution of the taxonomic lineages of each run. The `Newick format <https://en.wikipedia.org/wiki/Newick_format>`_ is a computer-readable format to represent the tree and can be directly imported into freely-available viewers such as `FigTree <http://tree.bio.ed.ac.uk/software/figtree>`_ and `ITOL (interactive Tree of Life) <http://itol.embl.de>`_.
 
 -------------
 Summary files
 -------------
-In addition to the output files for individual runs, described above, EBI Metagenomics provides a number of summary files available via the 'Analysis summary' tab on the project page (Figure 9 below). They summarized the counts per feature across all runs of a :term:`study` and therefore provide an easy way to identify patterns. The summary files are split between functional (not available for amplicon-only study) and taxonomy sections.
+In addition to the output files for individual runs, described above, MGnify provides a number of summary files available via the 'Analysis summary' tab on the project page (Figure 9 below). They summarized the counts per feature across all runs of a :term:`study` and therefore provide an easy way to identify patterns. The summary files are split between functional (not available for amplicon-only study) and taxonomy sections.
 
 .. image:: images/summary.PNG
 
@@ -139,9 +139,9 @@ taxonomy summary files
 ---------------
 Comparison tool
 ---------------
-Comparing runs helps to identify feature associated with experimental factors. EBI Metagenomics has developed a Comparison Tool that allows user to compare the GO-slim terms associated with the runs of a project (see `Analysis pipeline <http://emg-docs.readthedocs.io/en/latest/analysis.html>`__).
+Comparing runs helps to identify feature associated with experimental factors. MGnify has developed a Comparison Tool that allows user to compare the GO-slim terms associated with the runs of a project (see `Analysis pipeline <http://emg-docs.readthedocs.io/en/latest/analysis.html>`__).
 
-**To use the current tool, select the corresponding tab from any EBI Metagenomics webpage (Figure 10 below):**
+**To use the current tool, select the corresponding tab from any MGnify webpage (Figure 10 below):**
 
 .. image:: images/comp.PNG
 
@@ -164,18 +164,18 @@ The page will now display the study and selected runs on top of 5 new comparison
 We are working with collaborators to develop this tool in order to be able to compare taxonomic annotations, provide statistical validations and compare runs between projects.
 
 -----------------------------------------
-Data discovery on EBI Metagenomics portal
+Data discovery on MGnify portal
 -----------------------------------------
 
-EBI metagenomics is the largest metagenomic resource of public datasets. In order to help users accessing the data present on the portal, EBI Metagenomics offers a powerful search tool and a range of browsing options.
+MGnify is the largest metagenomic resource of public datasets. In order to help users accessing the data present on the portal, MGnify offers a powerful search tool and a range of browsing options.
 
 Search tool
 ^^^^^^^^^^^
-The Search tool is underpinned by `EBI search <https://www.ebi.ac.uk/ebisearch/overview.ebi>`_  and accessible via any EBI Metagenomics page (Figure 11 below). 
+The Search tool is underpinned by `EBI search <https://www.ebi.ac.uk/ebisearch/overview.ebi>`_  and accessible via any MGnify page (Figure 11 below). 
 
 .. image:: images/search.PNG
 
-**Figure 11**. The 'Search tool' can be accessed using the 'search' tab or the 'search' button located on the right of the EBI Metagenomics banner. The search space can be restricted using the 'search' field located above the latter.
+**Figure 11**. The 'Search tool' can be accessed using the 'search' tab or the 'search' button located on the right of the MGnify banner. The search space can be restricted using the 'search' field located above the latter.
 
 The search page contains 3 tabs allowing users to navigate between project, sample and run search levels. In each tab, the left hand side panel provide a number of facets that can be used to restrict the search space.
 
@@ -186,10 +186,10 @@ The search page contains 3 tabs allowing users to navigate between project, samp
 Browsing options
 ^^^^^^^^^^^^^^^^
 
-- Public project can be accessed using the links corresponding to the number of projects, samples and runs or experiment types located on the EBI Metagenomics home page below the main banner. Selecting one of those will redirect users to the corresponding EBI Metagenomics search page.
-- Another way to discover data of interest is to browse the public projects by biome as displayed on the EBI Metagenomics homepage. The 10 biomes with higher number of projects are displayed by default however the list can be extended using the 'See all biomes' link.  Upon selection, a table giving the hierarchical lineage according to `GOLD database classification <https://gold.jgi.doe.gov/distribution#Classification>`_  is provided. On the right hand-side of this table, the number of projects associated to the lineage in the strict sense or including sub-lineages are displayed as dynamic links giving access to the selected projects.
-- Users can also access particular projects, or samples, using the corresponding tabs located above the EBI Metagenomics banner. The list of projects, or samples, can be restricted using the Biome drop-down menu and/or text search. The results of this filtering can be downloaded using the two spreadsheet icons located above the right hand-side of the tables.
-- Finally, users have the option to access, from the EBI Metagenomics homepage, the latest public projects uploaded via the right side of the 'Browse projects' section.
+- Public project can be accessed using the links corresponding to the number of projects, samples and runs or experiment types located on the MGnify home page below the main banner. Selecting one of those will redirect users to the corresponding MGnify search page.
+- Another way to discover data of interest is to browse the public projects by biome as displayed on the MGnify homepage. The 10 biomes with higher number of projects are displayed by default however the list can be extended using the 'See all biomes' link.  Upon selection, a table giving the hierarchical lineage according to `GOLD database classification <https://gold.jgi.doe.gov/distribution#Classification>`_  is provided. On the right hand-side of this table, the number of projects associated to the lineage in the strict sense or including sub-lineages are displayed as dynamic links giving access to the selected projects.
+- Users can also access particular projects, or samples, using the corresponding tabs located above the MGnify banner. The list of projects, or samples, can be restricted using the Biome drop-down menu and/or text search. The results of this filtering can be downloaded using the two spreadsheet icons located above the right hand-side of the tables.
+- Finally, users have the option to access, from the MGnify homepage, the latest public projects uploaded via the right side of the 'Browse projects' section.
 
 .. include:: sequence-search.rst
 
@@ -197,7 +197,7 @@ Browsing options
 Privat area
 -----------------------------------------
 
-If you have given consent to the EBI Metagenomics team to analyse your data for which you have requested a pre-publication confidential hold, you can access the analysis results of those pre-published data sets by using your private area. You can simply access this area by clicking on the 'Login' button, which you will find on the top right hand side of any page (see Figure 12 below).
+If you have given consent to the MGnify team to analyse your data for which you have requested a pre-publication confidential hold, you can access the analysis results of those pre-published data sets by using your private area. You can simply access this area by clicking on the 'Login' button, which you will find on the top right hand side of any page (see Figure 12 below).
 
 .. image:: images/how_to_login.png
 
