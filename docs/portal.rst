@@ -191,8 +191,6 @@ Browsing options
 - Users can also access particular projects, or samples, using the corresponding tabs located above the MGnify banner. The list of projects, or samples, can be restricted using the Biome drop-down menu and/or text search. The results of this filtering can be downloaded using the two spreadsheet icons located above the right hand-side of the tables.
 - Finally, users have the option to access, from the MGnify homepage, the latest public projects uploaded via the right side of the 'Browse projects' section.
 
-.. include:: sequence-search.rst
-
 -----------------------------------------
 Privat area
 -----------------------------------------
