@@ -19,7 +19,7 @@ These sequences comprise a non-redundant set of proteins predicted from contigs 
 have been assembled from sequencing runs. The HMMER search
 engine has been adapted to provide fast searches against this database.
 The results can be linked back to the sample and run from which the peptide was derived
-and also to sequences with an exact match in the UniProt database.
+and also to sequences with an exact match in the UniProtKB database.
 
 Owing to the large size of the database we are not able to offer a search against
 the full set of proteins. Instead, we have applied a clustering algorithm which groups
@@ -85,15 +85,13 @@ Partial and full length peptides
 --------------------------------
 
 In common with some other protein coding sequence predictors, `Prodigal <https://github.com/hyattpd/prodigal/wiki/introduction>`_ provides an indication
-as to whether a gene is full length or extends beyond the contig. To
-indicate this, the sequence ID has two digits appended (one for each end of
+as to whether a gene is full length or extends beyond the contig. This is recorded as two digits
+(one for each end of
 the sequence), each of which is either 0 (the gene is
 encoded within the contig) or 1 (it extends beyond). Thus a full length
-sequence is suffixed with '-00' and a partial with '-11'. The
-notation '-10' or '-01' is used for the cases where the gene
-is truncated at only one end. Based on this information, three peptide
-sequence sets are available for searching: peptides derived from full
-length genes, peptides derived from partial genes, and all peptides.
+sequence is described as '00' and a partial as '11'. The values
+'10' or '01' are used for the cases where the gene
+is truncated only at one end.
 
 .. highlight:: bash
 ::
@@ -117,7 +115,9 @@ Availability
 
 As well as searches via a web server, we
 provide all data for download from our `FTP server <ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database>`_.
-This includes the sequence database, run, sample, biome, UniProtKB/SwissProt and UniProtKB/TrEMBL mappings,
+This includes the sequence database (separate fasta files for the full database and cluster representatives);
+run, sample, biome, Swiss-Prot and TrEMBL mappings;
+the partial status of the sequences
 and counts of the number of times each sequence
 was observed in the database as a whole.
 
