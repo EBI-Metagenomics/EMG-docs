@@ -37,9 +37,10 @@ The search takes a FASTA-formatted amino acid sequence.
 You can search against all of the sequences in the database ('All'),
 or restrict your search to full length sequences or partial
 sequences only (see :ref:`Partial and full length peptides`).
-Alternatively, you may choose to search from a subset of biomes. Sequences
+Alternatively, you may choose to search from a subset of environments or
+biomes. Sequences
 observed in multiple runs may be found in more than one biome. 'Other'
-sequences are those found in none of the other biome categories.
+sequences are those found in none of the other environment or biome categories.
 
 .. figure:: images/sequence_search_db_select.png
    :scale: 50 %
@@ -117,7 +118,6 @@ Availability
 As well as searches via a web server, we
 provide all data for download from our `FTP server <ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database>`_.
 This includes the sequence database, run, sample, biome, UniProtKB/SwissProt and UniProtKB/TrEMBL mappings,
-.. Pfam architectures,
 and counts of the number of times each sequence
 was observed in the database as a whole.
 
