@@ -17,6 +17,7 @@ MGnify documentation
    analysis
    portal
    api
+   npm-package
    sequence-search
    tutorials
    faqs

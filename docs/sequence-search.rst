@@ -75,6 +75,7 @@ The database is updated periodically and is created as follows:
 * Sequences are mapped back to MGnify run and sample accessions and annotated with biome(s)
 * Matching sequences in UniProtKB are identified
 * Sequences are clustered using MMseqs2/Linclust
+
 .. * Domain architectures are identified using the Pfam database
 
 Each update (versioned using the release year/month) is cumulative and
@@ -94,6 +95,7 @@ sequence is described as '00' and a partial as '11'. The values
 is truncated only at one end.
 
 .. highlight:: bash
+
 ::
 
    >seq_1 # 3 # 371 # 1 # ID=1_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.501
