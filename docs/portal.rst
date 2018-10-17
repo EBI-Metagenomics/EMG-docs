@@ -192,7 +192,7 @@ Browsing options
 - Finally, users have the option to access, from the MGnify homepage, the latest public projects uploaded via the right side of the 'Browse projects' section.
 
 -----------------------------------------
-Privat area
+Private area
 -----------------------------------------
 
 If you have given consent to the MGnify team to analyse your data for which you have requested a pre-publication confidential hold, you can access the analysis results of those pre-published data sets by using your private area. You can simply access this area by clicking on the 'Login' button, which you will find on the top right hand side of any page (see Figure 12 below).
