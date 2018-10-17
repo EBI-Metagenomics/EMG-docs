@@ -4,14 +4,14 @@ Guides and Tutorials
 ====================
 
 ---------------------------------
-EBI Metagenomics online tutorials
+MGnify online tutorials
 ---------------------------------
 
-A number of online tutorials relating to EBI Metagenomics are available:
+A number of online tutorials relating to MGnify are available:
 
-`EBI Metagenomics portal: Quick tour <https://www.ebi.ac.uk/training/online/course/ebi-metagenomics-portal-quick-tour>`_
+`MGnify portal: Quick tour <https://www.ebi.ac.uk/training/online/course/ebi-metagenomics-portal-quick-tour>`_
  
-`EBI Metagenomics portal: Submitting metagenomics data to the ENA <https://www.ebi.ac.uk/training/online/course/ebi-metagenomics-portal-submitting-metagenomics-da>`_
+`MGnify portal: Submitting metagenomics data to the ENA <https://www.ebi.ac.uk/training/online/course/ebi-metagenomics-portal-submitting-metagenomics-da>`_
 
 -----------------
 ENA online guides

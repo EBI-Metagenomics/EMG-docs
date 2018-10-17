@@ -5,7 +5,7 @@ FAQs
 
 What kind of sequence data does the service accept?
 ---------------------------------------------------
-EBI Metagenomics accepts sequencing data from a wide range of platforms, including Roche 454, Illumina and Ion Torrent. In addition to analysis of whole-genome shotgun (WGS) sequenced metagenomic and metatranscriptomic samples, it also provides analysis of 16S ribosomal RNA (rRNA) amplicon data. If you would like to submit Oxford Nanopore sequences, we suggest you `contact us <metagenomics-help@ebi.ac.uk>`_ prior to submission.
+MGnify accepts sequencing data from a wide range of platforms, including Roche 454, Illumina and Ion Torrent. In addition to analysis of whole-genome shotgun (WGS) assemblies, sequenced metagenomic and metatranscriptomic samples, it also provides analysis of 16S ribosomal RNA (rRNA) amplicon data. If you would like to submit Oxford Nanopore sequences, we suggest you `contact us <metagenomics-help@ebi.ac.uk>`_ prior to submission.
 
 Can I submit assembled metagenomic sequences for analysis?
 ----------------------------------------------------------
@@ -17,7 +17,7 @@ At the present moment, the pipeline does not provide taxonomic analysis of 18S r
 
 Can I submit viral sequences?
 -----------------------------
-Although EBI Metagenomics does not currently provide taxonomic analysis of viral sequences, any reads submitted to the pipeline that encode predicted protein coding sequences (pCDS) undergo functional analysis using InterPro. Therefore, while no taxonomic data will be returned for viral sequences, it should be possible to obtain functional analysis results.
+Although MGnify does not currently provide taxonomic analysis of viral sequences, any reads submitted to the pipeline that encode predicted protein coding sequences (pCDS) undergo functional analysis using InterPro. Therefore, while no taxonomic data will be returned for viral sequences, it should be possible to obtain functional analysis results.
 
 How do I run a BLAST search against the metagenomics datasets?
 --------------------------------------------------------------
@@ -33,7 +33,8 @@ We aim to analyze submitted data as quickly as possible. However, submitted data
 
 I have submitted my data - how do I trigger the analysis?
 ---------------------------------------------------------
-There is no manual way to trigger analysis. If you have provided `access agreement <https://www.ebi.ac.uk/metagenomics/submission>`_ for EBI Metagenomics, we will pick up your sequences from ENA automatically and queue them for analysis. 
+There is no manual way to trigger analysis. If you have provided `access agreement <https://www.ebi.ac.uk/metagenomics/submission>`_ for MGnify, we will pick up your sequences from ENA automatically and queue them for analysis. 
+Access agreements previously provided to EBI Metagenomics will apply to MGnify.
 
 Do you have an API?
 -------------------
@@ -41,7 +42,7 @@ Yes, we do. In the beginning of December 2017 we have released a first version o
 
 How can I download several sets of data?
 ----------------------------------------
-While our API is currently not supporting this, we have Python scripts allowing users to automatically download most processed files from the EBI Metagenomics website. The scripts and instructions for bulk downloading from the latter resource can be found `here <https://github.com/ProteinsWebTeam/ebi-metagenomics/wiki/Downloading-results-programmatically>`_. 
+While our API is currently not supporting this, we have Python scripts allowing users to automatically download most processed files from the MGnify website. The scripts and instructions for bulk downloading from the latter resource can be found `here <https://github.com/ProteinsWebTeam/ebi-metagenomics/wiki/Downloading-results-programmatically>`_. 
 
 How can I bulk download metadata?
 -----------------------------------
@@ -53,11 +54,11 @@ It is possible to analyse data sets with different versions of our analysis pipe
 
 Can I request that a dataset is analyzed if I am not the original submitter?
 ----------------------------------------------------------------------------
-We are currently working through the analysis of all publicly available metagenomic datasets in ENA, so if there is a publicly available study that you would like to see analysed in EBI Metagenomics, please get in touch and we will prioritise it.
+We are currently working through the analysis of all publicly available metagenomic datasets in ENA, so if there is a publicly available study that you would like to see analysed in MGnify, please get in touch and we will prioritise it.
 
-Can I request my data to not be analyzed by EBI Metagenomics?
+Can I request my data to not be analyzed by MGnify?
 -------------------------------------------------------------
-We can only access private data for analysis if you gave us agreement to do so. If, for any reasons, you do not want EBI Metagenomics to analyze one of your datasets, please `contact us <metagenomics-help@ebi.ac.uk>`_ .
+We can only access private data for analysis if you gave us agreement to do so. If, for any reasons, you do not want MGnify to analyze one of your datasets, please `contact us <metagenomics-help@ebi.ac.uk>`_ .
 If your data are public in ENA, then we can access them for analysis in any case.
 
 Can I compare the taxonomic assignments between runs of a project?
