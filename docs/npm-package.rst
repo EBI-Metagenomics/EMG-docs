@@ -8,6 +8,8 @@ The MGnify npm JS package is an AMD module which can be built into to retrieve a
 
 Current npm package version is **0.5.2**
 
+To develop using this package, please use wwwdev.ebi.ac.uk as the API domain name. For production uses, please contact metagenomics-help@ebi.ac.uk to get your domain whitelisted.
+
 Installation
 ^^^^^^^^^^^^
 -----------
