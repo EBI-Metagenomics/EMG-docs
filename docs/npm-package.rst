@@ -150,8 +150,8 @@ Retrieve a list of analyses of assemblies for a run by run accession
 
 
 
-Analysis
---------
+Analysis data
+-------------
 Retrieve an analysis by accession
 
 .. raw:: html
@@ -245,7 +245,7 @@ Nucleotide position histogram
     <script async src="https://jsfiddle.net/mgnify_ebi/4stdgrpm/embed/"></script>
 
 
-Interpro match pie chart
+InterPro match pie chart
 ------------------------
 
 .. raw:: html

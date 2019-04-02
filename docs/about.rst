@@ -38,7 +38,7 @@ If you find this resource useful, please consider citing the following publicati
 -------
 Contact
 -------
-If you would like to get in touch, please contact us using the `helpdesk <metagenomics-help@ebi.ac.uk>`_. We will respond as quickly as possible, but please bear in mind that we do not have a member of staff dedicated to running the helpesk service.
+If you would like to get in touch, please contact us using the `helpdesk <metagenomics-help@ebi.ac.uk>`_. We will respond as quickly as possible, but please bear in mind that we do not have a member of staff dedicated to running the helpdesk service.
 
    **Please, check our** :ref:`FAQ <faq>` **prior to contacting us.**
 

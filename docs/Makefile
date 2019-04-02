@@ -46,6 +46,7 @@ help:
 	@echo "  linkcheck  to check all external links for integrity"
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
 	@echo "  coverage   to run coverage check of the documentation (if enabled)"
+	@echo "  spelling  to check for typos in documentation"
 
 .PHONY: clean
 clean:
@@ -208,6 +209,13 @@ xml:
 	$(SPHINXBUILD) -b xml $(ALLSPHINXOPTS) $(BUILDDIR)/xml
 	@echo
 	@echo "Build finished. The XML files are in $(BUILDDIR)/xml."
+
+.SPELLING: spelling
+spelling:
+	$(SPHINXBUILD) -b spelling -W $(ALLSPHINXOPTS) $(BUILDDIR)/spelling
+	@echo
+	@echo "Check finished. Wrong words can be found in " \
+	      "$(BUILDDIR)/spelling/output.txt."
 
 .PHONY: pseudoxml
 pseudoxml:

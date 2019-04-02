@@ -7,9 +7,9 @@ With the rapid expansion in the number of datasets deposited in MGnify, it has b
 access to the data for cross-database complex queries.
 
 
---------
-Overview
---------
+------------
+API Overview
+------------
 
 
 Current version

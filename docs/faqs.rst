@@ -70,7 +70,7 @@ The 'OTUs, reads and taxonomic assignments.tsv' can be directly imported into  `
 
 Can I know which bacteria encodes particular pCDS in my dataset?
 ----------------------------------------------------------------
-The short answer is that it is generally not possible. The reason is that we annotate directly the reads and select the reads containing 16S for taxonomy assignments. The protein prediction is then performed on all reads after masking the tRNA and rRNA sequences. To link a predicted protein to a taxonomic assignments, the protein-coding gene would need to be on the same read than the annotated 16S sequence. It is possible to check if this is the case using the sequence headers from the 'Interpro matches.tsv' and 'Reads encoding 16S rRNA.fasta' files, both available on the 'Download' for each run.
+The short answer is that it is generally not possible. The reason is that we annotate directly the reads and select the reads containing 16S for taxonomy assignments. The protein prediction is then performed on all reads after masking the tRNA and rRNA sequences. To link a predicted protein to a taxonomic assignments, the protein-coding gene would need to be on the same read than the annotated 16S sequence. It is possible to check if this is the case using the sequence headers from the 'InterPro matches.tsv' and 'Reads encoding 16S rRNA.fasta' files, both available on the 'Download' for each run.
 The same answer applies to assembly although, depending on the contig length, more protein-coding genes may be located near a 16S rRNA genes.
 
 

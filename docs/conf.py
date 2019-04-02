@@ -33,6 +33,17 @@ extensions = [
     'sphinx.ext.autosectionlabel'
 ]
 
+if 'spelling' in sys.argv:
+    extensions.append("sphinxcontrib.spelling")
+
+# Spelling language.
+spelling_lang = 'en_GB'
+
+# Location of word list.
+spelling_word_list_filename = 'spelling_whitelist.txt'
+
+spelling_ignore_pypi_package_names = True
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
