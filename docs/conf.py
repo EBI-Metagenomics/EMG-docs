@@ -40,7 +40,7 @@ if 'spelling' in sys.argv:
 spelling_lang = 'en_GB'
 
 # Location of word list.
-spelling_word_list_filename = 'spelling_wordlist'
+spelling_word_list_filename = 'spelling_whitelist.txt'
 
 spelling_ignore_pypi_package_names = True
 

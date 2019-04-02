@@ -212,10 +212,10 @@ xml:
 
 .SPELLING: spelling
 spelling:
-	$(SPHINXBUILD) -b spelling $(ALLSPHINXOPTS) $(BUILDDIR)/spelling
+	$(SPHINXBUILD) -b spelling -W $(ALLSPHINXOPTS) $(BUILDDIR)/spelling
 	@echo
 	@echo "Check finished. Wrong words can be found in " \
-	      "_build/spelling/output.txt."
+	      "$(BUILDDIR)/spelling/output.txt."
 
 .PHONY: pseudoxml
 pseudoxml:
