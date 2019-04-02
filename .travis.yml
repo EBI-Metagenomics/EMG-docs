@@ -7,11 +7,17 @@ python:
 
 install:
   - pip install -r requirements.txt
+  - pip install -r test_requirements.txt
 
 script:
   - cd docs
-  - make html linkcheck
+  - make html linkcheck spelling
 
 notifications:
   slack:
     secure: wDL4MT5U1dehaBezkBAx2T2pALOzBS/eCdPeP7vcIKR9tprjgnbMo93h+FrbZ0xMbml4kGVYgPKLXEPKSbggnMgE3q8paKDlo85/mhmQ2NmjcviqGEfx5uyi77EjKKrYfLzqS54FBdcEyq2j2UKYx1vKg/uUC5caL+a6zfvGlaz2rNbxZwspveh2FAOzhL5/MEE3HbXSp8plwQMoNYuLu5Y66YYy25fnx6E6fH/ogs6X5rBYEJ5rTv6VwZkCe41sdyFIMQIzSTrG2P6sp5154O5hX8X008z0fwioo5Vuqnh1IFgJuuUmbQyYK20IVigC130gwzXD1vuHhWdspDoCPnvjEdd+tOmghuTa5f2RZHKimlJoVtE6eIUX0bduFKIcN2Yq/n7eLvlTjKL/Xejlaa2sqkUnWuhEG8Ss89UuYINhyh2yH7HxB7+q2v/YBwUCqpIrXEbCA6nTWCEkYX3FUfjjJNSuFZXsYhYdIfHm2fAd230Xv014N/ZUS4nE7kgitiHURYsPWR1NF0Y/rqRg0uclIOOS0m/iqRBmrXy1OGgPPCul3VvB8zDdcgNDFmo8oamSsXADAp+OSJx7nJijh1hkqKaOi7sB4coKVgv91QJhEy//lTTOzZvJSdQG+hZ3R3xzZQvVtCzvhCX7Zyr4L0p9cizKc3+30FrmstlQci4=
+
+addons:
+  apt:
+    packages:
+    - enchant
