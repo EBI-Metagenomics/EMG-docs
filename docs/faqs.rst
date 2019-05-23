@@ -5,23 +5,23 @@ FAQs
 
 What kind of sequence data does the service accept?
 ---------------------------------------------------
-MGnify accepts sequencing data from a wide range of platforms, including Roche 454, Illumina and Ion Torrent. In addition to analysis of whole-genome shotgun (WGS) assemblies, sequenced metagenomic and metatranscriptomic samples, it also provides analysis of 16S ribosomal RNA (rRNA) amplicon data. If you would like to submit Oxford Nanopore sequences, we suggest you `contact us <metagenomics-help@ebi.ac.uk>`_ prior to submission.
+MGnify accepts sequencing data from a wide range of platforms, including Roche 454, Illumina and Ion Torrent. In addition to analysis of whole-genome shotgun (WGS) assemblies, sequenced metagenomic and metatranscriptomic samples, it also provides analysis of 16S and 18S ribosomal RNA (rRNA) amplicon data. If you would like to submit Oxford Nanopore sequences, we suggest you `contact us <metagenomics-help@ebi.ac.uk>`_ prior to submission.
 
 Can I submit assembled metagenomic sequences for analysis?
 ----------------------------------------------------------
 Yes, we welcome submission of assembled data.
 
-Can I submit 18S rRNA or ITS amplicon sequences?
+Can I submit ITS amplicon sequences?
 ------------------------------------------------
-At the present moment, the pipeline does not provide taxonomic analysis of 18S rRNA or ITS sequences, so no meaningful analysis results will be returned for these data sets.
+At the present moment, the pipeline does not provide taxonomic analysis of ITS sequences, so no meaningful analysis results will be returned for these data sets.
 
 Can I submit viral sequences?
 -----------------------------
 Although MGnify does not currently provide taxonomic analysis of viral sequences, any reads submitted to the pipeline that encode predicted protein coding sequences (pCDS) undergo functional analysis using InterPro. Therefore, while no taxonomic data will be returned for viral sequences, it should be possible to obtain functional analysis results.
 
-How do I run a BLAST search against the metagenomics datasets?
---------------------------------------------------------------
-We don't offer BLAST searches against our metagenomic data sets via the web site. We do not have the resources to offer this service, owing to the size of the data. If you wish to perform such an analysis, You would will need to download the data locally and index it for BLAST. We do provide `scripts <https://github.com/ProteinsWebTeam/ebi-metagenomics/wiki/Downloading-results-programmatically>`_ for bulk download of results files, which may prove useful.
+How do I run a sequene search against the metagenomics datasets?
+----------------------------------------------------------------
+We do offer HMMer searches against our metagenomic protein database via the web site `sequence search facility <https://www.ebi.ac.uk/metagenomics/sequence-search/search/phmmer>`_.
 
 Can I change the release date of my project?
 --------------------------------------------
