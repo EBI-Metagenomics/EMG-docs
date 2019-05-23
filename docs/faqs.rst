@@ -20,7 +20,7 @@ Can I submit viral sequences?
 Although MGnify does not currently provide taxonomic analysis of viral sequences, any reads submitted to the pipeline that encode predicted protein coding sequences (pCDS) undergo functional analysis using InterPro. Therefore, while no taxonomic data will be returned for viral sequences, it should be possible to obtain functional analysis results.
 
 How do I run a sequence search against the metagenomics datasets?
-----------------------------------------------------------------
+-----------------------------------------------------------------
 We offer HMMER searches against our metagenomic protein database via the web site `sequence search facility <https://www.ebi.ac.uk/metagenomics/sequence-search/search/phmmer>`_.
 
 Can I change the release date of my project?
