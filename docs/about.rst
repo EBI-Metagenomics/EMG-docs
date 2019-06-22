@@ -12,7 +12,7 @@ MGnify resource was previously known as EBI Metagenomics, but was rebranded to r
 What does MGnify offer
 --------------------------------
 **Standards-compliant data**
-    The service provides submission tools that help ensure sequence data and metadata comply with the European Nucleotide Archive (ENA) data schemes and the Genomic Standards Consortium (`GSC <http://gensc.org>`_) metadata guidelines, allowing harmonisation of analysis efforts across the wider genomics community.
+    The service provides submission tools that help ensure sequence data and metadata comply with the European Nucleotide Archive (ENA) data schemes and the Genomic Standards Consortium (`GSC <https://press3.mcs.anl.gov/gensc/>`_) metadata guidelines, allowing harmonisation of analysis efforts across the wider genomics community.
 **Powerful analysis**
     The service provides powerful taxonomic and functional analysis of sequence data. Functional analysis results can be summarized and compared using Gene Ontology (`GO <http://geneontology.org>`_) terms.
 **Data Archiving**
