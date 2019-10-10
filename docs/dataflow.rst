@@ -10,7 +10,7 @@ The graph below summarize the MGnify data flow from submission to :term:`analysi
 
 **(1) Submissions are handled by the** `European Nucleotide Archive (ENA) <https://www.ebi.ac.uk/ena/>`_ **and therefore users have to have an ENA** `Webin account <https://www.ebi.ac.uk/ena/submit/sra/>`_.
 
-   In addition, users submitting private data have to provide an expressed agreement that MGnify can access their data for analysis, as described under `Submit data <https://www.ebi.ac.uk/metagenomics/submission>`_. Otherwise, we will not be able to access their data. MGnify will, of course, handle these data confidentially.
+   In addition, users submitting private data have to provide an expressed agreement that MGnify can access their data for analysis, as described under `Submit data <https://www.ebi.ac.uk/metagenomics/submit>`_. Otherwise, we will not be able to access their data. MGnify will, of course, handle these data confidentially.
 
 **(2) Access to the** `ENA submission page <https://www.ebi.ac.uk/ena/submit/sra/>`_ **requires login in using a registered email address or a Webin identifier (Webin-XXXX).**
 

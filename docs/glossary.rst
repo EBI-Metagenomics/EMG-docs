@@ -28,7 +28,7 @@ Glossary
 
 
     Go Term
-        A defined vocabulary term to represent the functional attributes of a protein. Fine by the the `Gene Ontology <http://www.geneontology.org/>`_ initiative, GO terms are organised hierarchically to unambiguously define the biological process, precise molecular function and cellular location of a protein.
+        A defined vocabulary term to represent the functional attributes of a protein. Fine by the the `Gene Ontology <http://geneontology.org/>`_ initiative, GO terms are organised hierarchically to unambiguously define the biological process, precise molecular function and cellular location of a protein.
 
 
     Go slim

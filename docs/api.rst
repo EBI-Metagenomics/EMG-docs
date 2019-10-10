@@ -330,7 +330,7 @@ The API supports Cross Origin Resource Sharing (CORS) for AJAX requests from any
 Examples
 --------
 
-Hands-on tutorial of basic Python API client scripts are available on https://github.com/EBI-Metagenomics/emgapi-examples/blob/master/emgapi/examples/notebook/answers/ANSWER_examples.ipynb
+Hands-on tutorial of basic Python API client scripts are available on https://github.com/EBI-Metagenomics/examples/blob/master/emgapi/examples/notebook/answers/ANSWER_examples.ipynb
 
 
 -------------------------
