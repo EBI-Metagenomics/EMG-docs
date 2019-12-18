@@ -40,15 +40,13 @@ Updates to databases and software include:
 Amplicon
 ------------------
 
-Version 5.0 performs taxonomic profiling of large, small subunit ribosomal ribonucleic acid (LSU and SSU rRNA) genes and additionally ITS regions. ITS1 and ITS2 reside between the LSU and SSU genes and are targeted for accurate classification of eukaryotic organisms.
-ITS Taxonomy is assigned via two reference databases: `ITSoneDB <https://academic.oup.com/nar/article/46/D1/D127/4210943>`_  (v.1.138) containing ITS1 sequences and
-`UNITE <https://academic.oup.com/nar/article/47/D1/D259/5146189>`_ (v8.0) containing ITS1 and ITS2 sequences. Both databases have an 8-level taxonomy, encompassing a a wide range of eukaryotic organisms with focus on fungal sequences.
+Amplicon Reads are merged with SeqPrep and filtered with an updated version of Trimmomatic. This filters sequences with a low average quality score and less than 100bp in length. An additional Biopython filtering step removes reads with greater than 10% ambiguous bases.
+`Infernal <http://europepmc.org/abstract/MED/24008419>`_ (running in hmm-only mode) uses a library of ribosomal RNA hidden Markov models from `Rfam <http://europepmc.org/articles/PMC4383904>`_ 12.2 to accurately identify both large and small subunit (:term:`LSU and SSU<LSU, SSU>`) ribosomal ribonucleic acid genes. The families found in the following clans: CL00111 (SSU) and CL00112 (LSU) are used by Infernal.
+The reads are assigned taxonomy with `MAPSeq <https://www.biorxiv.org/content/10.1101/126953v1>`_ version 1.2.3, which offers fast and accurate classification of reads, and provides corresponding confidence scores for assignment at each taxonomic level.
 
-Amplicon Reads are merged SeqPrep and filtered with an updated version of Trimmomatic, to filter sequences <100bp in length and remove reads with a low average quality score. An additional biopython filtering step removes reads with >10% ambiguous bases.
-`Infernal <http://europepmc.org/abstract/MED/24008419>`_ (running in hmm-only mode) uses a library of ribosomal RNA hidden Markov models from `Rfam <http://europepmc.org/articles/PMC4383904>`_ 12.2 to accurately identification of both large and small subunit (:term:`LSU and SSU<LSU, SSU>`) ribosomal ribonucleic acid genes. To identify those we use the families found in the following clans: CL00111 (SSU) and CL00112 (LSU).
-These regions are masked prior to ITS classification, minimising cross reactivity.
-
-`MAPSeq <https://www.biorxiv.org/content/10.1101/126953v1>`_ version 1.2.3, offers fast and accurate classification of reads, and provides corresponding confidence scores for assignment at each taxonomic level.
+MGnify Version 5.0 performs taxonomic profiling of large, small subunit ribosomal ribonucleic acid (LSU and SSU rRNA) genes and additionally ITS regions. ITS1 and ITS2 reside between the LSU and SSU genes and are targeted for accurate classification of eukaryotic organisms.
+ITS Taxonomy is assigned via two reference databases: `ITSoneDB <https://academic.oup.com/nar/article/46/D1/D127/4210943>`_  v.1.138 containing ITS1 sequences and `UNITE <https://academic.oup.com/nar/article/47/D1/D259/5146189>`_ v8.0 containing ITS1 and ITS2 sequences. Both databases have an 8-level taxonomy, encompassing a a wide range of eukaryotic organisms with focus on fungal sequences.
+The SSU and LSU regions are masked prior to ITS classification, minimising cross reactivity.
 
 .. figure:: images/pipeline_v5.0_amplicon.png
    :scale: 50 %
@@ -60,14 +58,12 @@ Raw Reads
 ------------------
 
 Metagenomic and metatranscriptomic raw reads undergo the same preparation, quality control and rRNA classification described for the amplicon workflow.
-Various other non-coding RNAs (ncRNAs) are also identified with infernal and available as downloadable files. Families found in the following clans are used to do this: CL00001, CL00002, CL00003.
-Supplementary taxonomic classification based on marker gene profiling is performed using `mOTUs2 <https://www.nature.com/articles/s41467-019-08844-4>`_ on quality controlled reads.
+Additional non-coding RNAs (ncRNAs) are also identified with Infernal in this pipeline. Families found in the following clans are used to do this: CL00001 (tRNA), CL00002 (RNAse) and CL00003 (SRP).
+Supplementary taxonomic classification based on marker gene profiling, is performed using `mOTUs2 <https://www.nature.com/articles/s41467-019-08844-4>`_ on quality controlled reads.
 
-FragGeneScan identified predicted coding sequences (pCDS) with masked rRNAs.
-Coding sequences are assigned protein annotations from five member databases, with an updated version of InterProScan. Gene ontology terms are extracted from the InterProScan results and grouped by similar functional process.
-Additionally, HMMER assigns KEGG orthologs to predicted coding sequences.
-Pfam annotations are now provided as separate visualisations and downloads.
-
+The rRNAs are masked, and FragGeneScan is used to predict coding sequences (pCDS).
+Coding sequences are assigned protein annotations from five member databases, with an updated version of InterProScan. Gene ontology terms are extracted from the InterProScan results and grouped by similar functional process. The Pfam annotations are now provided as separate visualisations and downloads.
+A new feature assigns and KEGG orthologs to the pCDS with HMMERSEARCH.
 
 Protein Signatures - InterProScan
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -99,9 +95,9 @@ As part of the metagenomic analysis pipeline, GO terms for molecular function, b
 
 KEGG Orthology
 ^^^^^^^^^^^^^^
-`The KEGG orthology database <https://academic.oup.com/nar/article/44/D1/D457/2502600>`_ (KO) contains groups of protein sequences mapped to a high level functional annotation.
-A HMMSEARCH against the `KOfam <https://www.biorxiv.org/content/10.1101/602110v1>`_ library; a database of profile HMMs generated for the group of protein sequences in each KO, assigns KO.
-Version 5.0 includes a visualised and downloadable summary of the top KEGG orthologs identified in the pCDS.
+`The KEGG orthology (KO) database <https://academic.oup.com/nar/article/44/D1/D457/2502600>`_ contains groups of orthologous genes which link to a high level functional pathways.
+KO identifiers are assigned with a HMMSEARCH against the `KOfam <https://www.biorxiv.org/content/10.1101/602110v1>`_ library; a database of profile HMMs generated for the group of genes in each KO.
+This is a new annotation offered with this version of the analysis pipeline and the top 10 KO matches are visualised on the website.
 
 .. figure:: images/pipeline_v5.0_raw.png
    :scale: 50 %
@@ -112,7 +108,7 @@ Version 5.0 includes a visualised and downloadable summary of the top KEGG ortho
 Assembly
 -----------------
 
-The functional annotation and taxonomy for assemblies is an extension of those performed for raw reads.
+The functional annotation and taxonomy for assemblies is an extension of those performed for raw reads. 
 
 Quality control and filtering are performed at a different length threshold of 500 nucleotides per contig.
 Coding sequences are predicted with an in house script utilising both Prodigal and FragGeneScan.
