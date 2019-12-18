@@ -25,12 +25,17 @@ Funding
 -------
 MGnify was initiated with funding from EMBL. It continues to be developed with EMBL support and funding gratefully received from the Biotechnology and Biological Sciences Research Council (BBSRC grant BB/M011755/1) and [ELIXIR GRANT INFO]. It previously received funding from BBSRC grant BB/I02612X/1 and the EU's Seventh Framework Programme for Research (FP7 grant MICROB3).
 
-
 -----------
 How to cite
 -----------
 If you find this resource useful, please consider citing the following publication:
 
+MGnify v5.0
+| `MGnify: the microbiome analysis resource in 2020. <https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkz1035/5614179>`_
+| A Mitchell,  A Almeida,  M Beracochea,  M Boland, J Burgin,  G Cochrane,  M R Crusoe,  V Kale,  S C Potter, L J Richardson,  E Sakharova,  M Scheremetjew, A Korobeynikov,  A Shlemov,  O Kunyavskaya,  A Lapidus, R D Finn.
+| **Nucleic Acids Research** (2019)
+
+MGnify v4.1
 | `EBI Metagenomics in 2017: enriching the analysis of microbial communities, from sequence reads to assemblies. <https://academic.oup.com/nar/article/46/D1/D726/4561650>`_
 | A Mitchell, M Scheremetjew, H Denise, S Potter, A Tarkowska, M Qureshi, G A Salazar, S Pesseat, M A Boland, F M I Hunter, P ten Hoopen, B Alako, C Amid, D J Wilkinson, T P Curtis, G Cochrane, R D Finn.
 | **Nucleic Acids Research** (2017) Database Issue 46:D726–D735. `10.1093/nar/gkx967 (PDF) <https://academic.oup.com/nar/article-pdf/46/D1/D726/23162872/gkx967.pdf>`_

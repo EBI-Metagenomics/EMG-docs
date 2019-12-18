@@ -43,25 +43,71 @@ Finding functional information about runs on the MGnify website
 
 Functional analysis of runs within projects on the `MGnify website <https://www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Functional Analysis' tab found toward the top of any run page (see Figure 4 below). Note that this tab will be greyed for amplicon runs that have no functional results.
 
-.. image:: images/Func_1.PNG
+.. image:: images/Func_1.PNG (this image needs changing! Once bar graphs are changed!)
 
-**Figure 4**. A Functional analysis tab can be found towards the top of each run page. Selecting this tab brings up a page displaying sequence features ('number of reads with predicted CDS (pCDS)', 'number of reads with predicted RNA', 'number of reads with InterPro matches', 'number of pCDS' and 'number of pCDS with InterPro match').
+**Figure 4**. A Functional analysis tab can be found towards the top of each run page. Selecting this tab brings up a page displaying sequence features ('Predicted CDS', 'Contigs with predicted CDS' and 'Contigs with predicted rRNA')
 
-Below this first bar chart, two other charts display the InterPro match information and GO term annotation for the run, as shown in Figure 5A and 5B below.
+Below this first bar chart, there are 4 tabs with different types of functional annotation:
 
 **A**
 
-.. image:: images/Func_2.png
+.. image:: images/Func1-v5.png
 
 **B**
 
-.. image:: images/Func_3.PNG
+.. image:: images/Func2-v5.png
 
-**Figure 5**. Functional analysis of metagenomics data, as shown on the MGnify website. A) InterPro match information for the predicted coding sequences in the run is shown. The number of InterPro matches are displayed graphically, and as a table that has a text search facility.  B) The GO terms predicted for the sample are displayed. Different graphical representations are available, and can be selected by clicking on the ‘Switch view’ icons.
+**C**
+
+.. image:: images/Func3-v5.png
+
+**D**
+
+.. image:: images/Func4-v5.png
+
+**Figure 5**. Functional analysis of metagenomics data, as shown on the MGnify website. A) InterPro match information for the predicted coding sequences in the run is shown. The number of InterPro matches are displayed graphically, and as a table that has a text search facility.  B) The GO terms predicted for the sample are displayed. Different graphical representations are available, and can be selected by clicking on the ‘Switch view’ icons. C) A table of Pfam matches for predicted coding sequences with a bar graph showing the top 10 Pfam hits. D) A table of KEGG ortholog matches for predicted coding sequences with a bar graph showing the top 10 KEGG ortholog hits.
 
 The Gene Ontology terms displayed graphically on the web site have been 'slimmed' with a special :term:`Go slim` developed for metagenomic data sets. GO slims are cut-down versions of the Gene Ontology, containing a subset of the terms in the whole GO. They give a broad overview of the ontology content without the detail of the specific fine-grained terms.
- 
+
 The full data sets used to generate both the :term:`InterPro` and GO overview charts, along with a host of additional data and intermediate files (processed reads, pCDS, reads encoding RNA and taxonomic analysis  results) can be downloaded for further analysis by clicking the Download tab, found towards the top of the page (see complete description here: `Files available to download on the MGnify website`_)
+
+-------------------------------------------------------------------------
+Finding pathways/systems information about runs on the MGnify website
+-------------------------------------------------------------------------
+
+Pathway and systems annotation of runs within projects on the `MGnify website <https://www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Pathways/Systems' tab found toward the top of any run page. Note that this tab will only be accessible for assembly analysis.
+
+There are 3 types of pathways and systems annotations:
+
+**A**
+
+.. image:: images/Path1-v5.png
+
+**B**
+
+.. image:: images/Path2-v5.png
+
+**C**
+
+.. image:: images/Path3-v5.png
+
+**Figure 6**. Annotation of potential pathways and high order system classification, as shown on the MGnify website. A) A table and bar graph of KEGG modules derived from KEGG orthologs, with pathway completeness values. B) An expandable list of present Genome Properties derived from InterProScan outputs. C) A table of antiSMASH hits with a bar graph showing the top 10 hits.
+
+------------------------------------------------------------------------
+Viewing functional annotation per contig
+------------------------------------------------------------------------
+
+This feature is available for assembly analysis only and can be found in the tab 'Contig Viewer'.
+
+**A**
+
+.. image:: images/Contig1-v5.png
+
+**B**
+
+.. image:: images/Contig2-v5.png
+
+**Figure 8**. Interactive contig viewer for an in depth functional annotation per contig. A) Main page contains table of contigs with annotations, length and coverage. Text search bars and tickboxes allow users to search for particular functional annotations. B) Hover over each coding sequence to see functional annotation with external links, and protein length for that region.
 
 ------------------------------------------------------------------------
 Finding taxonomic information about runs on the MGnify website
@@ -71,7 +117,7 @@ Taxonomic analysis of runs within projects on the `MGnify website <https://www.e
 
 .. image:: images/taxonomy.PNG
 
-**Figure 7**. A 'Taxonomic analysis' tab can be found towards the top of each run page. Selecting this tab brings up a page displaying the taxonomic results displayed as a interactive `_Krona plot <https://github.com/marbl/Krona/wiki>`__. 
+**Figure 7**. A 'Taxonomic analysis' tab can be found towards the top of each run page. Selecting this tab brings up a page displaying the taxonomic results displayed as a interactive `_Krona plot <https://github.com/marbl/Krona/wiki>`__.
 
 The taxonomic analysis results are displayed as Krona plot. This feature allows users to explore their taxonomic results and to zoom in on a particular taxonomic level by double clicking on it. The corresponding distribution charts are displayed on the right hand side of the panel.
 
@@ -87,34 +133,32 @@ MGnify analysis pipeline produces a number of files underlying the charts displa
 
 .. image:: images/Download_1.png
 
-**Figure 8**. The Download tab is organised in 3 sections: ‘Sequence data’, ‘Functional analysis’ (not available in the case of amplicon runs)  and ‘Taxonomic analysis’.
+**Figure 8**. The Download tab is organised in 3 sections: ‘Sequence data’, ‘Functional analysis’ (not available in the case of amplicon runs), 'Pathways and Systems' (available only for assemblies), ‘Taxonomic analysis SSU’, 'Taxonomic analysis LSU', 'Taxonomic analysis ITS' (available for amplicon only) and 'non-coding RNAs' (will only exist if any non coding RNAs are identified).
 
-Some of the files, particularly the sequence files in FASTA format, can be large. To facilitate their download process, these files are compressed with `GZIP <https://en.wikipedia.org/wiki/Gzip>`_ and when too large to be easily transferable, chunked in manageable size. If it is the case for your runs, please download all chunks, decompress them and concatenate them to reconstitute the full files.
+Some of the files, particularly the sequence files in FASTA format, can be large. To facilitate their download process, these files are compressed with `GZIP <https://en.wikipedia.org/wiki/Gzip>`_ and when too large to be easily transferable, chunked in manageable size. If it is the case for your runs, please download all chunks, decompress them and concatenate them to reconstitute the full files. Please ensure the chunks are concatenated in the correct order as headers will be in the first chunked file.
 
 Description of fasta files available to download
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-- Processed nucleotide reads: this file contains all reads having passed the quality control (QC) step.
-- Processed reads with pCDS: this file contains all processed reads having having predicted CDS(s) (pCDS). The CDS prediction is performed using `FragGenScan <http://omics.informatics.indiana.edu/FragGeneScan>`_ on the reads having passed the QC after masking of predicted rRNA and tRNA.
-- Processed reads with annotation: this file contains all processed reads containing pCDS(s) annotated by `InterProScan <https://www.ebi.ac.uk/interpro/interproscan.html>`_.
-- Processed reads without annotation: this file contains all processed reads having pCDS(s) not annotated by InterProScan
-- Predicted CDS with annotation : this file contains all the predicted proteins having been annotated by InterProScan. The sequence headers are: <run_id>_<start of pCDS>_<end of pCDS>_<strand of pCDS><space><InterPro term>/<member database ID>/<start of hit in predicted protein>-<end of hit in predicted protein>.
-- Predicted CDS without annotation: this file contains all the predicted proteins not annotated by InterProScan. The sequence headers are <run_id>_<start of pCDS>_<end of pCDS>_<strand of pCDS>.
-- Predicted ORF without annotation: this file contains all the pCDS coding for predicted proteins that were not annotated by InterProScan. The sequence headers are <run_id>_<start of pCDS>_<end of pCDS>_<strand of pCDS>.
-- Predicted tRNAs: this file contains all the sequences predicted to encode tRNAs. The prediction was done using models from `Rfam <http://rfam.xfam.org>`_ with `HMMER tools <http://hmmer.org>`_.
-- Reads encoding 5S rRNA: this file contains all reads predicted to encode for 5S rRNA by rRNASelector.
-- Reads encoding 16S rRNA: this file contains all reads predicted to encode for 16S rRNA by rRNASelector.
-- Reads encoding 23S rRNA: this file contains all reads predicted to encode for 23S rRNA by rRNASelector.
+- Processed nucleotide reads OR Processed contigs: this file contains all reads/contigs having passed the quality control (QC) step.
+- Predicted CDS: this file contains protein sequences having predicted CDS(s) (pCDS). The CDS prediction is performed using `FragGenScan <http://omics.informatics.indiana.edu/FragGeneScan>`_ and Prodigal on the reads having passed the QC after masking of predicted rRNA and tRNA.
+- Predicted ORF: this file contains nucleotide sequences having pCDS.
 
 Description of functional annotation files available to download
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-- InterPro matches file:  it is a tab-delimited file containing 15 columns. They are fully described `here <https://github.com/ebi-pf-team/interproscan/wiki/OutputFormats>`_
+- InterPro matches: A tab-delimited file containing 15 columns. They are fully described `here <https://github.com/ebi-pf-team/interproscan/wiki/OutputFormats>`_
+- Pfam annotation: summary of Pfam annotations and their frequencies.
 - Complete GO annotation file: it is a comma-separated file containing 4 columns. The first column lists the GO terms (labelled GO:XXXXXXX) having been associated with the predicted CDSs. The second gives the GO term description while the third indicates which category the GO term belong to. There is 3 category: ‘biological process’ (higher biological process such as ‘rRNA modification’) , ‘molecular function’ (individual catalytic activity such as ‘mannosyltransferase activity’) and ‘cellular component’ (cellular localisation of the activity such as ‘mitochondrion’). The last column give the number of predicted CDSs having been annotated with the GO terms for the run.
 - GO slim annotation file: this file is derived from the 'Complete GO annotation file' and has the same format. The GO slim set is a cut-down version of the GO terms containing a subset of the terms in the whole GO. They give a broad overview of the ontology content without the details of the specific fine grained terms. Go slim terms are used for visualisation on the website. To illustrate how the GO slim terms relates to the GO terms, the different metal binding GO terms present in the ‘Complete GO annotation’ file are summarized as one generic metal binding term in the ‘GO slim annotation’ file. The last column give the number of predicted CDSs having been annotated with the GO slim terms for the run.
+- Diamond annotation: a tab-delimited file containing 16 columns. The columns show taxonomic annotation of protein sequences.
+- KEGG orthologues annotation: summary of KEGG ortholog annotations and their frequencies.
 
 Description of taxonomic assignment files available to download
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-- :term:`OTUs<OTU>`, reads and taxonomic assignments files: these  files contain the same data presented in 3 different format : tab-separated file (TSV) and two Biom file (HDF5 and JSON). The TSV file contains 3 columns which headers are in the second line of the file. The first column is the OTU Id. The second column indicates the number of predicted 16S sequences associated with each OTU. The third column contains the taxonomic lineages provided by `GreenGenes database <http://greengenes.lbl.gov/Download/>`_. Note that the number of unannotated 16S sequences is not indicated in this file. This file can be directly imported into `Megan6 <http://ab.inf.uni-tuebingen.de/software/megan6/>`_ for visualisation and further analysis. The OTU id can be compared between runs for version 2 and 3 of the pipeline as they have been generated using `Qiime closed-reference protocol <http://qiime.org/tutorials/otu_picking.html>`_.The Biom files are `computer-readable files <http://biom-format.org>`_. The HDF5 (Hierachical Data Format) format can be imported into analysis and visualisation tools such as Matlab and R. A larger number of commercial and freely available tools, such as MEGAN6, can consume the JavaScript Object Notation (JSON) format.
-- Phylogenetic tree (Newick format)’ file (only available up to version 3 of MGnify pipeline): this file can be used to visualise the hierarchical distribution of the taxonomic lineages of each run. The `Newick format <https://en.wikipedia.org/wiki/Newick_format>`_ is a computer-readable format to represent the tree and can be directly imported into freely-available viewers such as `FigTree <https://beast.community/figtree>`_ and `ITOL (interactive Tree of Life) <https://itol.embl.de/>`_.
+
+- Reads encoding...: these file contains all reads predicted to encode for LSU, SSU, ITS or any other non-coding RNAs (ncRNAs). LSU, SSU and ncRNAS are predicted with Infernal. ITS have LSU and SSU sequences masked.
+- MAPseq assignments: this file contains the output from mapseq - a taxonomic assignment for each input sequence.
+- NEED TO ADD THIS TO DOWNLOAD SECTION!!! - Taxonomic assignments (TSV): this file contains one ‘Taxonomy’ column followed by the frequency of it's annotation. This file can be directly imported into `Megan6 <http://ab.inf.uni-tuebingen.de/software/megan6/>`_ for visualisation and further analysis.
+- OTUs, counts and taxonomic assignments - two files for each type of rRNA or ITS database. These contain the same taxonomic information as the TSV files in JSON and HDF5 formats. The Biom files are `computer-readable files <http://biom-format.org>`_. The HDF5 (Hierachical Data Format) format can be imported into analysis and visualisation tools such as Matlab and R. A larger number of commercial and freely available tools, such as MEGAN6, can consume the JavaScript Object Notation (JSON) format.
 
 -------------
 Summary files
@@ -124,17 +168,6 @@ In addition to the output files for individual runs, described above, MGnify pro
 .. image:: images/summary.PNG
 
 **Figure 9**. The 'Analysis summary' tab is organised in 2 sections: ‘Functional analysis for the project’ and ‘Taxonomic analysis for the project’ (the former is not available in the case of amplicon runs).
-
-functional summary files
-^^^^^^^^^^^^^^^^^^^^^^^^
-- InterPro matches(TSV): this tab-separated file contains 2 designation columns followed by a column for each valid runs of the project. The first column lists the InterPro terms having been associated to the predicted CDSs. The second column gives the description of the InterPro terms. All columns labelled with a run identifier present the number of predicted CDSs having been annotated with each InterPro terms for this run.
-- Complete GO annotation (TSV): this file contains 3 designation columns followed by a column for each valid runs of the project. The first column lists the GO terms (labelled GO:XXXXXXX) having been associated to the predicted CDSs. The second column gives the GO term description while the third column indicates which category the GO term belong to. All columns labelled with a run identifier present the number of predicted CDSs having been annotated with each GO terms for this run.
-- The ‘GO slim annotation (TSV)’ file is derived from the ‘Complete GO annotation’ file and has the same format. The GO slim term set is a cut-down version of the GO terms containing a subset of the terms in the whole GO. They give a broad overview of the ontology content without the detail of the specific fine grained terms. 
-
-taxonomy summary files
-^^^^^^^^^^^^^^^^^^^^^^
-- Taxonomic assignments (TSV): this file contains one ‘Taxonomy’ column followed by a column for each valid runs of the project. The ‘Taxonomy’ column list the taxonomic lineages having been associated with the predicted 16S sequences. All columns labelled with a run identifier present the number of predicted 16S sequences having been annotated with the taxonomic lineages for this run. This file can be directly imported into `Megan6 <http://ab.inf.uni-tuebingen.de/software/megan6/>`_ for visualisation and further analysis.
-- The ‘Phylum level taxonomies (TSV)’ file is derived from the ‘Taxonomic assignments’ file and presents the assignments brought up to ‘phylum’ level in order to give a high level view of the taxonomic assignments. The two first columns of this file present the ‘kingdom’ and ‘phylum’ level assignments, respectively. All columns labelled with a run identifier present the number of predicted 16S sequences having been annotated with the ‘phylum’ level taxonomic lineages for this run.
 
 -----------------------------------------
 Data discovery on MGnify portal

@@ -10,7 +10,7 @@ Landing page
 The sequence search (accessed by following the 'Sequence search' link from menu bar)
 provides a search against a catalogue of predicted peptides.
 
-.. figure:: images/sequence_search_landing.png
+.. figure:: images/sequence_search_landing-v5.png
    :scale: 50 %
 
 **Figure 1**. The landing page of the sequence search tool
@@ -29,7 +29,7 @@ obtained from our `FTP server <ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/pe
 
 The search takes a FASTA-formatted amino acid sequence.
 
-.. figure:: images/sequence_search_input_seq.png
+.. figure:: images/sequence_search_input_seq-v5.png
    :scale: 50 %
 
 **Figure 2**. Example of a well-formatted input sequence
@@ -42,7 +42,7 @@ biomes. Sequences
 observed in multiple runs may be found in more than one biome. 'Other'
 sequences are those found in none of the other environment or biome categories.
 
-.. figure:: images/sequence_search_db_select.png
+.. figure:: images/sequence_search_db_select-v5.png
    :scale: 50 %
 
 **Figure 3**. How to select the peptide database to search against
