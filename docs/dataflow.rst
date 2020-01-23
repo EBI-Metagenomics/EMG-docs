@@ -18,7 +18,7 @@ The graph below summarize the MGnify data flow from submission to :term:`analysi
 
    These steps are described in details in the :ref:`ENA online guides`. MGnify is providing a step by step guide to submission (:ref:`MGnify online tutorials`. Please also check our :ref:`FAQs <faq>`.
 
-   *Note that all queries concerning data submission should be directed to* `ENA dedicated help desk <mailto:datasubs@ebi.ac.uk>`_
+   *Note that all queries concerning data submission should be directed to* `ENA dedicated help desk <https://www.ebi.ac.uk/ena/browser/support>`_
 
    Following completion of these two steps, and after data validation by ENA, we will be able to access the submitted data and they will be queued for analysis (more details about our :ref:`Analysis pipeline <analysis>`).
 
