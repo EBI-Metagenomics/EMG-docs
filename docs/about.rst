@@ -14,7 +14,7 @@ What does MGnify offer
 --------------------------------
 **Powerful analysis**
    MGnify offers multiple analysis pipelines that are tailored according to input data (amplicon, raw read or assembly), providing (where appropriate) detailed taxonomic and functional analysis of microbiome sequence data.
-**Access to an extensive selection of analysed data
+**Access to an extensive selection of analysed data**
    MGnify houses a vast repository of analysed microbiome datasets, processed using standardized pipelines and workflows, allowing analyses to be placed in context with other studies from similar environments.
 **Programmatic access to analysed data**
     In addition to visualisations available from the website and downloadable results files, MGnify analyses can be queried and retrieved via a RESTful API, giving full programmatic access to the data.
