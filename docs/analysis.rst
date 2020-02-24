@@ -60,7 +60,7 @@ Amplicon reads are merged with SeqPrep (where appropriate) and filtered with Tri
 MGnify can also provide analysis of ITS amplicons. ITS1 and ITS2 reside between the LSU and SSU genes and can be targeted for accurate classification of eukaryotic organisms. ITS taxonomy is assigned by MAPseq using two reference databases: `ITSoneDB <https://academic.oup.com/nar/article/46/D1/D127/4210943>`_  containing ITS1 sequences and `UNITE <https://academic.oup.com/nar/article/47/D1/D259/5146189>`_ containing ITS1 and ITS2 sequences. The SSU and LSU regions are masked using Rfam, as described above, prior to ITS classification, minimising cross reactivity.
 
 .. figure:: images/pipeline_v5.0_amplicon.png
-   :scale: 50 %
+   :scale: 30 %
 
 **Figure 1**. Overview of the main steps in the amplicon workflow.
 
