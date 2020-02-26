@@ -9,9 +9,7 @@ Overview
 
 The latest MGnify analysis service (version 5.0) offers specialised workflows for three different data types: amplicon, raw metagenomic/metatranscriptomic reads, and assemblies. Each workflow is defined in common workflow language (`CWL <https://figshare.com/articles/Common_Workflow_Language_draft_3/3115156/2>`_). (`MGnify v5.0 CWL repository <https://github.com/EBI-Metagenomics/pipeline-v5>`_)
 
-The following processing steps and analyses are performed:
-
-.. list-table:: Software, Databases and Versions used by MGnify:
+.. list-table:: Software, Databases and Versions used by MGnify to perform analyses:
   :widths: 15, 10, 20, 5, 5, 5
   :stub-columns: 2
 
