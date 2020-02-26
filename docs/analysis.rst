@@ -31,7 +31,7 @@ The following processing steps and analyses are performed:
 
 .. list-table:: Software, Databases and Versions used by MGnify
   :widths: 15, 10, 20
-  :stub-columns: 1
+  :stub-columns: 2
 
   * - **Tool/Database**
     - **Version**
@@ -87,7 +87,7 @@ The following processing steps and analyses are performed:
   * - HMMER
     - *v3.2.1*
     - KEGG Ortholog prediction
-  * - modified version of KOfam
+  * - KOfam - a modified version
     - *2019-04-06 (based on KEGG 90.0)*
     - KEGG Ortholog prediction
   * - KEGG and in-house scripts
@@ -115,7 +115,7 @@ The following processing steps and analyses are performed:
     - *v2019_11*
     - Protein sequence-based taxonomic analysis
 
-All databases are available from an `ftp link <ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/pipeline-5.0/ref-dbs>`_
+All databases are available from an `FTP link <ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/pipeline-5.0/ref-dbs>`_
 
 ---------------------------
 Amplicon analysis pipeline
