@@ -50,9 +50,36 @@ The software, versions and databases used by MGnify are:
 
 All databases are available from an `ftp link <ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/pipeline-5.0/ref-dbs>`_
 
-------------------
+
+.. list-table:: Software, Databases and Versions
+  :widths: 15 10 20
+
+  * - Tool/Database
+    - Version
+    - Purpose
+  * - SeqPrep
+    - v1.2
+    - Paired end merging
+  * - Trimmomatic
+    - v0.36
+    - Quality control
+  * - Biopython
+    - v1.74
+    - Quality control
+  * - bedtools
+    - v2.28.0
+    - Sequence extraction
+  * - Easel
+    - v0.45h
+    - Sequence extraction
+  * - Infernal
+    - v1.1.2
+    - RNA prediction
+
+
+---------------------------
 Amplicon analysis pipeline
-------------------
+---------------------------
 
 Amplicon reads are merged with SeqPrep (where appropriate) and filtered with Trimmomatic to trim sequence regions with an average Phred 33 quality score less than 15 in a sliding window of 4 base pairs. This is followed by removal of reads less than 100bp in length. An additional Biopython filtering step removes reads with more than 10% ambiguous bases.
 `Infernal <http://europepmc.org/abstract/MED/24008419>`_ (running in hmm-only mode) using a library of ribosomal RNA hidden Markov models from `Rfam <http://europepmc.org/articles/PMC4383904>`_ is run to identify LSU and SSU sequences, using families found in the following clans: CL00111 (SSU) and CL00112 (LSU). Theses are undergo taxonomic classification using the `SILVA <https://academic.oup.com/nar/article/41/D1/D590/1069277>`_ database in conjunction with `MAPSeq <https://academic.oup.com/bioinformatics/article/33/23/3808/4082276>`_  which offers fast and accurate classification of reads, and provides corresponding confidence scores for assignment at each taxonomic level.
@@ -64,9 +91,9 @@ MGnify can also provide analysis of ITS amplicons. ITS1 and ITS2 reside between 
 
 **Figure 1**. Overview of the main steps in the amplicon workflow.
 
-------------------
+----------------------------
 Raw reads analysis pipeline
-------------------
+----------------------------
 
 Metagenomic and metatranscriptomic raw reads undergo merging, quality control and SSU/LSU based taxonomic analysis, as described for the amplicon pipeline above.
 Additional non-coding RNAs (ncRNAs) are identified with Infernal, using families from the following Rfam clans: CL00001 (tRNA), CL00002 (RNAse) and CL00003 (SRP).
@@ -80,9 +107,9 @@ For functional analysis, the sequence regions encoding rRNAs are masked, and `Fr
 **Figure 2**. Overview of the main steps in the raw reads workflow.
 
 
------------------
+---------------------------
 Assembly analysis pipeline
------------------
+---------------------------
 
 Users can request assembly of their own raw sequencing reads, or publicly available datasets, using the ‘Request analysis’ section of the `MGnify home page <https://www.ebi.ac.uk/metagenomics/>`_ Users own raw reads (with host sequences removed) must be archived in ENA before submitting an assembly request. The sequences then undergo quality control, as well as a precautionary additional host contamination removal process (where applicable) with bwa-mem. `metaSPAdes <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5411777/>`_ is used for assembly of paired end reads and `SPAdes <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3342519/>`_ for single reads. Alternatively, pre-assembled datasets, including those produced using other assembly algorithms, can be analysed. Quality control for assemblies is based on sequence length, with contigs less than 500 nucleotides removed from the analysis process.
 
