@@ -5,7 +5,7 @@ FAQs
 
 What kind of sequence data does the service accept?
 ---------------------------------------------------
-MGnify accepts sequencing data from a wide range of platforms, including Roche 454, Illumina and Ion Torrent. In addition to analysis of whole-genome shotgun (WGS) assemblies, sequenced metagenomic and metatranscriptomic samples, it also provides analysis of 16S and 18S ribosomal RNA (rRNA) amplicon data. If you would like to submit Oxford Nanopore sequences, we suggest you `contact us <metagenomics-help@ebi.ac.uk>`_ prior to submission.
+MGnify accepts sequencing data from a wide range of platforms, including Roche 454, Illumina and Ion Torrent. In addition to analysis of whole-genome shotgun (WGS) assemblies, sequenced metagenomic and metatranscriptomic samples, it also provides analysis of 16S and 18S ribosomal RNA (rRNA) amplicon data. We do not currently support analysis of long read data. We are in the process of expanding our assembly pipeline to make this available to users in the future.
 
 Can I submit assembled metagenomic sequences for analysis?
 ----------------------------------------------------------
@@ -13,11 +13,11 @@ Yes, we welcome submission of assembled data.
 
 Can I submit ITS amplicon sequences?
 ------------------------------------
-At the present moment, the pipeline does not provide taxonomic analysis of ITS sequences, so no meaningful analysis results will be returned for these data sets.
+The v5.0 analysis pipeline classifies ITS sequences for amplicon studies based on two databases: UNITE and ITSoneDB
 
 Can I submit viral sequences?
 -----------------------------
-Although MGnify does not currently provide taxonomic analysis of viral sequences, any reads submitted to the pipeline that encode predicted protein coding sequences (pCDS) undergo functional analysis using InterPro. Therefore, while no taxonomic data will be returned for viral sequences, it should be possible to obtain functional analysis results.
+Although MGnify does not currently provide taxonomic analysis of viral sequences, any reads submitted to the pipeline that encode predicted protein coding sequences (pCDS) undergo functional analysis using InterPro. Therefore, while no taxonomic data will be returned for viral sequences, it should be possible to obtain functional analysis results. We hope to make specific viral analysis available in the near future.
 
 How do I run a sequence search against the metagenomics datasets?
 -----------------------------------------------------------------
@@ -33,16 +33,16 @@ We aim to analyze submitted data as quickly as possible. However, submitted data
 
 I have submitted my data - how do I trigger the analysis?
 ---------------------------------------------------------
-There is no manual way to trigger analysis. If you have provided `access agreement <https://www.ebi.ac.uk/metagenomics/submit>`_ for MGnify, we will pick up your sequences from ENA automatically and queue them for analysis. 
+There is no manual way to trigger analysis. If you have provided `access agreement <https://www.ebi.ac.uk/metagenomics/submit>`_ for MGnify, we will pick up your sequences from ENA automatically and queue them for analysis.
 Access agreements previously provided to EBI Metagenomics will apply to MGnify.
 
 Do you have an API?
 -------------------
-Yes, we do. In the beginning of December 2017 we have released a first version of our new :ref:`RESTful API <restapi>`, which provides a rich search and retrieval interface for programmatic access to our data.
+Yes, we do. In the beginning of December 2017 we released the first version of our new :ref:`RESTful API <restapi>`, which provides a rich search and retrieval interface for programmatic access to our data.
 
 How can I download several sets of data?
 ----------------------------------------
-While our API is currently not supporting this, we have Python scripts allowing users to automatically download most processed files from the MGnify website. The scripts and instructions for bulk downloading from the latter resource can be found `here <https://github.com/ProteinsWebTeam/ebi-metagenomics/wiki/Downloading-results-programmatically>`_. 
+While our API is currently not supporting this, we have Python scripts allowing users to automatically download most processed files from the MGnify website. The scripts and instructions for bulk downloading from the latter resource can be found `here <https://github.com/ProteinsWebTeam/ebi-metagenomics/wiki/Downloading-results-programmatically>`_.
 
 How can I bulk download metadata?
 -----------------------------------
@@ -50,7 +50,7 @@ It is possible to access all the metadata associated with projects, samples and 
 
 How can I re-analyse my data with a different version of the pipeline?
 ----------------------------------------------------------------------
-It is possible to analyse data sets with different versions of our analysis pipeline. The original analyses are not deleted and are available side by side on our web site. Users interested in having data re-analysed should `contact <metagenomics-help@ebi.ac.uk>`_ us.
+It is possible to analyse data sets with different versions of our analysis pipeline. The original analyses are not deleted and are available side by side on our website. Users interested in having data re-analysed should `contact <metagenomics-help@ebi.ac.uk>`_ us.
 
 Can I request that a dataset is analyzed if I am not the original submitter?
 ----------------------------------------------------------------------------
@@ -58,12 +58,12 @@ We are currently working through the analysis of all publicly available metageno
 
 Can I request my data to not be analyzed by MGnify?
 -------------------------------------------------------------
-We can only access private data for analysis if you gave us agreement to do so. If, for any reasons, you do not want MGnify to analyze one of your datasets, please `contact us <metagenomics-help@ebi.ac.uk>`_ .
-If your data are public in ENA, then we can access them for analysis in any case.
+We can only access private data for analysis if you gave us agreement to do so. If, for any reason, you do not want MGnify to analyze one of your datasets, please `contact us <metagenomics-help@ebi.ac.uk>`_ .
+If your data is public in ENA, we are able to analyse this data without restriction.
 
 Can I compare the taxonomic assignments between runs of a project?
 -------------------------------------------------------------------
-The current version of the comparison tool let you only compare the GO annotations for runs of the same project. We are currently working on extending the functionality to taxonomy but this is not yet ready for release.
+The current version of the comparison tool lets you only compare the GO annotations for runs of the same project. We are currently working on extending the functionality to taxonomy but this is not yet ready for release.
 In the meantime, please have a look at the summary files provided on the project page. They summarized the counts per feature across the runs and provide an easy way to identify patterns.
 
 The 'OTUs, reads and taxonomic assignments.tsv' can be directly imported into  `Megan 6 <http://ab.inf.uni-tuebingen.de/software/megan6/>`_ to perform comparison and visualisation. The Biom format can also be imported into third-party tools.
@@ -72,5 +72,3 @@ Can I know which bacteria encodes particular pCDS in my dataset?
 ----------------------------------------------------------------
 The short answer is that it is generally not possible. The reason is that we annotate directly the reads and select the reads containing small subunit rRNA and large subunit rRNA for taxonomy assignments. The protein prediction is then performed on all reads after masking the tRNA and rRNA sequences. To link a predicted protein to a taxonomic assignments, the protein-coding gene would need to be on the same read as the annotated SSU/LSU sequence. It is possible to check if this is the case using the sequence headers from the 'InterPro matches.tsv' and 'Reads encoding SSU/LSU rRNA.fasta' files, both available on the 'Download' for each run.
 The same answer applies to assembly although, depending on the contig length, more protein-coding genes may be located near a 16S rRNA genes.
-
-

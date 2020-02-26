@@ -7,7 +7,7 @@ About
 The MGnify service
 ----------------------------
 
-MGnify is a freely available hub for the analysis and exploration of :term:`metagenomic`, :term:`metatranscriptomic`, :term:`amplicon` and :term:`assembly` data. The resource provides rich functional and taxonomic analyses of user-submitted sequences, as well as analysis of publicly available metagenomic datasets held within the European Nucleotide Archive (`ENA <https://www.ebi.ac.uk/ena>`_). The MGnify resource was previously known as EBI Metagenomics, but was rebranded in 2018 to reflect its growing remit.
+MGnify is a freely available hub for the analysis and exploration of :term:`metagenomic`, :term:`metatranscriptomic`, :term:`amplicon` and :term:`assembly` data. The resource provides rich functional and taxonomic analyses of user-submitted sequences, as well as analysis of publicly available metagenomic datasets held within the European Nucleotide Archive (`ENA <https://www.ebi.ac.uk/ena>`_). The MGnify resource was previously known as EBI Metagenomics, but was re-branded in 2018 to reflect its growing remit.
 
 --------------------------------
 What does MGnify offer
@@ -39,7 +39,7 @@ How to cite
 If you find this resource useful, please consider citing the following publication:
 
 MGnify v5.0
-| `MGnify: the microbiome analysis resource in 2020. Doi: 10.1093/nar/gkz1035<https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkz1035/5614179>`_
+| `MGnify: the microbiome analysis resource in 2020. Doi: 10.1093/nar/gkz1035 <https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkz1035/5614179>`_
 | A Mitchell,  A Almeida,  M Beracochea,  M Boland, J Burgin,  G Cochrane,  M R Crusoe,  V Kale,  S C Potter, L J Richardson,  E Sakharova,  M Scheremetjew, A Korobeynikov,  A Shlemov,  O Kunyavskaya,  A Lapidus, R D Finn.
 | **Nucleic Acids Res** 48(D1):D570-D578 (2020).
 
@@ -48,12 +48,12 @@ Contact
 -------
 If you would like to get in touch, please contact us using the `helpdesk <metagenomics-help@ebi.ac.uk>`_. We will respond as quickly as possible, but bear in mind that we do not have a member of staff dedicated to running the helpdesk service.
 
-   **Please, check our** :ref:`FAQ <faq>` **prior to contacting us.**
+   **Please, check our** :ref:`FAQs <faq>`. **prior to contacting us.**
 
-If your questions relate to submission of sequence data and/or metadata, please contact the (`ENA helpdesk<https://www.ebi.ac.uk/ena/browser/support>`_) who are responsible for this providing the submission services.
+If your questions relate to submission of sequence data and/or metadata, please contact the (`ENA helpdesk <https://www.ebi.ac.uk/ena/browser/support>`_) who are responsible for this providing the submission services.
 
--------
+-----------------
 News and updates
--------
+-----------------
 
 If you would like to keep up to date with developments with MGnify, please follow us on Twitter (`@MGnifyDB <https://twitter.com/MGnifyDB>`_).

@@ -219,7 +219,7 @@ Retrieve a list of studies related to a publication
 Data display
 --------------
 
-The following section list examples of how to load data analysis charts seen on the MGnify website.
+The following section lists examples of how to load data analysis charts seen on the MGnify website.
 
 QC chart
 --------
@@ -269,9 +269,9 @@ Reads GC Distribution & GC/AT content
     <script async src="https://jsfiddle.net/mgnify_ebi/xgw1e43a/embed/"></script>
 
 
-Go Term charts
+GO Term charts
 --------------
-The following chart can also be loaded in bar chart form using the GoTermBarChart class.
+The following chart can also be loaded in bar chart form using the GOTermBarChart class.
 
 .. raw:: html
 

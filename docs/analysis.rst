@@ -29,53 +29,93 @@ The following processing steps and analyses are performed:
 * antiSMASH annotation of biosynthetic gene clusters  (assemblies only)
 * eggNOG functional annotations (assemblies only).
 
+.. list-table:: Software, Databases and Versions used by MGnify
+  :widths: 15, 10, 20
+  :stub-columns: 1
 
-The software, versions and databases used by MGnify are:
-
-* Paired end merging - SeqPrep v1.2
-* Quality control - Trimmomatic v0.36, Biopython v1.74
-* Sequence extraction:  bedtools v2.28.0, Easel v0.45h
-* RNA prediction - Infernal v1.1.2, Rfam v13.0
-* SSU/LSU taxonomic analysis - MAPseq v1.2.3, SILVA release 132
-* ITS taxonomic analysis - MAPseq v1.2.3, ITSoneDB v1.138, UNITE v8.0
-* Taxonomic analysis visualisation - Kronatools v2.7.1, biom-format-2.1.6
-* Phylogenetic marker gene profiling - mOTUs2 v2.5.1
-* Protein sequence-based taxonomic analysis - DIAMOND v0.9.25.126, UniRef90 v2019_11
-* Coding sequence prediction - FragGeneScan v1.20, Prodigal v2.6.3
-* Protein function annotation - InterProScan v75.0, eggNOG v4.5.1, eggNOG-mapper v1.0.3
-* KEGG Ortholog prediction - HMMER v3.2.1, modified version of KOfam 2019-04-06 (based on KEGG 90.0)
-* KEGG module prediction - KEGG 90.0 and in-house scripts
-* Systems and pathways annotation - Genome Properties v2.0.1
-* Secondary metabolite biosynthetic gene cluster annotation - antiSMASH v.4.2.0
-
-All databases are available from an `ftp link <ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/pipeline-5.0/ref-dbs>`_
-
-
-.. list-table:: Software, Databases and Versions
-  :widths: 15 10 20
-
-  * - Tool/Database
-    - Version
-    - Purpose
+  * - **Tool/Database**
+    - **Version**
+    - **Purpose**
   * - SeqPrep
-    - v1.2
+    - *v1.2*
     - Paired end merging
   * - Trimmomatic
-    - v0.36
+    - *v0.36*
     - Quality control
   * - Biopython
-    - v1.74
+    - *v1.74*
     - Quality control
   * - bedtools
-    - v2.28.0
+    - *v2.28.0*
     - Sequence extraction
   * - Easel
-    - v0.45h
+    - *v0.45h*
     - Sequence extraction
   * - Infernal
-    - v1.1.2
+    - *v1.1.2*
     - RNA prediction
+  * - Rfam
+    - *v13.0*
+    - RNA prediction
+  * - MAPseq
+    - *v1.2.3*
+    - RNA prediction and ITS taxonomic analysis
+  * - Kronatools
+    - *v2.7.1*
+    - Visualisation of taxonomic analyses
+  * - biom-format
+    - *v2.1.6*
+    - Formatting of taxonomic analyses
+  * - mOTUs2
+    - *v2.5.1*
+    - Phylogenetic marker gene profiling
+  * - FragGeneScan
+    - *v1.20*
+    - Coding sequence prediction
+  * - Prodigal
+    - *v2.6.3*
+    - Coding sequence prediction
+  * - InterProScan
+    - *v75.0*
+    - Protein function annotation
+  * - eggNOG
+    - *v4.5.1*
+    - Protein function annotation
+  * - eggNOG-mapper
+    - *v1.0.3*
+    - Protein function annotation
+  * - HMMER
+    - *v3.2.1*
+    - KEGG Ortholog prediction
+  * - modified version of KOfam
+    - *2019-04-06 (based on KEGG 90.0)*
+    - KEGG Ortholog prediction
+  * - KEGG and in-house scripts
+    - *90.0*
+    - KEGG module prediction
+  * - Genome Properties
+    - *v2.0.1*
+    - Systems and pathways annotation
+  * - antiSMASH
+    - *v.4.2.0*
+    - Secondary metabolite biosynthetic gene cluster annotation
+  * - SILVA
+    - *release 132*
+    - SSU/LSU rRNA taxonomy
+  * - ITSoneDB
+    - *v1.138*
+    - ITS taxonomy
+  * - UNITE
+    - *v8.0*
+    - ITS taxonomy
+  * - DIAMOND
+    - *v0.9.25.126*
+    - Protein sequence-based taxonomic analysis
+  * - UniRef90
+    - *v2019_11*
+    - Protein sequence-based taxonomic analysis
 
+All databases are available from an `ftp link <ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/pipeline-5.0/ref-dbs>`_
 
 ---------------------------
 Amplicon analysis pipeline
