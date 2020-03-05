@@ -84,15 +84,15 @@ Glossary
 
 
     Pan-genome
-        The entire set of genes (core and accessory) within a species
+        The entire set of genes (core and accessory) within a species.
 
 
     KEGG
-        Kyoto Encyclopedia of Genes and Genomes - a collection of databases used to assign high level functional and pathway annotations
+        Kyoto Encyclopedia of Genes and Genomes - a collection of databases used to assign high level functional and pathway annotations.
 
 
     COG
-        Cluster of Orthologous Groups of proteins - a database of groups of proteins inferred by orthology
+        Cluster of Orthologous Groups of proteins - a database of groups of proteins inferred by orthology.
 
 
     ITS
