@@ -77,3 +77,25 @@ Glossary
 
     LSU, SSU
         Clusters of Large and Small Subunit ribosomal RNA genes. LSU comprises 23S (for prokaryotes) and 28S (for eukaryotes) sequences while the SSU represents 16S (for prokaryotes) and 18S (for eukaryotes) sequences.
+
+
+    MAGs
+        Metagenome assembled genomes are binned or de-replicated metagenome assemblies belonging to one taxon.
+
+
+    Pan-genome
+        The entire set of genes (core and accessory) within a species.
+
+
+    KEGG
+        Kyoto Encyclopedia of Genes and Genomes - a collection of databases used to assign high level functional and pathway annotations.
+
+
+    COG
+        Cluster of Orthologous Groups of proteins - a database of groups of proteins inferred by orthology.
+
+
+    ITS
+        The internal transcribed spacer are regions situated between the :term:`LSU and SSU<LSU, SSU>` genes.
+
+
