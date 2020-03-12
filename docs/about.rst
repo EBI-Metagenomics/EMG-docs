@@ -37,7 +37,7 @@ How to cite
 If you find this resource useful, please consider citing the following publication:
 
 MGnify v5.0
-| `MGnify: the microbiome analysis resource in 2020. Doi: 10.1093/nar/gkz1035 <https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkz1035/5614179>`_
+| `MGnify: the microbiome analysis resource in 2020. Doi: 10.1093/nar/gkz1035 <https://academic.oup.com/nar/article/48/D1/D570/5614179>`_
 | A Mitchell,  A Almeida,  M Beracochea,  M Boland, J Burgin,  G Cochrane,  M R Crusoe,  V Kale,  S C Potter, L J Richardson,  E Sakharova,  M Scheremetjew, A Korobeynikov,  A Shlemov,  O Kunyavskaya,  A Lapidus, R D Finn.
 | **Nucleic Acids Res** 48(D1):D570-D578 (2020).
 

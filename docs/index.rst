@@ -19,7 +19,7 @@ MGnify documentation
    api
    npm-package
    sequence-search
-   genomes
+   genome-viewer
    tutorials
    faqs
    glossary

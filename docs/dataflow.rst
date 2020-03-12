@@ -16,7 +16,7 @@ The graph below summarize the MGnify data flow from submission to :term:`analysi
 
 **(3 and 4): upload and submission.**
 
-  These steps are described in detail in the :ref:`ENA online guides`. The :ref:`MGnify online tutorials` provide a step by step guide to submission. Please also check our :ref:`FAQs <faq>`.
+  These steps are described in detail in the :ref:`ENA online guides`. The :ref:`MGnify and EMBL-EBI online tutorials` provide a step by step guide to submission. Please also check our :ref:`FAQs <faq>`.
 
   *Note that all queries concerning data submission should be directed to* `ENA dedicated help desk <https://www.ebi.ac.uk/ena/browser/support>`_
 

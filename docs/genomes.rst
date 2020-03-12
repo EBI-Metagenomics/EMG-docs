@@ -1,4 +1,4 @@
-.. _genomes:
+.. _genome-viewer:
 
 
 MGnify Genomes
@@ -42,7 +42,7 @@ The page header details the genome type and a full GTDB lineage assigned with `G
 `Infernal <http://europepmc.org/abstract/MED/24008419>`_ is used to screen for presence of ribosomal RNAs against `Rfam <http://europepmc.org/articles/PMC4383904>`_ covariance models for 5S, 16S and 23S rRNA. Transfer RNAs are identified with `tRNAScan-SE <https://academic.oup.com/nar/article/25/5/955/5133591>`_. These figures are presented in the Genome RNA
 coverage section, as the percentage coverage for each rRNA type and a count of total tRNA and ncRNAs.
 
-:term:`pCDS` are inferred with `Prokka <https://academic.oup.com/bioinformatics/article/30/14/2068/2390517>`_ which uses `Prodigal <https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-119>`_ . `eggNOG-mapper tool <https://www.biorxiv.org/content/10.1101/076331v1.full>`_ assigns :term:`KEGG` and :term:`COG` annotations against the :term:`pCDS`. InterProScan performs proteins annotations with 5 member databases as described in (link to analysis pipeline page). The proportion of predicted proteins with an :term:`InterPro` or eggNOG annotation are given as a coverage percentage. COG and KEGG annotations are visualised in their respective tabs with the top 10 hits in an interactive bar graph.
+:term:`pCDS<Predicted coding sequences (pCDS)>` are inferred with `Prokka <https://academic.oup.com/bioinformatics/article/30/14/2068/2390517>`_ which uses `Prodigal <https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-119>`_ . `eggNOG-mapper tool <https://www.biorxiv.org/content/10.1101/076331v1.full>`_ assigns :term:`KEGG` and :term:`COG` annotations against the :term:`pCDS`. InterProScan performs proteins annotations with 5 member databases as described in (link to analysis pipeline page). The proportion of predicted proteins with an :term:`InterPro` or eggNOG annotation are given as a coverage percentage. COG and KEGG annotations are visualised in their respective tabs with the top 10 hits in an interactive bar graph.
 
 Additionally, the geographic origin of each genome and links to ENA accessions can be found towards the bottom of this page.
 
