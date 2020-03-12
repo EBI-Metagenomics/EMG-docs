@@ -3,17 +3,14 @@
 
 MGnify Genomes
 ^^^^^^^^^^^^^^^
-------------------
-Landing page
-------------------
+--------------------
+Genomes Landing page
+--------------------
 
 MGnify Genomes (accessed by following the 'Genomes' link from the menu bar)
 provides a detailed interactive view of prokaryotic genomes and their functional annotations.
 
 The ‘Genome list’ tab contains a catalogue of non-redundant isolate and metagenome assembled genomes (:term:`MAGs`). Each accession is a species representative of a cluster of genomes. To constitute a cluster: genomes with completeness greater than 50%, contamination less than 5% and average quality score (completeness - 5*contamination) greater than 50 - calculated with `CheckM, v.1.0.11 <https://genome.cshlp.org/content/25/7/1043?ijkey=a446ec2b6e540d598d39c9253e0fdfbdab52b2f4&keytype2=tf_ipsecsha>`_ are clustered with _`dRep v2.2.4 <https://www.nature.com/articles/ismej2017126>_` using an average nucleotide identity (ANI) cutoff of  ≥95% and an aligned fraction (AF) of ≥30% . The species representative for each cluster is the best quality genome judged by completeness, contamination and the assembly N50 values. Isolate genomes are prioritised over MAGs for a species representative.
-
-A set of assemblies, annotations and :term:`pan-genome<Pan-genome>` results are also available as a separate download and in our
-`FTP server <http://ftp.ebi.ac.uk/pub/databases/metagenomics/mgnify_genomes/>`_.
 
 .. figure:: images/genomes_landing-v5.png
   :scale: 50 %
@@ -27,7 +24,7 @@ The ‘Taxonomy tree’ is a subset of the GTDB taxonomy which can be viewed int
 
 **Figure 2**. GTDB interactive taxonomy tree
 
-The ‘Protein catalogue’ are clusters of all the predicted coding sequences in the genome catalogue. Separate catalogues are generated at different amino acid identity levels (100%, 95%, 90% and 50%) and are available on our `FTP server <ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/mgnify_genomes/>`_
+The ‘Protein catalogue’ are clusters of all the predicted coding sequences in the genome catalogue. Separate catalogues are generated at different amino acid identity levels (100%, 95%, 90% and 50%).
 
 The ‘Search’ tab is a `BItsliced Genomic Signature Index (BIGSI)  <https://www.nature.com/articles/s41587-018-0010-1>`_ based search engine. BIGSI  queries short sequence fragments against the species representative genome catalogue. The table of results provides the user with direct links to the matching genomes. Match statistics are shown as a count and percentage of kmers found. The minimum kmer proportion is set at a default of 0.4 and can be increased or decreased within a range of 0.1-1 with the available toggle.
 
@@ -63,3 +60,6 @@ The ‘Downloads’ tab comprises summary files for all described analysis.
   :scale: 50 %
 
 **Figure 4**. An overview for a species representative MAG, with a pan-genome analysis.
+
+
+A set of assemblies, annotations, :term:`pan-genome<Pan-genome>` results and protein catalogues are available in our `FTP server <http://ftp.ebi.ac.uk/pub/databases/metagenomics/mgnify_genomes/>`_.

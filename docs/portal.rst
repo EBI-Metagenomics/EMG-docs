@@ -36,7 +36,7 @@ Finding functional information about runs on the MGnify website
 
 Functional analysis of runs within projects on the `MGnify website <https://www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Functional Analysis' tab found toward the top of any run page (see Figure 4 below). Note that this tab will be greyed for amplicon runs that have no functional results.
 
-.. image:: images/Func_1.PNG (this image needs changing! Once bar graphs are changed! - The below paragraph also applies)
+.. image:: images/Func_1.PNG
 
 **Figure 4**. A Functional analysis tab can be found towards the top of each run page. Selecting this tab brings up a page displaying sequence features ('Predicted CDS', 'Contigs with predicted CDS' and 'Contigs with predicted rRNA')
 

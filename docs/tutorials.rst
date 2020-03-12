@@ -3,9 +3,9 @@
 Guides and Tutorials
 ====================
 
----------------------------------
+------------------------------------
 MGnify and EMBL-EBI online tutorials
----------------------------------
+------------------------------------
 
 A number of online tutorials relating to MGnify are available:
 
