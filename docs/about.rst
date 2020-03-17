@@ -24,7 +24,7 @@ What does MGnify offer
 -------
 Funding
 -------
-Current funding
+Current funding:
 MGnify currently receives funding support from: the European Union’s Horizon 2020 Research and Innovation programme (817729 and 824087); the Biotechnology and Biological Sciences Research Council (BB/R015228/1, BB/S009043/1 and BB/N018354/1); ELIXIR, the research infrastructure for Life-Science data; and European Molecular Biology Laboratory (EMBL) core funds.
 
 Previous funding:
@@ -54,4 +54,4 @@ If your questions relate to submission of sequence data and/or metadata, please 
 News and updates
 -----------------
 
-If you would like to keep up to date with developments with MGnify, please follow us on Twitter (`@MGnifyDB <https://twitter.com/MGnifyDB>`_).
+If you would like to keep up to date with developments within MGnify, please follow us on Twitter (`@MGnifyDB <https://twitter.com/MGnifyDB>`_).
