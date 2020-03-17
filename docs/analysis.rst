@@ -10,7 +10,7 @@ Overview
 The latest MGnify analysis service (version 5.0) offers specialised workflows for three different data types: :term:`amplicon`, raw :term:`metagenomic`/:term:`metatranscriptomic` reads, and :term:`assembly`. Each workflow is defined in common workflow language (`CWL <https://figshare.com/articles/Common_Workflow_Language_draft_3/3115156/2>`_). (`MGnify v5.0 CWL repository <https://github.com/EBI-Metagenomics/pipeline-v5>`_)
 All databases are available from an `FTP link <ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/pipeline-5.0/ref-dbs>`_
 
-The following processing steps and analyses are performed with :
+The software and databases used for the various processing steps and analyses are listed in the following table.
 
 .. list-table:: Software, Databases and Versions used by MGnify:
   :widths: 15, 10, 20, 5, 5, 5
@@ -187,7 +187,7 @@ The following processing steps and analyses are performed with :
     - Yes
   * - metaSPAdes
     - *3.13*
-    - Assembly of raw reads ( available on request)
+    - Assembly of raw reads (available on request)
     - N/A
     - N/A
     - N/A
@@ -196,8 +196,8 @@ The following processing steps and analyses are performed with :
 Amplicon analysis pipeline
 ---------------------------
 
-Amplicon reads are merged with SeqPrep (where appropriate) and filtered with Trimmomatic to trim sequence regions with an average Phred 33 quality score less than 15 in a sliding window of 4 base pairs. This is followed by removal of reads less than 100bp in length. An additional Biopython filtering step removes reads with more than 10% ambiguous bases.
-`Infernal <http://europepmc.org/abstract/MED/24008419>`_ (running in hmm-only mode) using a library of ribosomal RNA hidden Markov models from `Rfam <http://europepmc.org/articles/PMC4383904>`_ is run to identify large and small subunit ribosomal ribonucleic acid (:term:`LSU and SSU rRNA<LSU, SSU>`) genes, using families found in the following clans: CL00111 (SSU) and CL00112 (LSU). Theses are undergo taxonomic classification using the `SILVA <https://academic.oup.com/nar/article/41/D1/D590/1069277>`_ database in conjunction with `MAPSeq <https://academic.oup.com/bioinformatics/article/33/23/3808/4082276>`_  which offers fast and accurate classification of reads, and provides corresponding confidence scores for assignment at each taxonomic level.
+Amplicon reads are merged with SeqPrep (where appropriate) and filtered with Trimmomatic to trim sequence regions with an average Phred 33 quality score of less than 15 in a sliding window of 4 base pairs. This is followed by removal of reads less than 100bp in length. An additional Biopython filtering step removes reads with more than 10% ambiguous bases.
+`Infernal <http://europepmc.org/abstract/MED/24008419>`_ (running in hmm-only mode) using a library of ribosomal RNA hidden Markov models from `Rfam <http://europepmc.org/articles/PMC4383904>`_ is run to identify large and small subunit ribosomal ribonucleic acid (:term:`LSU and SSU rRNA<LSU, SSU>`) genes, using families found in the following clans: CL00111 (SSU) and CL00112 (LSU). Theses undergo taxonomic classification using the `SILVA <https://academic.oup.com/nar/article/41/D1/D590/1069277>`_ database in conjunction with `MAPSeq <https://academic.oup.com/bioinformatics/article/33/23/3808/4082276>`_  which offers fast and accurate classification of reads, and provides corresponding confidence scores for assignment at each taxonomic level.
 
 MGnify can also provide analysis of ITS (:term:`internal transcribed spacer<ITS>`) amplicons. ITS1 and ITS2 reside between the LSU and SSU genes and can be targeted for accurate classification of eukaryotic organisms. ITS taxonomy is assigned by MAPseq using two reference databases: `ITSoneDB <https://academic.oup.com/nar/article/46/D1/D127/4210943>`_  containing ITS1 sequences and `UNITE <https://academic.oup.com/nar/article/47/D1/D259/5146189>`_ containing ITS1 and ITS2 sequences. The SSU and LSU regions are masked using Rfam, as described above, prior to ITS classification, minimising cross reactivity.
 
@@ -226,12 +226,12 @@ For functional analysis, the sequence regions encoding rRNAs are masked, and `Fr
 Assembly analysis pipeline
 ---------------------------
 
-Users can request assembly of their own raw sequencing reads, or publicly available datasets, using the ‘Request analysis’ section of the `MGnify home page <https://www.ebi.ac.uk/metagenomics/>`_ Users own raw reads (with host sequences removed) must be archived in ENA before submitting an assembly request. The sequences then undergo quality control, as well as a precautionary additional host contamination removal process (where applicable) with bwa-mem. `metaSPAdes <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5411777/>`_ is used for assembly of paired end reads and `SPAdes <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3342519/>`_ for single reads. Alternatively, pre-assembled datasets, including those produced using other assembly algorithms, can be analysed. Quality control for assemblies is based on sequence length, with contigs less than 500 nucleotides removed from the analysis process.
+Users can request assembly of their own raw sequencing reads, or publicly available datasets, using the ‘Request analysis’ section of the `MGnify home page <https://www.ebi.ac.uk/metagenomics/>`_. Users own raw reads (with host sequences removed) must be archived in ENA before submitting an assembly request. The sequences then undergo quality control, as well as a precautionary additional host contamination removal process (where applicable) with bwa-mem. `metaSPAdes <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5411777/>`_ is used for assembly of paired end reads and `SPAdes <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3342519/>`_ for single reads. Alternatively, pre-assembled datasets, including those produced using other assembly algorithms, can be analysed. Quality control for assemblies is based on sequence length, with contigs less than 500 nucleotides removed from the analysis process.
 
 rRNAs are identified and undergo taxonomic analysis as for raw reads above. Sequence regions encoding rRNAs are masked and protein coding sequences are predicted using a combined gene caller that utilises both `Prodigal <https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-119>`_ and FragGeneScan. In addition to rRNA-based taxonomic analyses, `DIAMOND <https://www.nature.com/articles/nmeth.3176>`_ is used to assign taxonomy to protein sequences, based on the top hit to the `UniRef90 <https://academic.oup.com/bioinformatics/article/31./6/926/214968>`_ database.
 
 Protein function is assigned in the form of InterProScan annotations, GO terms, and :term:`KEGG` ortholog predictions, as described for the raw reads analysis pipeline above.
-Additionally, clusters of orthologous groups (:term:`COGs<COG>`) annotations and eggNOG functional descriptions are provided by the `eggNOG-mapper tool <https://www.biorxiv.org/content/10.1101/076331v1.full>`_
+Additionally, clusters of orthologous groups (:term:`COGs<COG>`) annotations and eggNOG functional descriptions are provided by the `eggNOG-mapper tool <https://www.biorxiv.org/content/10.1101/076331v1.full>`_.
 
 KEGG ortholog annotations are further processed to produce KEGG pathway information, including module presence and completeness. Similarly, InterPro annotations for individual protein sequences are amalgamated to generate `Genome Properties <https://academic.oup.com/nar/article/47/D1/D564/5144958>`_ (GP), providing inference of higher level pathways and systems that may be present in the dataset. Finally, `antiSMASH <https://academic.oup.com/nar/article/45/W1/W36/3778252>`_ is used to identify and annotate biosynthetic gene clusters that code for the production of secondary metabolites.
 
