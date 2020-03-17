@@ -13,7 +13,7 @@ Yes, we welcome submission of assembled data.
 
 Can I submit ITS amplicon sequences?
 ------------------------------------
-The v5.0 analysis pipeline classifies ITS sequences for amplicon studies based on two databases: UNITE and ITSoneDB
+Yes, the v5.0 analysis pipeline classifies ITS sequences for amplicon studies based on two databases: UNITE and ITSoneDB
 
 Can I submit viral sequences?
 -----------------------------
@@ -29,7 +29,7 @@ The date of release is set by you during the submission in ENA. If you do not ex
 
 How long will it take for my data to be analyzed?
 -------------------------------------------------
-We aim to analyze submitted data as quickly as possible. However, submitted data are only available to us once they have been validated and archived by ENA. This process takes at least 24 hours, and in some cases several days. Once the sequence files are made available, the analysis time depends on our current analysis backlog, the size and number of runs in the project you have submitted. Most studies will be validated, archived and analysed within one week. If you are concerned that your data is taking a long time to be analysed, please `contact us <metagenomics-help@ebi.ac.uk>`_.
+We aim to analyze submitted data as quickly as possible. However, submitted data are only available to us once they have been validated and archived by ENA. This process takes at least 24 hours, and in some cases several days. Once the sequence files are made available, the analysis time depends on our current analysis backlog, and the size and number of runs in the project you have submitted. Most studies will be validated, archived and analysed within two weeks. If you are concerned that your data is taking a long time to be analysed, please `contact us <metagenomics-help@ebi.ac.uk>`_.
 
 I have submitted my data - how do I trigger the analysis?
 ---------------------------------------------------------
@@ -38,11 +38,11 @@ Access agreements previously provided to EBI Metagenomics will apply to MGnify.
 
 Do you have an API?
 -------------------
-Yes, we do. In the beginning of December 2017 we released the first version of our new :ref:`RESTful API <restapi>`, which provides a rich search and retrieval interface for programmatic access to our data.
+Yes, we do. In December 2017 we released the first version of our new :ref:`RESTful API <restapi>`, which provides a rich search and retrieval interface for programmatic access to our data.
 
-How can I download several sets of data?
+How can I download multiple sets of data?
 ----------------------------------------
-While our API is currently not supporting this, we have Python scripts allowing users to automatically download most processed files from the MGnify website. The scripts and instructions for bulk downloading from the latter resource can be found `here <https://github.com/ProteinsWebTeam/ebi-metagenomics/wiki/Downloading-results-programmatically>`_.
+While our API currently does not support this, we have Python scripts allowing users to automatically download most processed files from the MGnify website. The scripts and instructions for bulk downloading from the resource can be found `here <https://github.com/ProteinsWebTeam/ebi-metagenomics/wiki/Downloading-results-programmatically>`_.
 
 How can I bulk download metadata?
 -----------------------------------
@@ -58,17 +58,17 @@ We are currently working through the analysis of all publicly available metageno
 
 Can I request my data to not be analyzed by MGnify?
 -------------------------------------------------------------
-We can only access private data for analysis if you gave us agreement to do so. If, for any reason, you do not want MGnify to analyze one of your datasets, please `contact us <metagenomics-help@ebi.ac.uk>`_ .
+We can only access private data for analysis if you give us permission to do so. If, for any reason, you do not want MGnify to analyze one of your datasets, please `contact us <metagenomics-help@ebi.ac.uk>`_ .
 If your data is public in ENA, we are able to analyse this data without restriction.
 
 Can I compare the taxonomic assignments between runs of a project?
 -------------------------------------------------------------------
 The current version of the comparison tool lets you only compare the GO annotations for runs of the same project. We are currently working on extending the functionality to taxonomy but this is not yet ready for release.
-In the meantime, please have a look at the summary files provided on the project page. They summarized the counts per feature across the runs and provide an easy way to identify patterns.
+In the meantime, please have a look at the summary files provided on the project page. They summarize the counts per feature across the runs and provide an easy way to identify patterns.
 
 The 'OTUs, reads and taxonomic assignments.tsv' can be directly imported into  `Megan 6 <http://ab.inf.uni-tuebingen.de/software/megan6/>`_ to perform comparison and visualisation. The Biom format can also be imported into third-party tools.
 
 Can I know which bacteria encodes particular pCDS in my dataset?
 ----------------------------------------------------------------
 The short answer is that it is generally not possible. The reason is that we annotate directly the reads and select the reads containing small subunit rRNA and large subunit rRNA for taxonomy assignments. The protein prediction is then performed on all reads after masking the tRNA and rRNA sequences. To link a predicted protein to a taxonomic assignments, the protein-coding gene would need to be on the same read as the annotated SSU/LSU sequence. It is possible to check if this is the case using the sequence headers from the 'InterPro matches.tsv' and 'Reads encoding SSU/LSU rRNA.fasta' files, both available on the 'Download' for each run.
-The same answer applies to assembly although, depending on the contig length, more protein-coding genes may be located near a 16S rRNA genes.
+The same answer applies for assembly. However, depending on the contig length, more protein-coding genes may be located near the 16S rRNA genes.
