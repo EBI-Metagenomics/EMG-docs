@@ -29,9 +29,7 @@ The graph below summarizes the MGnify data flow from submission to :term:`analys
   **Assemblies:**
     The associated sample taxonomy must be in the metagenomic tax tree 408169. Please see the `environmental taxonomy <https://ena-docs.readthedocs.io/en/latest/faq/taxonomy.html#environmental-taxonomic-classifications>`_ guidelines for further details.
   **Raw metagenomic or metatranscriptomic reads:**
-    Same taxonomy guidelines as assemblies apply
-    AND/OR
-    The library source should be either 'METAGENOMIC' or 'METATRANSCRIPTOMIC'. Please see the `library source <https://ena-docs.readthedocs.io/en/latest/submit/reads/webin-cli.html#permitted-values-for-library-source>`_ guidelines for further details.
+    Same taxonomy guidelines as assemblies apply AND/OR the library source should be either 'METAGENOMIC' or 'METATRANSCRIPTOMIC'. Please see the `library source <https://ena-docs.readthedocs.io/en/latest/submit/reads/webin-cli.html#permitted-values-for-library-source>`_ guidelines for further details.
 
 
 **(5) Upon completion of analysis, data will be uploaded on the website**
