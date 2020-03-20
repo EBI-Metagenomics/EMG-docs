@@ -41,7 +41,7 @@ Do you have an API?
 Yes, we do. In December 2017 we released the first version of our new :ref:`RESTful API <restapi>`, which provides a rich search and retrieval interface for programmatic access to our data.
 
 How can I download multiple sets of data?
-----------------------------------------
+------------------------------------------
 While our API currently does not support this, we have Python scripts allowing users to automatically download most processed files from the MGnify website. The scripts and instructions for bulk downloading from the resource can be found `here <https://github.com/ProteinsWebTeam/ebi-metagenomics/wiki/Downloading-results-programmatically>`_.
 
 How can I bulk download metadata?
