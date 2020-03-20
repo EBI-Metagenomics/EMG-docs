@@ -143,7 +143,7 @@ Description of functional annotation files available to download
 
 Description of pathways and systems annotation files available to download
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-- antiSMASH annotation: EMBL flatfile and GenBank formatted filed with annotations per contig.
+- antiSMASH annotation: EMBL flatfile and GenBank formatted files with annotations per contig.
 - Genome Properties annotation: summary of genome properties and and their frequency.
 - KEGG pathway annotation: summary of KEGG modules, pathway names and completeness.
 
