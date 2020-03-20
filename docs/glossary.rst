@@ -20,19 +20,23 @@ Glossary
 
 
     Biome
-        An ecological community type. in MGnify, :term:`biomes<biome>` are organised hierarchically going from large types (such as soil, host-associated or aquatic) to more precise types (such as forest soil, skin or coastal) based on the `GOLD classification <https://gold.jgi.doe.gov/distribution#Classification>`_
+        An ecological community type. In MGnify, :term:`biomes<biome>` are organised hierarchically going from large types (such as soil, host-associated or aquatic) to more precise types (such as forest soil, skin or coastal) based on the `GOLD classification <https://gold.jgi.doe.gov/distribution#Classification>`_.
 
 
     Pipeline
-        A prescribed set of successive steps needed to transform an input (raw reads and contigs for MGnify) into an output with added information (annotated files with taxonomy and functional assignments for MGnify) pipeline tool	a software or script used during the individual step of an analysis pipeline.
+        A prescribed set of successive steps needed to transform an input (raw reads and contigs for MGnify) into an output with added information (annotated files with taxonomy and functional assignments for MGnify) 
+        
+        
+    Pipeline tool	
+        A software or script used during the individual step of an analysis pipeline.
 
 
-    Go Term
-        A defined vocabulary term to represent the functional attributes of a protein. Fine by the the `Gene Ontology <http://geneontology.org/>`_ initiative, GO terms are organised hierarchically to unambiguously define the biological process, precise molecular function and cellular location of a protein.
+    GO term
+        A defined vocabulary term to represent the functional attributes of a protein. Defined by the the `Gene Ontology <http://geneontology.org/>`_ initiative, GO terms are organised hierarchically to unambiguously define the biological process, precise molecular function or cellular location of a protein.
 
 
-    Go slim
-        Go slim terms are cut-down version of the GO hierarchy to be able to give an overview of the functional results. It is used on MGnify website. The GO slim hierarchy lacks the fine granularity of the full GO hierarchy.
+    GO slim
+        A GO slim is a cut-down version of the GO hierarchy to give an overview of the functional results. It is used on MGnify website. The GO slim hierarchy lacks the fine granularity of the full GO hierarchy.
 
 
     InterPro
@@ -40,27 +44,27 @@ Glossary
 
 
     Metagenomic
-        Refer to environmental sample where Whole Genome Shotgun sequencing method have been applied. Analysis will yield taxonomic and functional information.
+        Refers to environmental sample where Whole Genome Shotgun sequencing method has been applied. Analysis will yield taxonomic and functional information.
 
 
     Metatranscriptomic
-        Refer to environmental sample where whole transcriptome sequencing method have been applied. Analysis will yield taxonomic and functional information.
+        Refera to environmental sample where whole transcriptome sequencing method has been applied. Analysis will yield taxonomic and functional information.
 
 
     Amplicon
-        Refer to environmental sample where a marker gene have been amplified and sequenced. On the EMG website, we use the term amplicon when the amplified marker gene is ribosomal RNA gene. Analysis will yield taxonomic information.
+        Refers to environmental sample where a marker gene has been amplified and sequenced. On the EMG website, we use the term amplicon when the amplified marker gene is ribosomal RNA gene. Analysis will yield taxonomic information.
 
 
     Assembly
-        Refer to environmental sample where Whole Genome Shotgun sequencing reads have been assembled to form larger fragments called contigs. Analysis will yield taxonomic and functional information.
+        Refers to environmental sample where Whole Genome Shotgun sequencing reads have been assembled to form larger fragments called contigs. Analysis will yield taxonomic and functional information.
 
 
     Metabarcoding
-        Refer to environmental sample where a marker gene, different from ribosomal RNA gene,  have been amplified and sequenced. Analysis will yield taxonomic information.
+        Refers to environmental sample where a marker gene, different from ribosomal RNA gene, has been amplified and sequenced. Analysis will yield taxonomic information.
 
 
-    Predicted coding sequences (pCDS)
-        Partial or complete gene sequence as predicted by the gene caller (FragGenScan for read submissions, Prodigal and FragGenScan for assembly submissions)
+    Predicted coding sequence (pCDS)
+        Partial or complete gene sequence as predicted by the gene caller (FragGenScan for read submissions, Prodigal and FragGenScan for assembly submissions).
 
 
     16S rRNA genes
@@ -88,7 +92,7 @@ Glossary
 
 
     KEGG
-        Kyoto Encyclopedia of Genes and Genomes - a collection of databases used to assign high level functional and pathway annotations.
+        Kyoto Encyclopedia of Genes and Genomes - a database used to assign high level functional and pathway annotations.
 
 
     COG
@@ -96,6 +100,6 @@ Glossary
 
 
     ITS
-        The internal transcribed spacer are regions situated between the :term:`LSU and SSU<LSU, SSU>` genes.
+        The internal transcribed spacers are regions situated between the :term:`LSU and SSU<LSU, SSU>` genes.
 
 

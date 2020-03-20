@@ -4,7 +4,7 @@
 MGnify Genomes
 ^^^^^^^^^^^^^^^
 --------------------
-Genomes Landing page
+Genomes landing page
 --------------------
 
 MGnify Genomes (accessed by following the 'Genomes' link from the menu bar)
@@ -24,9 +24,9 @@ The ‘Taxonomy tree’ is a subset of the GTDB taxonomy which can be viewed int
 
 **Figure 2**. GTDB interactive taxonomy tree
 
-The ‘Protein catalogue’ are clusters of all the predicted coding sequences in the genome catalogue. Separate catalogues are generated at different amino acid identity levels (100%, 95%, 90% and 50%).
+The ‘Protein catalogue’ is clusters of all the predicted coding sequences in the genome catalogue. Separate catalogues are generated at different amino acid identity levels (100%, 95%, 90% and 50%).
 
-The ‘Search’ tab is a `BItsliced Genomic Signature Index (BIGSI)  <https://www.nature.com/articles/s41587-018-0010-1>`_ based search engine. BIGSI  queries short sequence fragments against the species representative genome catalogue. The table of results provides the user with direct links to the matching genomes. Match statistics are shown as a count and percentage of kmers found. The minimum kmer proportion is set at a default of 0.4 and can be increased or decreased within a range of 0.1-1 with the available toggle.
+The ‘Search’ tab is a `BItsliced Genomic Signature Index (BIGSI)  <https://www.nature.com/articles/s41587-018-0010-1>`_ based search engine. BIGSI queries short sequence fragments against the species representative genome catalogue. The table of results provides the user with direct links to the matching genomes. Match statistics are shown as a count and percentage of kmers found. The minimum kmer proportion is set at a default of 0.4 and can be increased or decreased within a range of 0.1-1 with the available toggle.
 
 .. figure:: images/genomes-bigsi-v5.png
   :scale: 50 %
@@ -39,12 +39,12 @@ Genomes
 
 The page header details the genome type and a full GTDB lineage assigned with `GTDB-tk <https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz848/5626182>`_. The ‘Overview’ tab contains statistics about the genome. Type of genome (isolate or MAG), length, percentage completeness and contamination, the number of contigs, number of genomes represented by the species cluster, total number of proteins, N50 and GC content are shown here.
 
-`Infernal <http://europepmc.org/abstract/MED/24008419>`_ is used to screen for presence of ribosomal RNAs against `Rfam <http://europepmc.org/articles/PMC4383904>`_ covariance models for 5S, 16S and 23S rRNA. Transfer RNAs are identified with `tRNAScan-SE <https://academic.oup.com/nar/article/25/5/955/5133591>`_. These figures are presented in the Genome RNA
+`Infernal <http://europepmc.org/abstract/MED/24008419>`_ is used to screen for the presence of ribosomal RNAs against `Rfam <http://europepmc.org/articles/PMC4383904>`_ covariance models for 5S, 16S and 23S rRNA. Transfer RNAs are identified with `tRNAScan-SE <https://academic.oup.com/nar/article/25/5/955/5133591>`_. These figures are presented in the Genome RNA
 coverage section, as the percentage coverage for each rRNA type and a count of total tRNA and ncRNAs.
 
-:term:`pCDS<Predicted coding sequences (pCDS)>` are inferred with `Prokka <https://academic.oup.com/bioinformatics/article/30/14/2068/2390517>`_ which uses `Prodigal <https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-119>`_ . `eggNOG-mapper tool <https://www.biorxiv.org/content/10.1101/076331v1.full>`_ assigns :term:`KEGG` and :term:`COG` annotations against the pCDS. InterProScan performs proteins annotations with 5 member databases as described in (link to analysis pipeline page). The proportion of predicted proteins with an :term:`InterPro` or eggNOG annotation are given as a coverage percentage. COG and KEGG annotations are visualised in their respective tabs with the top 10 hits in an interactive bar graph.
+:term:`pCDS<Predicted coding sequences (pCDS)>` are inferred with `Prokka <https://academic.oup.com/bioinformatics/article/30/14/2068/2390517>`_ which uses `Prodigal <https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-119>`_ . `eggNOG-mapper tool <https://www.biorxiv.org/content/10.1101/076331v1.full>`_ assigns :term:`KEGG` and :term:`COG` annotations against the pCDS. InterProScan performs protein annotations with 5 member databases as described in (link to analysis pipeline page). The proportion of predicted proteins with an :term:`InterPro` or eggNOG annotation are given as a coverage percentage. COG and KEGG annotations are visualised in their respective tabs with the top 10 hits in an interactive bar graph.
 
-Additionally, the geographic origin of each genome and links to ENA accessions can be found towards the bottom of this page.
+Additionally, the geographic origin of each genome, and links to ENA accessions can be found towards the bottom of this page.
 
 All genome annotations can be viewed interactively in the ‘Browse genome’ tab to browse all assigned functional annotations in more detail.
 
@@ -52,9 +52,9 @@ All genome annotations can be viewed interactively in the ‘Browse genome’ ta
 Pan-genome
 ------------------
 
-Genome accessions with more than 1 genome in a species cluster have additional pan-genome analyses. `Roary v3.12.0 <https://academic.oup.com/bioinformatics/article/31/22/3691/240757>`_ performs an iterative clustering of predicted genes with a greater than 90% amino acid identity (AAI) for all genomes in the species cluster, to infer a core genome. Further BLASTp steps identify groups of homologous genes pertaining to the accessory genomes. The overview page has an extra 'Pan-genome statistics' block. Figures for pan-genome size - a ratio of the total core and accessory genes versus the total number of genes in the species representative, pan-genome core size and pan-genome accessory size can be found here. `eggNOG-mapper tool <https://www.biorxiv.org/content/10.1101/076331v1.full>`_  and InterProScan annotations are performed as above. The COG and KEGG visualisations have an extra bar in the plot representing the pan-genome analysis.
+Genome accessions with more than 1 genome in a species cluster have additional pan-genome analyses. `Roary v3.12.0 <https://academic.oup.com/bioinformatics/article/31/22/3691/240757>`_ performs an iterative clustering of predicted genes with greater than 90% amino acid identity (AAI) for all genomes in the species cluster, to infer a core genome. Further BLASTp steps identify groups of homologous genes pertaining to the accessory genomes. The overview page has an extra 'Pan-genome statistics' block. Figures for pan-genome size - a ratio of the total core and accessory genes versus the total number of genes in the species representative, pan-genome core size and pan-genome accessory size can be found here. `eggNOG-mapper tool <https://www.biorxiv.org/content/10.1101/076331v1.full>`_  and InterProScan annotations are performed as above. The COG and KEGG visualisations have an extra bar in the plot representing the pan-genome analysis.
 
-The ‘Downloads’ tab comprises summary files for all described analysis.
+The ‘Downloads’ tab comprises summary files for all described analyses.
 
 .. figure:: images//genomes-overview-v5.png
   :scale: 50 %

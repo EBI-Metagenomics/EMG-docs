@@ -35,11 +35,10 @@ The search takes a FASTA-formatted amino acid sequence.
 **Figure 2**. Example of a well-formatted input sequence
 
 You can search against all of the sequences in the database ('All'),
-or restrict your search to full length sequences or partial
+or restrict your search to full length sequences, or partial
 sequences only (see :ref:`Partial and full length peptides`).
 Alternatively, you may choose to search from a subset of environments or
-biomes. Sequences
-observed in multiple runs may be found in more than one biome. 'Other'
+biomes. Sequences observed in multiple runs may be found in more than one biome. 'Other'
 sequences are those found in none of the other environment or biome categories.
 
 .. figure:: images/sequence_search_db_select-v5.png
