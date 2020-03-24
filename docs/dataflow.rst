@@ -20,10 +20,6 @@ The graph below summarizes the MGnify data flow from submission to :term:`analys
 
   *Note that all queries concerning data submission should be directed to* `ENA dedicated help desk <https://www.ebi.ac.uk/ena/browser/support>`_
 
-  After validation by ENA, we will be able to access the submitted data and they will be queued for analysis (more details about our :ref:`Analysis pipeline <analysis>`).
-
-  The length of time required for analysis varies according to the number of projects in the queue and the nature and number of runs in the submission. However, we aim to have most analyses completed in less than a week once validated by ENA.
-
   **The following ENA submission criteria must be fulfilled. Please note, MGnify will not have access to retrieve data for analyses until these criteria are met.**
 
   **Assemblies:**
@@ -31,6 +27,12 @@ The graph below summarizes the MGnify data flow from submission to :term:`analys
   **Raw metagenomic or metatranscriptomic reads:**
     Same taxonomy guidelines as assemblies apply AND/OR the library source should be either 'METAGENOMIC' or 'METATRANSCRIPTOMIC'. Please see the `library source <https://ena-docs.readthedocs.io/en/latest/submit/reads/webin-cli.html#permitted-values-for-library-source>`_ guidelines for further details.
 
+  After validation by ENA, if the above criteria are met we will be able to access the submitted data.
+
+  To request private analysis with MGnify, navigate to the `home page <https://www.ebi.ac.uk/metagenomics/>`_, click 'Submit and/or Request' and complete the form. You will need to login to request analysis of private data. To request analysis of a public dataset in ENA click 'Request' and complete the form.
+  Once we have received the requests, they will be queued for analysis (more details about our :ref:`Analysis pipeline <analysis>`).
+
+  The length of time required for analysis varies according to the number of projects in the queue and the nature and number of runs in the submission. However, we aim to have most analyses completed in less than a week once validated by ENA.
 
 **(5) Upon completion of analysis, data will be uploaded on the website**
 
