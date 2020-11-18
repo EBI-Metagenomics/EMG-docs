@@ -60,7 +60,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'EMG-docs'
-copyright = u'2016, EMBL-EBI'
+copyright = u'2016-2020, EMBL-EBI'
 author = u'MGnify team'
 
 # The version info for the project you're documenting, acts as replacement for
