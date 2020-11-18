@@ -7,7 +7,7 @@ Analysis pipeline v5.0
 Overview
 --------
 
-The latest MGnify analysis service (version 5.0) offers specialised workflows for three different data types: :term:`amplicon`, raw :term:`metagenomic`/:term:`metatranscriptomic` reads, and :term:`assembly`. Each workflow is defined in common workflow language (`CWL <https://figshare.com/articles/Common_Workflow_Language_draft_3/3115156/2>`_). (`MGnify v5.0 CWL repository <https://github.com/EBI-Metagenomics/pipeline-v5>`_)
+The latest MGnify analysis service (version 5.0) offers specialised workflows for three different data types: :term:`amplicon<Amplicon>`, raw :term:`metagenomic<Metagenomic>`/:term:`metatranscriptomic<Metatranscriptomic>` reads, and :term:`assembly<Assembly>`. Each workflow is defined in common workflow language (`CWL <https://figshare.com/articles/Common_Workflow_Language_draft_3/3115156/2>`_). (`MGnify v5.0 CWL repository <https://github.com/EBI-Metagenomics/pipeline-v5>`_)
 All databases are available from an `FTP link <ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/pipeline-5.0/ref-dbs>`_
 
 The software and databases used for the various processing steps and analyses are listed in the following table.

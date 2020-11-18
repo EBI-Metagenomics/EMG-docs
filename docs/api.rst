@@ -33,8 +33,8 @@ A GET request can be issued to the root endpoint to get all categories that the 
 
 
 There are several easy-to-use top-levels resources, such as
-:term:`studies<study>`, :term:`samples<sample>`, :term:`runs<run>`,
-experiment-types, :term:`biomes<biome>`, and annotations. For example
+:term:`studies<Study>`, :term:`samples<Sample>`, :term:`runs<Run>`,
+experiment-types, :term:`biomes<Biome>`, and annotations. For example
 https://www.ebi.ac.uk/metagenomics/api/latest/studies retrieves a list
 of all studies, while https://www.ebi.ac.uk/metagenomics/api/latest/studies/ERP009004
 retrieves a single study, with the accession ERP009004. The samples contained
@@ -53,7 +53,7 @@ Response
 ^^^^^^^^
 
 Links to a resource return a JSON object formatted data structure that
-contains the resource type (in this example :term:`biomes<biome>`), associated
+contains the resource type (in this example :term:`biomes<Biome>`), associated
 object identifier (*id*) and *attributes*. Where appropriate, *relationships*
 and links are provided to other resources, allowing complex queries to be
 constructed.
@@ -185,8 +185,8 @@ Parameters
 
 Lists of resources can be filtered and sorted by selected parameters, allowing
 the construction of more complex queries. For instance, in order to retrieve
-oceanographic :term:`samples<sample>` from :term:`metagenomic`
-:term:`studies<study>` taken at temperature less than 10C, the following query
+oceanographic :term:`samples<Sample>` from :term:`metagenomic<Metagenomic>`
+:term:`studies<Study>` taken at temperature less than 10C, the following query
 could be constructed https://www.ebi.ac.uk/metagenomics/api/latest/biomes/root:Environmental:Aquatic:Marine/samples?experiment_type=metagenomic&metadata_key=temperature&metadata_value_lte=10&ordering=accession:
 
 .. highlight:: bash
@@ -330,7 +330,7 @@ The API supports Cross Origin Resource Sharing (CORS) for AJAX requests from any
 Examples
 --------
 
-Hands-on tutorial of basic Python API client scripts are available on https://github.com/EBI-Metagenomics/examples/blob/master/emgapi/examples/notebook/answers/ANSWER_examples.ipynb
+Hands-on tutorial of basic Python API client scripts are available on https://github.com/EBI-Metagenomics/examples/blob/master/mgnify/src/notebooks/answers/ANSWER_examples.ipynb
 
 
 -------------------------

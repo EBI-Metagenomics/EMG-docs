@@ -7,11 +7,10 @@ python:
 
 install:
   - pip install -r requirements.txt
-  - pip install -r test_requirements.txt
 
 script:
   - cd docs
-  - make html linkcheck spelling
+  - make html
 
 notifications:
   slack:
