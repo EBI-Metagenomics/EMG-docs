@@ -63,8 +63,7 @@ If your data is public in ENA, we are able to analyse this data without restrict
 
 Can I compare the taxonomic assignments between runs of a project?
 -------------------------------------------------------------------
-The current version of the comparison tool lets you only compare the GO annotations for runs of the same project. We are currently working on extending the functionality to taxonomy but this is not yet ready for release.
-In the meantime, please have a look at the summary files provided on the project page. They summarize the counts per feature across the runs and provide an easy way to identify patterns.
+Please refer to the summary files provided on the project page under the 'Analysis summary' tab. They summarize the counts per feature across the runs and provide an easy way to identify patterns.
 
 The 'OTUs, reads and taxonomic assignments.tsv' can be directly imported into  `Megan 6 <http://ab.inf.uni-tuebingen.de/software/megan6/>`_ to perform comparison and visualisation. The Biom format can also be imported into third-party tools.
 
