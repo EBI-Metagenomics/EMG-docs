@@ -102,4 +102,9 @@ Glossary
     ITS
         The internal transcribed spacers are regions situated between the :term:`LSU and SSU<LSU, SSU>` genes.
 
+    CRISPR
+        Acronym for Clustered Regularly Interspaced Short Palindromic Repeats, is a family of DNA sequences found in the genomes of prokaryotic organisms such as bacteria and archaea.
+
+    Cas
+        CRISPR-associated protein is an enzyme that uses CRISPR sequences as a guide to recognize and cleave specific strands of DNA.
 

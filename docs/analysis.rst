@@ -185,6 +185,12 @@ The software and databases used for the various processing steps and analyses ar
     -
     -
     - Yes
+  * - CRISPRCasFinder
+    - *4.2.21*
+    - CRISPR and Cas sequence prediction
+    -
+    - Yes
+    - Yes
   * - metaSPAdes
     - *3.13*
     - Assembly of raw reads (available on request)
@@ -216,6 +222,8 @@ Supplementary phylogenetic classification based on marker gene profiling, is per
 
 For functional analysis, the sequence regions encoding rRNAs are masked, and `FragGeneScan <https://academic.oup.com/nar/article/38/20/e191/1317565>`_ is used to predict coding sequences (pCDS). Coding sequences are assigned protein annotations with InterProScan, using 5 member databases that are able to process large numbers of potentially fragmented sequences (Gene3D, TIGRFAMs, Pfam, PRINTS and PROSITE patterns). Pfam annotations are provided as separate visualisations and downloads. GO terms are extracted from the InterProScan results and grouped according to category (Biological Process, Molecular Function and Cellular Component). GO terms are also summarized using a specialized `GO Slim <http://www.geneontology.org/ontology/subsets/goslim_metagenomics.obo>`_ developed for metagenomic data. Finally, protein coding sequences undergo KEGG ortholog annotations using HMMER v3.2.1 and a modified version of KOfam 2019-04-06 (based on KEGG 90.0).
 
+For metagenomic data, CRISPR/Cas sequences are also detected and exported as a GFF annotation, including a Fasta file with spacer sequences. 
+
 .. figure:: images/pipeline_v5.0_raw.png
   :scale: 50 %
 
@@ -235,6 +243,7 @@ Additionally, clusters of orthologous groups (:term:`COGs<COG>`) annotations and
 
 KEGG ortholog annotations are further processed to produce KEGG pathway information, including module presence and completeness. Similarly, InterPro annotations for individual protein sequences are amalgamated to generate `Genome Properties <https://academic.oup.com/nar/article/47/D1/D564/5144958>`_ (GP), providing inference of higher level pathways and systems that may be present in the dataset. Finally, `antiSMASH <https://academic.oup.com/nar/article/45/W1/W36/3778252>`_ is used to identify and annotate biosynthetic gene clusters that code for the production of secondary metabolites.
 
+In addition, CRISPR/Cas sequences are also detected and exported as a GFF annotation, including a Fasta file with spacer sequences. 
 
 
 .. figure:: images/pipeline_v5.0_assembly.png
