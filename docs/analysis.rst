@@ -253,13 +253,12 @@ In addition, CRISPR/Cas sequences are also detected and exported as a GFF annota
 
 
 ---------------------------
-NEW Long-Reads assembly pipeline
+Long-Reads assembly pipeline
 ---------------------------
 
-Long-read sequencing technology is becoming popular for metagenomics analysis as the longer reads remove ambiguity in the genome assembly process. MGnify supports both Oxford Nanopore and PacBio SMRT technologies as part of the metagenomic assembly and annotation service.
+MGnify supports both Oxford Nanopore and PacBio SMRT technologies as part of the metagenomic assembly and annotation service.
 
-
-The assembly pipeline is written as a workflow in CWL, the source code is accessible in the `MGnify-LR pipeline <https://github.com/EBI-Metagenomics/mgnify-lr>` repository. Current version 1.0.0 depends on the following programs:
+The long-read assembly pipeline (MGnify-LR) is provided as a workflow in CWL, with the source code accessible via the `MGnify-LR pipeline <https://github.com/EBI-Metagenomics/mgnify-lr>` repository. Version 1.0.0 depends on the following programs:
 
 
 * Fastp 0.20.1
@@ -276,13 +275,16 @@ The assembly pipeline is written as a workflow in CWL, the source code is access
 
 In addition, the workflow includes a few bash, python and perl scripts.
 
-
-The MGnify-LR pipeline can be used to preprocess long-reads, assembly them with `Flye <https://github.com/fenderglass/Flye>`, and polishing the contigs with `Racon <https://github.com/isovic/racon>`/`Medaka <https://github.com/nanoporetech/medaka>`, before passing the assembled contigs to the MGnify analysis.
+The MGnify-LR pipeline can be used to preprocess long-reads, assemble them with `Flye <https://github.com/fenderglass/Flye>`, and polish the contigs with `Racon <https://github.com/isovic/racon>`/`Medaka <https://github.com/nanoporetech/medaka>`.
 
 .. figure:: images/lr_pipeline_assembly.png
    :scale: 50 %
 
-In addition, for samples being sequenced by long-read technology and paired-end Illumina short-reads, the MGnify-LR pipeline can use an hybrid assembly using `metaSPAdes <https://cab.spbu.ru/software/meta-spades/>`. 
+---------------------------
+Long-read hybrid assembly pipeline
+---------------------------
+
+Where  samples have been sequenced using long-read technology as well as paired-end Illumina short-read technology, the MGnify-LR pipeline can be used in hybrid-mode, which uses `metaSPAdes <https://cab.spbu.ru/software/meta-spades/>` for the short-read assembly, and then utilises `Racon <https://github.com/isovic/racon>`/`Medaka <https://github.com/nanoporetech/medaka>` for polishing.
 
 .. figure:: images/hybrid_pipeline_assembly.png
    :scale: 50 %
