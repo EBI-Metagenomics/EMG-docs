@@ -7,7 +7,7 @@ MGnify Genomes
 Genome Catalogues
 -----------------
 
-MGnify Genomes (accessed from the 'Genomes' tab of the 'Browse' area in the menu bar)
+MGnify Genomes (accessed from the 'Genomes' tab of the 'Browse data' area in the menu bar)
 provides a detailed interactive view of prokaryotic genomes and their functional annotations.
 
 MGnify displays genomes in biome-specific Catalogues.
