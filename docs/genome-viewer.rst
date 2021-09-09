@@ -23,7 +23,7 @@ whilst older versions can be downloaded from our `FTP server <http://ftp.ebi.ac.
 --------------------
 Browsing a catalogue
 --------------------
-Clicking on a Catalogue ID in the list allows you to browse the catalogue's contents.
+Clicking on a Catalogue name (or 'View genomes') in the list allows you to browse the catalogue's contents.
 
 The "Genome list" tab contains a catalogue of non-redundant isolate and metagenome assembled genomes (:term:`MAGs`).
 Each accession is a species representative of a cluster of genomes.
@@ -68,7 +68,7 @@ Sourmash queries complete MAGs for similarity against the species representative
 
 Use the browse button to upload either a single FastA file, or multiple files by holding [ctrl] or [shift] while clicking in the file explorer.
 Alternatively you can select a whole directory of files using the directory mode (select this option below the Browse button).
-In this mode, the tool will process all FastA files in the selected directory, however it will not check subdirectories.
+In this mode, the tool will process all FastA files in the selected directory, however it will not descend into subdirectories.
 Files are not uploaded onto MGnify servers.
 Rather, Sourmash generates a signature of your file(s) in your browser, and compares this signature against our MAG catalogue on the server.
 Successful searches create a CSV result file for each signature submitted.
@@ -84,7 +84,7 @@ These result files are only stored in our servers for 30 days, so please be sure
 Genome detail
 --------------
 
-View a specific Genome by clicking it in the Genomes List, or a search result.
+View a specific Genome by clicking it in the Genome List, or a search result.
 
 The page header details the genome type and a full GTDB lineage assigned with `GTDB-tk <https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz848/5626182>`_. The ‘Overview’ tab contains statistics about the genome. Type of genome (isolate or MAG), length, percentage completeness and contamination, the number of contigs, number of genomes represented by the species cluster, total number of proteins, N50 and GC content are shown here.
 
