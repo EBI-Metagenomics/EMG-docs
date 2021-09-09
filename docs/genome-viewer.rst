@@ -15,7 +15,7 @@ MGnify displays genomes in biome-specific Catalogues.
 The latest version of each Catalogue is shown on the website,
 whilst older versions can be downloaded from our `FTP server <http://ftp.ebi.ac.uk/pub/databases/metagenomics/mgnify_genomes/>`_.
 
-.. figure:: images/genomes-genome-catalogues-list-v1.png
+.. figure:: images/genomes-genome-catalogues-list-v2.png
   :width: 100%
 
 **Figure 1**. MGnify genomes are collected into biome-specific catalogues.
