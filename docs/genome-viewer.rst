@@ -56,6 +56,11 @@ The ‘Search by gene’ tab is a `BItsliced Genomic Signature Index (BIGSI)  <h
 BIGSI queries short sequence fragments against the species representative genome catalogue.
 The table of results provides the user with direct links to the matching genomes.
 Match statistics are shown as a count and percentage of kmers found.
+An approximate `megaBLAST <https://blast.ncbi.nlm.nih.gov/>`_ alignment score is shown, which is calculated using kmer presence.
+The associated p-value shows how (un)likely it is for a search result to achieve the stated BLAST score or better by chance, given the number of genomes MGnify indexes and the query length.
+The `Nature Biotechnology paper describing BIGSI <https://www.nature.com/articles/s41587-018-0010-1#Sec9>`_ describes this process.
+Note that these scores assume an unfiltered search across all catalogues – the stated p-value will be a slight over-estimate (i.e. conservative) when searching against a single catalogue.
+
 The minimum kmer proportion is set at a default of 0.4 and can be increased or decreased within a range of 0.1-1 with the available toggle.
 
 .. figure:: images/genomes-bigsi-v6.png
