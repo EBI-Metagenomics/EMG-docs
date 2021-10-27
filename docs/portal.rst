@@ -36,6 +36,8 @@ MGnify Studies are accessioned with an MGYS number.
 Samples within MGnify are pulled directly from ENA.
 They represent (the genetic sequencing of) a single real-world specimen from a particular :term:`biome`.
 Samples have accessions assigned by the source database, e.g. prefixed ERS by ENA.
+Links to entries in ENA and `BioSamples <https://www.ebi.ac.uk/biosamples/>`__ are provided for each sample,
+where additional metadata can be found.
 
 The sequencing :term:`runs<run>`, :term:`assemblies<assembly>` and :term:`analyses<analysis result>` can be explored
 for each sample, by clicking the sample in the Browse Samples list.
