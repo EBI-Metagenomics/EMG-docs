@@ -38,7 +38,7 @@ New genomes (MAGs or isolates) are added to an existing catalogue following the 
 to a catalogue, a genome must be available in `INSDC <https://www.insdc.org/>`_.
 
 .. figure:: images/update_pipeline.png
-  :scale: 70 %
+  :width: 100 %
 
 **Figure 2**. The algorithm to update an existing genome catalog.
 
