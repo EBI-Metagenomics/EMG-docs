@@ -44,7 +44,7 @@ to a catalogue, a genome must be available in `INSDC <https://www.insdc.org/>`_.
 
 
 Briefly, the new genomes undergo QC filtration: quality score (QS) is calculated for each genome as
-% completeness - 5 * % contamination; genomes with QS < 50 or contamination > 5% are removed. The genomes are then
+``% completeness - 5 * % contamination``; genomes with QS < 50 or contamination > 5% are removed. The genomes are then
 dereplicated at 99.9% similarity to remove strain redundancy and compared to the previous version of the genome
 catalogue using `Mash <https://github.com/marbl/Mash>`_ to determine whether each genome represents a novel species,
 a novel strain or a strain that already exists in the catalogue. The category under which a new genome falls is based on
