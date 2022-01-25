@@ -58,7 +58,7 @@ for human contamination using `BLAST <https://blast.ncbi.nlm.nih.gov/Blast.cgi>`
 strain become the new species representative for their respective cluster if any of the following conditions is true:
 
 - the new genome is an isolate while the current species representative is a MAG;
-- the new genome is a MAG and it's quality score (completeness - 5 * contamination) is 10% higher than that of the current species representative;
+- the new genome is a MAG and it's quality score (``completeness - 5 * contamination``) is 10% higher than that of the current species representative;
 - the new genome and the current representative are isolates and the quality score of the new genome is 10% higher than that of the current species representative.
 
 If none of the above conditions is true, the new strain is added to the species cluster but does not replace the existing
