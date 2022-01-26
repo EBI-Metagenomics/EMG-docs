@@ -20,10 +20,59 @@ whilst older versions can be downloaded from our `FTP server <http://ftp.ebi.ac.
 
 **Figure 1**. MGnify genomes are collected into biome-specific catalogues.
 
+----------------------------
+Generating genome catalogues
+----------------------------
+
+There are two processes that have been put in place to generate a genome catalogue. A new catalogue (v1.0 of any
+catalogue) is generated using `MGnify genome analysis pipeline <https://github.com/EBI-Metagenomics/genomes-pipeline>`_.
+Pipeline structure and tool descriptions are included in the
+`README file <https://github.com/EBI-Metagenomics/genomes-pipeline/blob/master/README.md>`_ in the repository.
+
+The process to produce updated versions of the catalogues is described below.
+
+Updating an existing catalogue
+------------------------------
+
+New genomes (MAGs or isolates) are added to an existing catalogue following the steps outlined in Figure 2. To be added
+to a catalogue, a genome must be available in `INSDC <https://www.insdc.org/>`_.
+
+.. figure:: images/update_pipeline.png
+  :width: 100 %
+
+**Figure 2**. The algorithm to update an existing genome catalog.
+
+
+Briefly, the new genomes undergo QC filtration: quality score (QS) is calculated for each genome as
+``% completeness - 5 * % contamination``; genomes with QS < 50 or contamination > 5% are removed. The genomes are then
+dereplicated at 99.9% similarity to remove strain redundancy and compared to the previous version of the genome
+catalogue using `Mash <https://github.com/marbl/Mash>`_ to determine whether each genome represents a novel species,
+a novel strain or a strain that already exists in the catalogue. The category under which a new genome falls is based on
+the distance between the new genome and the most similar genome in the existing catalog: > 0.05 = new species,
+0.001 - 0.05 = new strain, < 0.001 = strain already exists.
+
+If the strain already exists, the genome is discarded. Genomes classified as novel species are dereplicated at 95%
+similarity to identify genomes that belong to the same species cluster and undergo two more quality control steps:
+genomes are screened with `GUNC <https://github.com/grp-bork/gunc>`_ to remove possible chimeras and contigs are screened
+for human contamination using `BLAST <https://blast.ncbi.nlm.nih.gov/Blast.cgi>`_. Genomes that represent a novel
+strain become the new species representative for their respective cluster if any of the following conditions is true:
+
+- the new genome is an isolate while the current species representative is a MAG;
+- the new genome is a MAG and it's quality score (``completeness - 5 * contamination``) is 10% higher than that of the current species representative;
+- the new genome and the current representative are isolates and the quality score of the new genome is 10% higher than that of the current species representative.
+
+If none of the above conditions is true, the new strain is added to the species cluster but does not replace the existing
+species representative.
+
+The tools used to annotate the new genomes and to update the pan-genomes for each species containing multiple conspecific
+genomes to which new genomes have been added are listed in the README files associated with each catalog on the
+`FTP server <http://ftp.ebi.ac.uk/pub/databases/metagenomics/mgnify_genomes/>`_.
+
 --------------------
 Browsing a catalogue
 --------------------
-Clicking on a Catalogue name (or 'View genomes') in the list allows you to browse the catalogue's contents.
+Clicking on a Catalogue name (or 'View catalogue') in the list on the `MGnify website <https://www.ebi.ac.uk/metagenomics/browse#genomes>`_ allows you to browse the
+catalogue's contents.
 
 The "Genome list" tab contains a catalogue of non-redundant isolate and metagenome assembled genomes (:term:`MAGs`).
 Each accession is a species representative of a cluster of genomes.
@@ -34,7 +83,7 @@ Isolate genomes are prioritised over MAGs for a species representative.
 .. figure:: images/genomes-catalogue-genomes-list-v1.png
   :width: 100 %
 
-**Figure 2**. Each catalogue contains MAGs and isolate genomes.
+**Figure 3**. Each catalogue contains MAGs and isolate genomes.
 
 The ‘Taxonomy tree’ is a subset of the GTDB taxonomy which can be viewed interactively.
 Genomes from the catalogue can be found in the tree by taxonomic lineage.
@@ -43,7 +92,7 @@ Each orange coloured genome accession links to further statistics and functional
 .. figure:: images/genomes-taxonomy-tree-v5.png
   :scale: 50 %
 
-**Figure 3**. GTDB interactive taxonomy tree for a catalogue
+**Figure 4**. GTDB interactive taxonomy tree for a catalogue
 
 The ‘Protein catalogue’ is clusters of all the predicted coding sequences in the genome catalogue.
 Separate catalogues are generated at different amino acid identity levels (100%, 95%, 90% and 50%).
@@ -66,7 +115,7 @@ The minimum kmer proportion is set at a default of 0.4 and can be increased or d
 .. figure:: images/genomes-bigsi-v6.png
   :width: 100 %
 
-**Figure 4** BIGSI search example with table of results.
+**Figure 5** BIGSI search example with table of results.
 
 The ‘Search by MAG’ tab is a `Sourmash <https://sourmash.readthedocs.io/en/latest/>`_ based search engine.
 Sourmash queries complete MAGs for similarity against the species representative genome catalogue.
@@ -83,7 +132,7 @@ These result files are only stored in our servers for 30 days, so please be sure
 .. figure:: images/genomes-sourmash-v1.png
   :width: 100 %
 
-**Figure 5** Sourmash search example with file selected
+**Figure 6** Sourmash search example with file selected
 
 --------------
 Genome detail
@@ -113,7 +162,7 @@ The ‘Downloads’ tab comprises summary files for all described analyses.
 .. figure:: images//genomes-overview-v5.png
   :scale: 50 %
 
-**Figure 6**. An overview for a species representative MAG, with a pan-genome analysis.
+**Figure 7**. An overview for a species representative MAG, with a pan-genome analysis.
 
 
 A set of assemblies, annotations, :term:`pan-genome<Pan-genome>` results and protein catalogues are available in our `FTP server <http://ftp.ebi.ac.uk/pub/databases/metagenomics/mgnify_genomes/>`_.
