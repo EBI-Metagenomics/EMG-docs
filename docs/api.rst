@@ -42,6 +42,20 @@ within this study can be retrieved using the relationship URL:
 https://www.ebi.ac.uk/metagenomics/api/latest/studies/ERP009004/samples.
 
 
+The Browsable API
+^^^^^^^^^^^^^^^^^
+
+The easiest way to discover the API's capabilities is to open the interactive
+`"Browsable API" in your web browser <https://www.ebi.ac.uk/metagenomics/api/latest/>`_.
+
+This interace is created automatically when you open an API endpoint from a program
+that supports HTML (i.e. your browser).
+If you were to request the same URL using e.g. :code:`curl`, plain JSON would be returned.
+This means you can find the URL pattern for data you're interested in interactively,
+then copy the URL into your scripts.
+
+
+
 HTTP methods
 ^^^^^^^^^^^^
 
@@ -62,70 +76,97 @@ constructed.
 
 ::
 
-    {
-      "data": {
+  {
+    "data": {
         "type": "studies",
-        "id": "ERP009004",
+        "id": "MGYS00002008",
         "attributes": {
-          "samples-count": 57,
-          "runs-count": 57,
-          "accession": "ERP009004",
-          "centre-name": "Genome Alberta",
-          "public-release-date": null,
-          "study-abstract": "Metagenomics for Greener Production and Extraction of Hydrocarbon Energy:\nCreating Opportunities for Enhanced Recovery with Reduced Environmental Impact",
-          "study-name": "Hydrocarbon Metagenomics Project",
-          "data-origination": "SUBMITTED",
-          "last-update": "2016-01-20T14:12:06Z",
-          "project-id": "PRJEB7983"
+            "bioproject": "PRJEB22493",
+            "samples-count": 136,
+            "accession": "MGYS00002008",
+            "secondary-accession": "ERP104174",
+            "centre-name": "EMBL-EBI",
+            "is-public": true,
+            "public-release-date": null,
+            "study-abstract": "The APY Third Party Annotation (TPA) assembly was derived from the primary whole genome shotgun (WGS) data set PRJEB1787. This project includes samples from the following biomes : Marine.",
+            "study-name": "EMG produced TPA metagenomics assembly of the Shotgun Sequencing of Tara Oceans DNA samples corresponding to size fractions for  prokaryotes. (APY) data set",
+            "data-origination": "SUBMITTED",
+            "last-update": "2022-01-16T11:17:46"
         },
         "relationships": {
-          "biomes": {
-            "data": [
-              {
-                "type": "biomes",
-                "id": "root:Environmental:Aquatic:Freshwater",
+            "downloads": {
                 "links": {
-                  "self": "https://www.ebi.ac.uk/metagenomics/api/latest/biomes/root:Environmental:Aquatic:Freshwater"
+                    "related": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00002008/downloads"
                 }
-              },
-              {
-                "type": "biomes",
-                "id": "root:Environmental:Aquatic:Marine",
-                "links": {
-                  "self": "https://www.ebi.ac.uk/metagenomics/api/latest/biomes/root:Environmental:Aquatic:Marine"
-                }
-              },
-              {
-                "type": "biomes",
-                "id": "root:Environmental:Terrestrial:Soil",
-                "links": {
-                  "self": "https://www.ebi.ac.uk/metagenomics/api/latest/biomes/root:Environmental:Terrestrial:Soil"
-                }
-              }
-            ],
-            "links": {
-              "related": "https://www.ebi.ac.uk/metagenomics/api/latest/studies/ERP009004/biomes"
             },
-            "meta": {
-              "count": 3
+            "biomes": {
+                "links": {
+                    "related": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00002008/biomes"
+                },
+                "data": [
+                    {
+                        "type": "biomes",
+                        "id": "root:Environmental:Aquatic:Marine:Oceanic",
+                        "links": {
+                            "self": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Oceanic"
+                        }
+                    }
+                ]
+            },
+            "studies": {
+                "links": {
+                    "related": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00002008/studies"
+                },
+                "data": [
+                    {
+                        "type": "studies",
+                        "id": "MGYS00000410",
+                        "links": {
+                            "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00000410"
+                        }
+                    },
+                    {
+                        "type": "studies",
+                        "id": "MGYS00000492",
+                        "links": {
+                            "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00000492"
+                        }
+                    },
+                    {
+                        "type": "studies",
+                        "id": "MGYS00001482",
+                        "links": {
+                            "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00001482"
+                        }
+                    }
+                ]
+            },
+            "samples": {
+                "links": {
+                    "related": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00002008/samples"
+                }
+            },
+            "geocoordinates": {
+                "links": {
+                    "related": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00002008/geocoordinates"
+                }
+            },
+            "publications": {
+                "links": {
+                    "related": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00002008/publications"
+                },
+            },
+            "analyses": {
+                "links": {
+                    "related": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00002008/analyses"
+                },
             }
-          },
-          "publications": {
-            "links": {
-              "related": "https://www.ebi.ac.uk/metagenomics/api/latest/studies/ERP009004/publications"
-            }
-          },
-          "samples": {
-            "links": {
-              "related": "https://www.ebi.ac.uk/metagenomics/api/latest/studies/ERP009004/samples"
-            }
-          }
         },
         "links": {
-          "self": "https://www.ebi.ac.uk/metagenomics/api/latest/studies/ERP009004"
+            "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00002008"
         }
-      }
     }
+  }
 
 
 Hypermedia
@@ -179,6 +220,59 @@ Navigation through pages:
       }
     }
 
+.. note::
+    Some API endpoint use *cursor-based pagination*, because they come from a document database.
+    The :code:`links` object in responses provided the necesary cursors to fetch
+
+For example, fetching Contigs for an :term:`analysis<Analysis result>`.
+
+.. highlight :: bash
+
+::
+
+  curl -X GET "https://www.ebi.ac.uk/metagenomics/api/v1/analyses/MGYA00585528/contigs"
+
+Gives:
+
+.. highlight:: json
+
+::
+
+  {
+    "links": {
+        "next": "https://www.ebi.ac.uk/metagenomics/api/v1/analyses/MGYA00585528/contigs?cursor=cD02MTUyMDU0Yzg5YTUzNWM2ZDQzYTY5MGI%3D",
+        "prev": null
+    },
+    "data": [
+        {
+            "type": "analysis-job-contigs",
+            "id": "6152054c89a535c6d43a68f3",
+            "attributes": {
+                "contig-id": "ERZ2310312.1-contig-1",
+                "length": 20832,
+                "coverage": 0.0,
+                "analysis-id": "585528",
+                "accession": "MGYA00585528",
+                "pipeline-version": "5.0",
+                "job-id": 585528,
+                "has-cog": true,
+                "has-kegg": true,
+                "has-go": true,
+                "has-pfam": true,
+                "has-interpro": true,
+                "has-antismash": false,
+                "has-kegg-module": false
+            }
+        },
+        "..."
+    ],
+    "meta": {
+        "pagination": {
+            "count": 105
+        }
+    }
+  }
+
 
 Parameters
 ^^^^^^^^^^
@@ -199,18 +293,43 @@ The provision of such complex queries allows metadata to be combined with
 annotation for powerful data analysis and visualisation.
 
 
-Customising queries
-^^^^^^^^^^^^^^^^^^^
+Customising queries: compound documents
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The API response distinguishes between attributes and relationships,
 allowing customisation of the response by passing fields or including
 relations as parameters in the initial query.
 
+Some relationship fields render the related data automatically,
+in cases where the count of related objects is known to always be small,
+and where this is an extremely common requirement.
+
+For other relationships, adding :code:`?include=<relationship field>` 
+to a query will result in the 
+:code:`relationships` response including a :code:`<relationship field>.data` object, 
+with a list of IDs of the related object. 
+Provided these data arrays are non-empty, 
+the response will also include a top-level :code:`included` array, 
+with the corresponding IDs and fully rendered data for the related objects. 
+This format is known as a 
+`"Compound Document" <https://jsonapi.org/format/#document-compound-documents>`_.
+
+.. note::
+    Note that the list of related objects is *not* paginated, 
+    and can be very expensive to query. 
+    Only a subset of relationships are available for inclusion in compound documents: 
+    these are based on common use cases and on queries that can be optimised 
+    so are less likely to run slowly or time out.
+
+    The supported :code:`?include=` relationships are discoverable using the 
+    `"Browsable API" in your web browser <https://www.ebi.ac.uk/metagenomics/api/latest/>`_.
+
+
 .. highlight:: bash
 
 For example::
 
-    curl -X GET "https://www.ebi.ac.uk/metagenomics/api/latest/studies/ERP005831?include=samples&fields[studies]=accession,study_name,biomes,samples&fields[samples]=accession,longitude,latitude,biome"
+    curl -X GET "https://www.ebi.ac.uk/metagenomics/api/latest/studies/MGYS00002008?include=samples,biomes"
 
 
 .. highlight:: json
@@ -219,97 +338,143 @@ For example::
 
   {
     "data": {
-      "type": "studies",
-      "id": "ERP005831",
-      "attributes": {
-        "accession": "ERP005831",
-        "study-name": "Stable isotope probing/metagenomics of terrestrial dimethylsulfide degrading microorganisms"
-      },
-      "relationships": {
-        "biomes": {
-            "links": {
-                "related": "https://www.ebi.ac.uk/metagenomics/api/v0.4/studies/ERP005831/biomes"
-            },
-          "data": [
-            {
-              "type": "biomes",
-              "id": "root:Environmental:Aquatic:Freshwater:Lentic:Sediment",
-              "links": {
-                "self": "https://www.ebi.ac.uk/metagenomics/api/v0.4/biomes/root:Environmental:Aquatic:Freshwater:Lentic:Sediment"
-              }
-            },
-            {
-              "type": "biomes",
-              "id": "root:Environmental:Terrestrial:Soil:Loam:Agricultural",
-              "links": {
-                "self": "https://www.ebi.ac.uk/metagenomics/api/v0.4/biomes/root:Environmental:Terrestrial:Soil:Loam:Agricultural"
-              }
-            }
-          ],
-          "meta": {
-            "count": 2
-          }
-        },
-        "samples": {
-          "links": {
-            "related": "https://www.ebi.ac.uk/metagenomics/api/v0.4/studies/ERP005831/samples"
-          }
-        }
-      },
-      "links": {
-          "self": "https://www.ebi.ac.uk/metagenomics/api/v0.4/studies/ERP005831"
-      }
-    },
-    "included": [
-      {
-        "type": "samples",
-        "id": "ERS456668",
+        "type": "studies",
+        "id": "MGYS00002008",
         "attributes": {
-          "accession": "ERS456668",
-          "longitude": -1.56,
-          "latitude": 52.38
+            "..."
         },
         "relationships": {
-          "biome": {
-            "links": {
-              "related": "https://www.ebi.ac.uk/metagenomics/api/v0.4/biomes/root:Environmental:Aquatic:Freshwater:Lentic:Sediment"
+            "samples": {
+                "links": {
+                    "related": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00002008/samples"
+                },
+                "data": [
+                    {
+                        "type": "samples",
+                        "id": "6173"
+                    }
+                ]
             },
-            "data": {
-              "type": "biomes",
-              "id": "root:Environmental:Aquatic:Freshwater:Lentic:Sediment"
+            "..."
+            "biomes": {
+                "links": {
+                    "related": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00002008/biomes"
+                },
+                "data": [
+                    {
+                        "type": "biomes",
+                        "id": "root:Environmental:Aquatic:Marine",
+                        "links": {
+                            "self": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine"
+                        }
+                    }
+                ]
+            },
+            "..."
+        },
+        "links": {
+            "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00002008"
+        }
+    },
+    "included": [
+        {
+            "type": "biomes",
+            "id": "root:Environmental:Aquatic:Marine",
+            "attributes": {
+                "samples-count": 183,
+                "biome-name": "Marine",
+                "lineage": "root:Environmental:Aquatic:Marine"
+            },
+            "relationships": {
+                "samples": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine/samples"
+                    }
+                },
+                "children": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine/children"
+                    }
+                },
+                "genomes": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine/genomes"
+                    }
+                },
+                "studies": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine/studies"
+                    }
+                }
+            },
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine"
             }
-          }
-          },
-          "links": {
-            "self": "https://www.ebi.ac.uk/metagenomics/api/v0.4/samples/ERS456668"
-          }
         },
         {
-          "type": "samples",
-          "id": "ERS456669",
-          "attributes": {
-            "accession": "ERS456669",
-            "longitude": -1.61,
-            "latitude": 52.19
-          },
-          "relationships": {
-            "biome": {
-              "links": {
-                "related": "https://www.ebi.ac.uk/metagenomics/api/v0.4/biomes/root:Environmental:Terrestrial:Soil:Loam:Agricultural"
-              },
-              "data": {
-                "type": "biomes",
-                "id": "root:Environmental:Terrestrial:Soil:Loam:Agricultural"
-              }
+            "type": "samples",
+            "id": "ERS487899",
+            "attributes": {
+                "sample-metadata": [],
+                "longitude": -6.5669,
+                "biosample": "SAMEA2619376",
+                "latitude": 36.5533,
+                "accession": "ERS487899",
+                "analysis-completed": "2015-03-17",
+                "collection-date": "2009-09-15",
+                "geo-loc-name": null,
+                "sample-desc": "&quot;This sample (TARA_X000000263) was collected during the Tara Oceans expedition (2009-2013) at station TARA_004 (latitudeN=36.5533, longitudeE=-6.5669) on date/time=2009-09-15T11:30, using a PUMP (High Volume Peristaltic Pump).  The sample material (saline water (ENVO:00002010), including plankton (ENVO:xxxxxxxx)) was collected at a depth of 3-7 m, targeting a surface water layer (ENVO:00002042) in the marine biome (ENVO:00000447). The sample was size-fractionated (0.22-1.6 micrometres), and stored in liquid nitrogen for later detection of prokaryote nucleic acid sequences by pyrosequencing methods, and for later metagenomics analysis. This sample has replicate sample(s): TARA_X000000264.&quot;",
+                "environment-biome": "marine biome (ENVO:00000447)",
+                "environment-feature": "surface water layer (ENVO:00002042)",
+                "environment-material": "&quot;saline water (ENVO:00002010), including plankton (ENVO:xxxxxxxx)&quot;",
+                "sample-name": "TARA_X000000263",
+                "sample-alias": "TARA_X000000263",
+                "host-tax-id": null,
+                "species": null,
+                "last-update": "2019-09-25T16:24:35"
+            },
+            "relationships": {
+                "runs": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/ERS487899/runs"
+                    }
+                },
+                "biome": {
+                    "data": {
+                        "type": "biomes",
+                        "id": "root:Environmental:Aquatic:Marine"
+                    },
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine"
+                    }
+                },
+                "studies": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/ERS487899/studies"
+                    },
+                    "data": [
+                        {
+                            "type": "studies",
+                            "id": "MGYS00002008",
+                            "links": {
+                                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00002008"
+                            }
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/ERS487899"
             }
-          },
-          "links": {
-            "self": "https://www.ebi.ac.uk/metagenomics/api/v0.4/samples/ERS456669"
-          }
         }
     ]
   }
 
+
+Datasets that cannot be made using a single Compound Document
+should be built up by making several requests to the API,
+using the URIs provided in the :code:`relationships.<related field>.links.related` 
+attributes.
 
 Errors
 ^^^^^^
