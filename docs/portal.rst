@@ -160,6 +160,7 @@ Quality control (QC) analysis of runs within projects on the `MGnify website <ht
 
 
 .. figure:: images/QC1.PNG
+
     A 'Quality control' tab can be found towards the top of each run page.
 
 Selecting this tab brings up a page containing four graphical representations: a count of reads/contigs remaining pre and post QC, a histogram of minimum, maximum and average sequence length (post QC), distribution of GC content and the first 500 nucleotides (post QC). These are available to download via the 'Download' tab found toward the top of any run page (see Figure 8 below).
