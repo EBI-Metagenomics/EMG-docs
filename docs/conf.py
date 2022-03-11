@@ -30,7 +30,8 @@ import os
 # ones.
 extensions = [
     'sphinx.ext.ifconfig',
-    'sphinx.ext.autosectionlabel'
+    'sphinx.ext.autosectionlabel',
+    'sphinx.ext.extlinks'
 ]
 
 if 'spelling' in sys.argv:
@@ -301,3 +302,12 @@ texinfo_documents = [
 #texinfo_no_detailmenu = False
 
 linkcheck_ignore = [r'http://localhost:\d+/']
+
+# Autonumber figures within a document
+numfig = True
+numfig_format = {
+    'figure': 'Figure %s'
+}
+
+# External links relative to a Base
+extlinks = {'website': ('https://www.ebi.ac.uk/metagenomics/beta%s', 'ebi.ac.uk/metagenomics%s')}
