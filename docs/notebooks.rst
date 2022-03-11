@@ -4,6 +4,20 @@ MGnify Notebooks Server
 A Jupyter Lab environment for the MGnify API
 --------------------------------------------
 
+--------------------
+Short video tutorial
+--------------------
+
+.. raw :: html
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9R2srhWyYS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+`View on YouTube <https://youtu.be/9R2srhWyYS0>`_.
+
+----------------------------
+About the notebooks resource
+----------------------------
+
 The `MGnify Notebooks Server <https://shiny-portal.embl.de/shinyapps/app/06_mgnify-notebook-lab?jlpath=mgnify-examples/home.ipynb>`_
 is a `Jupyter Lab <https://jupyter.org>`_ environment for doing data analysis online.
 
