@@ -14,9 +14,9 @@ Short video tutorial
 
 `View on YouTube <https://youtu.be/9R2srhWyYS0>`_.
 
-----------------------------
-About the notebooks resource
-----------------------------
+---------------------------------------
+About the notebooks.mgnify.org resource
+---------------------------------------
 
 The `MGnify Notebooks Server <https://shiny-portal.embl.de/shinyapps/app/06_mgnify-notebook-lab?jlpath=mgnify-examples/home.ipynb>`_
 is a `Jupyter Lab <https://jupyter.org>`_ environment for doing data analysis online.

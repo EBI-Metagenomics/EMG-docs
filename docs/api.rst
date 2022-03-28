@@ -495,7 +495,11 @@ The API supports Cross Origin Resource Sharing (CORS) for AJAX requests from any
 Examples
 --------
 
-Hands-on tutorial of basic Python API client scripts are available on https://github.com/EBI-Metagenomics/examples/blob/master/mgnify/src/notebooks/answers/ANSWER_examples.ipynb
+* Examples of using the API are provided in our :doc:`MGnify Notebooks Server <notebooks>`, which is available at `notebooks.mgnify.org <shiny-portal.embl.de/shinyapps/app/06_mgnify-notebook-lab?jlpath=mgnify-examples/home.ipynb>`_. See the :doc:`dedicated documentation <notebooks>` for that resource for more information.
+
+* You can also find our `example notebooks and scripts on GitHub  <https://github.com/EBI-Metagenomics/notebooks/tree/main/notebooks-src/notebooks>`_.
+
+* We also have short examples of `how to fetch paginated data from the API into one big CSV/TSV file <https://gist.github.com/SandyRogers/5d9eff7f1f7b08cfa40265f5e2adf9cd>`_.
 
 
 -------------------------
