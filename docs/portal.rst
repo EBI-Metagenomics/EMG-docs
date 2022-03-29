@@ -114,11 +114,25 @@ Biome and Location metadata are visualised, and other user-provided metadata are
     (2) = the Biome is highlighted.
     (3) = the sample location is mapped.
 
-Sample metadata from `BioSamples <https://www.ebi.ac.uk/biosamples/>`__
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sample metadata from `BioSamples <https://www.ebi.ac.uk/biosamples/>`_
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The :term:`Sample` detail pages also show a link to an entry in the
-`EBI BioSamples <https://www.ebi.ac.uk/biosamples/>`__ database, where further metadata may be found.
+`EBI BioSamples <https://www.ebi.ac.uk/biosamples/>`_ database, where further metadata may be found.
+
+Sample metadata from the Elixir Contextual Data Clearing House
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Some :term:`Samples<Sample>` have additional metadata from `Elixir’s Contextual Data Clearing House <https://elixir-europe.org/internal-projects/commissioned-services/establishment-data-clearinghouse>`_.
+
+These metadata take the form of curations: either adding additional sample metadata beyond that stored in the ENA submission,
+or sometimes correcting existing metadata.
+
+Like the Sample metadata from ENA, they’re shown as a list of Key:Value pairs.
+
+.. figure:: images/portal/metadata-cdch.png
+
+    Additional Sample metadata from the Contextual Data Clearing House.
 
 Additional metadata from text-mining on Publications
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -132,7 +146,7 @@ but that was mentioned in the publications describing them.
 
 These can be explored within MGnify on a Publication page, or in the list of Publications on a Study page.
 
-.. figure:: images/europe-pmc-annotations.png
+.. figure:: images/portal/europe-pmc-annotations.png
 
     Annotations for publications are made available within MGnify, in a drill-down format.
 
@@ -150,7 +164,7 @@ Content of the 'Associated runs' table on project page
 This table lists all :term:`samples<sample>` and :term:`runs<run>` associated with a project as well as the experiment type (:term:`Amplicon<amplicon>`, :term:`Assembly<assembly>`, :term:`Metabarcoding<metabarcoding>`, :term:`Metagenomic<metagenomic>` or :term:`Metatranscriptomic<metatranscriptomic>`), sequencing instrument model and pipeline version for each individual run.
 In addition, the last field displays links to analysis results and download pages (the latter being represented by the |icon| icon).
 
-.. |icon| image:: images/download_IC.png
+.. |icon| image:: images/portal/download_IC.png
 
 ------------------------------------------------------------------------------
 Finding quality control information about runs on the MGnify website
@@ -159,17 +173,17 @@ Finding quality control information about runs on the MGnify website
 Quality control (QC) analysis of runs within projects on the `MGnify website <https://www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Quality control' tab found toward the top of any run page (see Figure 1 below).
 
 
-.. figure:: images/QC1.PNG
+.. figure:: images/portal/QC1.PNG
 
     A 'Quality control' tab can be found towards the top of each run page.
 
 Selecting this tab brings up a page containing four graphical representations: a count of reads/contigs remaining pre and post QC, a histogram of minimum, maximum and average sequence length (post QC), distribution of GC content and the first 500 nucleotides (post QC). These are available to download via the 'Download' tab found toward the top of any run page (see Figure 8 below).
 
-.. figure:: images/QC_metag.PNG
+.. figure:: images/portal/QC_metag.PNG
 
     Typical even nucleotide distribution expected for metagenome, metatranscriptome and assembly datasets. Note that the stretch of uneven distribution observed until position 20 are indicative that the sequencing adapters had not been completely removed in the submitted reads.
 
-.. figure:: images/QC_ndamplicon.PNG
+.. figure:: images/portal/QC_ndamplicon.PNG
 
     Typical uneven nucleotide distribution expected for an amplicon dataset.
 
@@ -179,7 +193,7 @@ Finding functional information about runs on the MGnify website
 
 Functional analysis of runs within projects on the `MGnify website <https://www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Functional Analysis' tab found toward the top of any run page (see Figure 4 below). Note that this tab will be greyed for amplicon runs that have no functional results.
 
-.. figure:: images/Func_1.PNG
+.. figure:: images/portal/Func_1.PNG
 
     A Functional analysis tab can be found towards the top of each run page. Selecting this tab brings up a page displaying sequence features ('Predicted CDS', 'Contigs with predicted CDS' and 'Contigs with predicted rRNA')
 
@@ -187,19 +201,19 @@ Below this first bar chart, there are 4 tabs with different types of functional 
 
 **A**
 
-.. image:: images/Func1-v5.png
+.. image:: images/portal/Func1-v5.png
 
 **B**
 
-.. image:: images/Func2-v5.png
+.. image:: images/portal/Func2-v5.png
 
 **C**
 
-.. image:: images/Func3-v5.png
+.. image:: images/portal/Func3-v5.png
 
 **D**
 
-.. figure:: images/Func4-v5.png
+.. figure:: images/portal/Func4-v5.png
 
     Functional analysis of metagenomics data, as shown on the MGnify website.
     A) InterPro match information for the predicted coding sequences in the run is shown. The number of InterPro matches are displayed graphically, and as a downloadable table with links to corresponding InterPro entries. B) Predicted GO slim terms are displayed. Different graphical representations are available, and can be selected by clicking on the ‘Switch view’ icons. C) A table of Pfam matches for predicted coding sequences with a bar graph showing the top 10 hits. D) A table of KEGG ortholog matches for predicted coding sequences with a bar graph showing the top 10 hits.
@@ -215,15 +229,15 @@ There are 3 types of pathway and system annotations:
 
 **A**
 
-.. image:: images/Path1-v5.png
+.. image:: images/portal/Path1-v5.png
 
 **B**
 
-.. image:: images/Path2-v5.png
+.. image:: images/portal/Path2-v5.png
 
 **C**
 
-.. figure:: images/Path3-v5.png
+.. figure:: images/portal/Path3-v5.png
 
     Annotation of potential pathways and high order system classification, as shown on the MGnify website. A) A table and bar graph of KEGG modules derived from KEGG orthologs, with pathway completeness values. B) An expandable list of present Genome Properties, grouped by top level systems, derived from InterProScan outputs. C) A table of antiSMASH hits with a bar graph showing the top 10 hits.
 
@@ -235,11 +249,11 @@ This feature is available for assembly analysis only and can be found in the tab
 
 **A**
 
-.. image:: images/Contig1-v5.png
+.. image:: images/portal/Contig1-v5.png
 
 **B**
 
-.. figure:: images/Contig2-v5.png
+.. figure:: images/portal/Contig2-v5.png
 
     Interactive contig viewer for localised visualisation of functional annotation per contig. A) The main page contains a table of contigs with annotations, length and coverage. Text search and tickboxes allow users to search for functional annotations by method. B) Hover over each coding sequence to see functional annotation with external links, and protein length for that region.
 
@@ -249,7 +263,7 @@ Finding taxonomic information about runs on the MGnify website
 
 Taxonomic analysis of runs within projects on the `MGnify website <https://www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Taxonomic analysis' tab found toward the top of any run page (see Figure 7 below).
 
-.. figure:: images/taxonomy.PNG
+.. figure:: images/portal/taxonomy.PNG
 
     A 'Taxonomic analysis' tab can be found towards the top of each run page. Selecting this tab brings up a page displaying the taxonomic results displayed as an interactive Krona plot.
 
@@ -263,7 +277,7 @@ Files available to download on the MGnify website
 
 The full data sets used to generate the graphs, along with a host of additional data and intermediate files can be downloaded for further analysis by clicking the ‘Download’ tab, found towards the top of the page.
 
-.. figure:: images/Download_1-v5.png
+.. figure:: images/portal/Download_1-v5.png
 
     The Download tab is organised into sections: ‘Sequence data’, ‘Functional analysis’ (not available in the case of amplicon runs), 'Pathways and Systems' (available only for assemblies), ‘Taxonomic analysis SSU’, 'Taxonomic analysis LSU', 'Taxonomic analysis ITS' (available for amplicon only) and 'non-coding RNAs' (will only exist if any non coding RNAs are identified).
 
@@ -302,7 +316,7 @@ Summary files
 --------------------
 In addition to the output files for individual runs, described above, MGnify provides a number of summary files available via the 'Analysis summary' tab on the project page (Figure 9 below). They summarize the counts per feature across all runs of a :term:`study` and therefore provide an easy way to identify patterns. The summary files are split between functional (not available for amplicon-only study) and taxonomy sections.
 
-.. figure:: images/summary.PNG
+.. figure:: images/portal/summary.PNG
 
     The 'Analysis summary' tab is organised in 2 sections: ‘Functional analysis for the project’ and ‘Taxonomic analysis for the project’ (the former is not available in the case of amplicon runs).
 
@@ -316,7 +330,7 @@ Text search
 ^^^^^^^^^^^
 The Search tool is underpinned by `EBI search <https://www.ebi.ac.uk/ebisearch/overview.ebi>`_  and accessible via any MGnify page (Figure 11 below).
 
-.. figure:: images/search.PNG
+.. figure:: images/portal/search.PNG
 
     The 'Text search' can be accessed using the button located on the MGnify banner. The search space can be restricted by free-text using the 'Search' field below the header of this page.
 
@@ -341,12 +355,12 @@ Private area
 
 If you have given consent to the MGnify team to analyse your data for which you have requested a pre-publication confidential hold, you can access the analysis results of those pre-published data sets using your private login area. You can access this area by clicking on the 'Login' button, which you will find on the top right hand side of any page (see Figure 12 below).
 
-.. figure:: images/how_to_login.png
+.. figure:: images/portal/how_to_login.png
 
     A login dialog will open once you have clicked on the 'Login' button, which can be found on the right top corner of each page.
 
 After you have successfully logged into our system, you will have direct access to all your privately (and publicly) submitted projects and samples. You will find a list of your latest submissions (projects and samples) on the home page, but you have also access to all your submitted projects so far on the projects list view (Figure 13 below). On that page you will find a drop down filter item 'My projects', which allows you to list all your projects.
 
-.. figure:: images/my_projects_cu.png
+.. figure:: images/portal/my_projects_cu.png
 
     Filter options on the projects list view.
