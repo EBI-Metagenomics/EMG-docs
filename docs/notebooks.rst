@@ -10,9 +10,9 @@ Short video tutorial
 
 .. raw :: html
     
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/9R2srhWyYS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/B8rw7GTX9GQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-`View on YouTube <https://youtu.be/9R2srhWyYS0>`_.
+`View on YouTube <https://youtu.be/B8rw7GTX9GQ>`_.
 
 ---------------------------------------
 About the notebooks.mgnify.org resource
