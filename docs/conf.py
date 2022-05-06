@@ -310,4 +310,4 @@ numfig_format = {
 }
 
 # External links relative to a Base
-extlinks = {'website': ('https://www.ebi.ac.uk/metagenomics/beta%s', 'ebi.ac.uk/metagenomics%s')}
+extlinks = {'website': ('https://www.ebi.ac.uk/metagenomics%s', 'ebi.ac.uk/metagenomics%s')}
