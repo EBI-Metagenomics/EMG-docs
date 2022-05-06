@@ -15,7 +15,7 @@ MGnify displays genomes in biome-specific Catalogues.
 The latest version of each Catalogue is shown on the website,
 whilst older versions can be downloaded from our `FTP server <http://ftp.ebi.ac.uk/pub/databases/metagenomics/mgnify_genomes/>`_.
 
-.. figure:: images/genomes-genome-catalogues-list-v2.png
+.. figure:: images/genomes/genomes-genome-catalogues-list-v2.png
   :width: 100%
 
 **Figure 1**. MGnify genomes are collected into biome-specific catalogues.
@@ -37,7 +37,7 @@ Updating an existing catalogue
 New genomes (MAGs or isolates) are added to an existing catalogue following the steps outlined in Figure 2. To be added
 to a catalogue, a genome must be available in `INSDC <https://www.insdc.org/>`_.
 
-.. figure:: images/update_pipeline.png
+.. figure:: images/genomes/update_pipeline.png
   :width: 100 %
 
 **Figure 2**. The algorithm to update an existing genome catalog.
@@ -80,7 +80,7 @@ To constitute a cluster: genomes with completeness greater than 50%, contaminati
 The species representative for each cluster is the best quality genome judged by completeness, contamination and the assembly N50 values.
 Isolate genomes are prioritised over MAGs for a species representative.
 
-.. figure:: images/genomes-catalogue-genomes-list-v1.png
+.. figure:: images/genomes/genomes-catalogue-genomes-list-v1.png
   :width: 100 %
 
 **Figure 3**. Each catalogue contains MAGs and isolate genomes.
@@ -89,7 +89,7 @@ The ‘Taxonomy tree’ is a subset of the GTDB taxonomy which can be viewed int
 Genomes from the catalogue can be found in the tree by taxonomic lineage.
 Each orange coloured genome accession links to further statistics and functional annotation data.
 
-.. figure:: images/genomes-taxonomy-tree-v5.png
+.. figure:: images/genomes/genomes-taxonomy-tree-v5.png
   :scale: 50 %
 
 **Figure 4**. GTDB interactive taxonomy tree for a catalogue
@@ -101,21 +101,18 @@ Data for the Protein catalogue are available at the linked FTP server location.
 Searching a catalogue
 ---------------------
 
-The ‘Search by gene’ tab is a `BItsliced Genomic Signature Index (BIGSI)  <https://www.nature.com/articles/s41587-018-0010-1>`_ based search engine.
-BIGSI queries short sequence fragments against the species representative genome catalogue.
+The ‘Search by gene’ tab is a `COmpact Bitsliced Signature index (COBS)  <https://arxiv.org/abs/1905.09624>`_ based search engine.
+COBS queries short sequence fragments against the species representative genome catalogue.
 The table of results provides the user with direct links to the matching genomes.
 Match statistics are shown as a count and percentage of kmers found.
-An approximate `megaBLAST <https://blast.ncbi.nlm.nih.gov/>`_ alignment score is shown, which is calculated using kmer presence.
-The associated p-value shows how (un)likely it is for a search result to achieve the stated BLAST score or better by chance, given the number of genomes MGnify indexes and the query length.
-The `Nature Biotechnology paper describing BIGSI <https://www.nature.com/articles/s41587-018-0010-1#Sec9>`_ describes this process.
-Note that these scores assume an unfiltered search across all catalogues – the stated p-value will be a slight over-estimate (i.e. conservative) when searching against a single catalogue.
+A score of 100% means that all of the `31-length kmers <https://en.wikipedia.org/wiki/K-mer>`_ in the query were found in the indexed Genome.
 
 The minimum kmer proportion is set at a default of 0.4 and can be increased or decreased within a range of 0.1-1 with the available toggle.
 
-.. figure:: images/genomes-bigsi-v6.png
+.. figure:: images/genomes/genome-search-cobs.png
   :width: 100 %
 
-**Figure 5** BIGSI search example with table of results.
+**Figure 5** COBS search example with table of results.
 
 The ‘Search by MAG’ tab is a `Sourmash <https://sourmash.readthedocs.io/en/latest/>`_ based search engine.
 Sourmash queries complete MAGs for similarity against the species representative genome catalogue.
@@ -129,7 +126,7 @@ Successful searches create a CSV result file for each signature submitted.
 These are compiled into a TGZ allowing you to fetch all your results in one click.
 These result files are only stored in our servers for 30 days, so please be sure to download them before they expire.
 
-.. figure:: images/genomes-sourmash-v1.png
+.. figure:: images/genomes/genomes-sourmash-v1.png
   :width: 100 %
 
 **Figure 6** Sourmash search example with file selected
@@ -159,7 +156,7 @@ Genome accessions with more than 1 genome in a species cluster have additional p
 
 The ‘Downloads’ tab comprises summary files for all described analyses.
 
-.. figure:: images//genomes-overview-v5.png
+.. figure:: images/genomes/genomes-overview-v5.png
   :scale: 50 %
 
 **Figure 7**. An overview for a species representative MAG, with a pan-genome analysis.
