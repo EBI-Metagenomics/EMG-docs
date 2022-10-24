@@ -18,7 +18,6 @@ MGnify documentation
    portal
    api
    notebooks
-   npm-package
    sequence-search
    genome-viewer
    tutorials
