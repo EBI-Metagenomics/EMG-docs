@@ -15,7 +15,7 @@ MGnify displays genomes in biome-specific Catalogues.
 The latest version of each Catalogue is shown on the website,
 whilst older versions can be downloaded from our `FTP server <http://ftp.ebi.ac.uk/pub/databases/metagenomics/mgnify_genomes/>`_.
 
-.. figure:: images/genomes/genomes-genome-catalogues-list-v2.png
+.. figure:: images/genomes/genomes-genome-catalogues-list.png
   :width: 100%
 
 **Figure 1**. MGnify genomes are collected into biome-specific catalogues.
@@ -68,41 +68,31 @@ The tools used to annotate the new genomes and to update the pan-genomes for eac
 genomes to which new genomes have been added are listed in the README files associated with each catalog on the
 `FTP server <http://ftp.ebi.ac.uk/pub/databases/metagenomics/mgnify_genomes/>`_.
 
---------------------
-Browsing a catalogue
---------------------
-Clicking on a Catalogue name (or 'View catalogue') in the list on the `MGnify website <https://www.ebi.ac.uk/metagenomics/browse#genomes>`_ allows you to browse the
-catalogue's contents.
+---------------------------
+Searching across catalogues
+---------------------------
+There are three ways to search for species across all of the catalogues.
 
-The "Genome list" tab contains a catalogue of non-redundant isolate and metagenome assembled genomes (:term:`MAGs`).
-Each accession is a species representative of a cluster of genomes.
-To constitute a cluster: genomes with completeness greater than 50%, contamination less than 5% and average quality score (completeness - 5*contamination) greater than 50 - calculated with `CheckM, v.1.0.11 <https://genome.cshlp.org/content/25/7/1043?ijkey=a446ec2b6e540d598d39c9253e0fdfbdab52b2f4&keytype2=tf_ipsecsha>`_ are clustered with `dRep v2.2.4 <https://www.nature.com/articles/ismej2017126>`_ using an average nucleotide identity (ANI) cutoff of  ≥95% and an aligned fraction (AF) of ≥30% .
-The species representative for each cluster is the best quality genome judged by completeness, contamination and the assembly N50 values.
-Isolate genomes are prioritised over MAGs for a species representative.
+By accession or taxonomy
+------------------------
 
-.. figure:: images/genomes/genomes-catalogue-genomes-list-v1.png
+.. figure:: images/genomes/genomes-all-genomes.png
   :width: 100 %
 
-**Figure 3**. Each catalogue contains MAGs and isolate genomes.
+**Figure 3**. Searching for "Prevotella" genomes from all catalogues.
 
-The ‘Taxonomy tree’ is a subset of the GTDB taxonomy which can be viewed interactively.
-Genomes from the catalogue can be found in the tree by taxonomic lineage.
-Each orange coloured genome accession links to further statistics and functional annotation data.
+The Browse > Genomes > All Genomes tab lists genomes from all catalogues. The genome accessions and taxonomic lineages are indexed for full-text search.
+This is helpful to find a specific genome where the biome is irrelevant, or to find the set of biomes (catalogues) which a certain taxonomic classification is present in.
 
-.. figure:: images/genomes/genomes-taxonomy-tree-v5.png
-  :scale: 50 %
 
-**Figure 4**. GTDB interactive taxonomy tree for a catalogue
+By gene fragment
+----------------
 
-The ‘Protein catalogue’ is clusters of all the predicted coding sequences in the genome catalogue.
-Separate catalogues are generated at different amino acid identity levels (100%, 95%, 90% and 50%).
-Data for the Protein catalogue are available at the linked FTP server location.
+The ‘Gene search’ tab is a `COmpact Bitsliced Signature index (COBS)  <https://arxiv.org/abs/1905.09624>`_ based search engine.
+COBS queries short sequence fragments against the species representatives of some or all genome catalogues.
 
-Searching a catalogue
----------------------
+One or more catalogues can be selected to search against. By default, your query is compared to all current catalogues.
 
-The ‘Search by gene’ tab is a `COmpact Bitsliced Signature index (COBS)  <https://arxiv.org/abs/1905.09624>`_ based search engine.
-COBS queries short sequence fragments against the species representative genome catalogue.
 The table of results provides the user with direct links to the matching genomes.
 Match statistics are shown as a count and percentage of kmers found.
 A score of 100% means that all of the `31-length kmers <https://en.wikipedia.org/wiki/K-mer>`_ in the query were found in the indexed Genome.
@@ -112,10 +102,18 @@ The minimum kmer proportion is set at a default of 0.4 and can be increased or d
 .. figure:: images/genomes/genome-search-cobs.png
   :width: 100 %
 
-**Figure 5** COBS search example with table of results.
+**Figure 4** COBS search example with table of results.
 
-The ‘Search by MAG’ tab is a `Sourmash <https://sourmash.readthedocs.io/en/latest/>`_ based search engine.
-Sourmash queries complete MAGs for similarity against the species representative genome catalogue.
+
+By whole genome /  MAG
+----------------------
+
+The ‘MAG search’ tab is a `Sourmash <https://sourmash.readthedocs.io/en/latest/>`_ based search engine.
+Sourmash queries complete MAGs for similarity against the species representatives of some or all genome catalogues.
+
+One or more catalogues can be selected to search against. By default, your query is compared to all current catalogues.
+
+The query genome must be a nucleotide sequence file.
 
 Use the browse button to upload either a single FastA file, or multiple files by holding [ctrl] or [shift] while clicking in the file explorer.
 Alternatively you can select a whole directory of files using the directory mode (select this option below the Browse button).
@@ -126,10 +124,49 @@ Successful searches create a CSV result file for each signature submitted.
 These are compiled into a TGZ allowing you to fetch all your results in one click.
 These result files are only stored in our servers for 30 days, so please be sure to download them before they expire.
 
-.. figure:: images/genomes/genomes-sourmash-v1.png
+.. figure:: images/genomes/genomes-sourmash.png
   :width: 100 %
 
-**Figure 6** Sourmash search example with file selected
+**Figure 5** Sourmash search example with file selected
+
+
+--------------------
+Browsing a catalogue
+--------------------
+
+Clicking on a Catalogue ID in the list on the `MGnify website <https://www.ebi.ac.uk/metagenomics/browse#genomes>`_ allows you to browse the
+catalogue's contents.
+
+The "Genome list" tab contains a catalogue of non-redundant isolate and metagenome assembled genomes (:term:`MAGs`).
+Each accession is a species representative of a cluster of genomes.
+To constitute a cluster: genomes with completeness greater than 50%, contamination less than 5% and average quality score (completeness - 5*contamination) greater than 50 - calculated with `CheckM, v.1.0.11 <https://genome.cshlp.org/content/25/7/1043?ijkey=a446ec2b6e540d598d39c9253e0fdfbdab52b2f4&keytype2=tf_ipsecsha>`_ are clustered with `dRep v2.2.4 <https://www.nature.com/articles/ismej2017126>`_ using an average nucleotide identity (ANI) cutoff of  ≥95% and an aligned fraction (AF) of ≥30% .
+The species representative for each cluster is the best quality genome judged by completeness, contamination and the assembly N50 values.
+Isolate genomes are prioritised over MAGs for a species representative.
+
+.. figure:: images/genomes/genomes-catalogue-genomes-list.png
+  :width: 100 %
+
+**Figure 6**. Each catalogue contains MAGs and isolate genomes.
+
+The ‘Taxonomy tree’ is a subset of the GTDB taxonomy which can be viewed interactively.
+Genomes from the catalogue can be found in the tree by taxonomic lineage.
+Each orange coloured genome accession links to further statistics and functional annotation data.
+
+.. figure:: images/genomes/genomes-taxonomy-tree.png
+  :scale: 50 %
+
+**Figure 7**. GTDB interactive taxonomy tree for a catalogue
+
+The ‘Protein catalogue’ is clusters of all the predicted coding sequences in the genome catalogue.
+Separate catalogues are generated at different amino acid identity levels (100%, 95%, 90% and 50%).
+Data for the Protein catalogue are available at the linked FTP server location.
+
+Searching a catalogue
+---------------------
+
+There are single-catalogue versions of the COBS and Sourmash searches available on the ‘Search by gene’ and ‘Search by MAG’ tabs, respectively.
+These searches work exactly the same as the cross-catalogue searches described above, except that they always search against only one catalogue.
+
 
 --------------
 Genome detail
@@ -146,7 +183,19 @@ coverage section, as the percentage coverage for each rRNA type and a count of t
 
 Additionally, the geographic origin of each genome, and links to ENA accessions can be found towards the bottom of this page.
 
+
+Genome annotation browser
+-------------------------
+
 All genome annotations can be viewed interactively in the ‘Browse genome’ tab to browse all assigned functional annotations in more detail.
+
+The "Functional annotation track colour" dropdown menu can be used to pick an annotation type of interest.
+Once selected, the annotation region will be coloured (and labelled, depending on the annotation type).
+
+.. figure:: images/genomes/genome-browser.png
+  :width: 100 %
+
+**Figure 8**. An annotated genome in the Genome Browser.
 
 ------------------
 Pan-genome
@@ -156,10 +205,10 @@ Genome accessions with more than 1 genome in a species cluster have additional p
 
 The ‘Downloads’ tab comprises summary files for all described analyses.
 
-.. figure:: images/genomes/genomes-overview-v5.png
+.. figure:: images/genomes/genomes-overview.png
   :scale: 50 %
 
-**Figure 7**. An overview for a species representative MAG, with a pan-genome analysis.
+**Figure 9**. An overview for a species representative MAG, with a pan-genome analysis.
 
 
 A set of assemblies, annotations, :term:`pan-genome<Pan-genome>` results and protein catalogues are available in our `FTP server <http://ftp.ebi.ac.uk/pub/databases/metagenomics/mgnify_genomes/>`_.
