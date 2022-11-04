@@ -29,7 +29,7 @@ The date of release is set by you during the submission in ENA. If you do not ex
 
 How long will it take for my data to be analyzed?
 -------------------------------------------------
-We aim to analyze submitted data as quickly as possible. However, submitted data are only available to us once they have been validated and archived by ENA. This process takes at least 24 hours, and in some cases several days. Once the sequence files are made available, the analysis time depends on our current analysis backlog, and the size and number of runs in the project you have submitted. Most studies will be validated, archived and analysed within two weeks. If you are concerned that your data is taking a long time to be analysed, please `contact us <metagenomics-help@ebi.ac.uk>`_.
+We aim to analyze submitted data as quickly as possible. However, submitted data are only available to us once they have been validated and archived by ENA. This process takes at least 24 hours, and in some cases several days. Once the sequence files are made available, the analysis time depends on our current analysis backlog, and the size and number of runs in the project you have submitted. Most studies will be validated, archived and analysed within two weeks. If you are concerned that your data is taking a long time to be analysed, please `contact us <https://www.ebi.ac.uk/about/contact/support/metagenomics>`_.
 
 I have submitted my data - how do I trigger the analysis?
 ---------------------------------------------------------
@@ -50,7 +50,7 @@ It is possible to access all the metadata associated with projects, samples and 
 
 How can I re-analyse my data with a different version of the pipeline?
 ----------------------------------------------------------------------
-It is possible to analyse data sets with different versions of our analysis pipeline. The original analyses are not deleted and are available side by side on our website. Users interested in having data re-analysed should `contact <metagenomics-help@ebi.ac.uk>`_ us.
+It is possible to analyse data sets with different versions of our analysis pipeline. The original analyses are not deleted and are available side by side on our website. Users interested in having data re-analysed should `contact <https://www.ebi.ac.uk/about/contact/support/metagenomics>`_ us.
 
 Can I request that a dataset is analyzed if I am not the original submitter?
 ----------------------------------------------------------------------------
@@ -58,7 +58,7 @@ We are currently working through the analysis of all publicly available metageno
 
 Can I request my data to not be analyzed by MGnify?
 -------------------------------------------------------------
-We can only access private data for analysis if you give us permission to do so. If, for any reason, you do not want MGnify to analyze one of your datasets, please `contact us <metagenomics-help@ebi.ac.uk>`_ .
+We can only access private data for analysis if you give us permission to do so. If, for any reason, you do not want MGnify to analyze one of your datasets, please `contact us <https://www.ebi.ac.uk/about/contact/support/metagenomics>`_ .
 If your data is public in ENA, we are able to analyse this data without restriction.
 
 Can I compare the taxonomic assignments between runs of a project?

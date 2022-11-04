@@ -173,17 +173,17 @@ Finding quality control information about runs on the MGnify website
 Quality control (QC) analysis of runs within projects on the `MGnify website <https://www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Quality control' tab found toward the top of any run page (see Figure 1 below).
 
 
-.. figure:: images/portal/QC1.PNG
+.. figure:: images/portal/qc1.png
 
     A 'Quality control' tab can be found towards the top of each run page.
 
 Selecting this tab brings up a page containing four graphical representations: a count of reads/contigs remaining pre and post QC, a histogram of minimum, maximum and average sequence length (post QC), distribution of GC content and the first 500 nucleotides (post QC). These are available to download via the 'Download' tab found toward the top of any run page (see Figure 8 below).
 
-.. figure:: images/portal/QC_metag.PNG
+.. figure:: images/portal/qc_metag.png
 
     Typical even nucleotide distribution expected for metagenome, metatranscriptome and assembly datasets. Note that the stretch of uneven distribution observed until position 20 are indicative that the sequencing adapters had not been completely removed in the submitted reads.
 
-.. figure:: images/portal/QC_ndamplicon.PNG
+.. figure:: images/portal/qc_ndamplicon.png
 
     Typical uneven nucleotide distribution expected for an amplicon dataset.
 
@@ -193,7 +193,7 @@ Finding functional information about runs on the MGnify website
 
 Functional analysis of runs within projects on the `MGnify website <https://www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Functional Analysis' tab found toward the top of any run page (see Figure 4 below). Note that this tab will be greyed for amplicon runs that have no functional results.
 
-.. figure:: images/portal/Func_1.PNG
+.. figure:: images/portal/func1-amplicon.png
 
     A Functional analysis tab can be found towards the top of each run page. Selecting this tab brings up a page displaying sequence features ('Predicted CDS', 'Contigs with predicted CDS' and 'Contigs with predicted rRNA')
 
@@ -201,19 +201,19 @@ Below this first bar chart, there are 4 tabs with different types of functional 
 
 **A**
 
-.. image:: images/portal/Func1-v5.png
+.. image:: images/portal/func1-v5.png
 
 **B**
 
-.. image:: images/portal/Func2-v5.png
+.. image:: images/portal/func2-v5.png
 
 **C**
 
-.. image:: images/portal/Func3-v5.png
+.. image:: images/portal/func3-v5.png
 
 **D**
 
-.. figure:: images/portal/Func4-v5.png
+.. figure:: images/portal/func4-v5.png
 
     Functional analysis of metagenomics data, as shown on the MGnify website.
     A) InterPro match information for the predicted coding sequences in the run is shown. The number of InterPro matches are displayed graphically, and as a downloadable table with links to corresponding InterPro entries. B) Predicted GO slim terms are displayed. Different graphical representations are available, and can be selected by clicking on the ‘Switch view’ icons. C) A table of Pfam matches for predicted coding sequences with a bar graph showing the top 10 hits. D) A table of KEGG ortholog matches for predicted coding sequences with a bar graph showing the top 10 hits.
@@ -229,15 +229,15 @@ There are 3 types of pathway and system annotations:
 
 **A**
 
-.. image:: images/portal/Path1-v5.png
+.. image:: images/portal/path1-v5.png
 
 **B**
 
-.. image:: images/portal/Path2-v5.png
+.. image:: images/portal/path2-v5.png
 
 **C**
 
-.. figure:: images/portal/Path3-v5.png
+.. figure:: images/portal/path3-v5.png
 
     Annotation of potential pathways and high order system classification, as shown on the MGnify website. A) A table and bar graph of KEGG modules derived from KEGG orthologs, with pathway completeness values. B) An expandable list of present Genome Properties, grouped by top level systems, derived from InterProScan outputs. C) A table of antiSMASH hits with a bar graph showing the top 10 hits.
 
@@ -249,11 +249,11 @@ This feature is available for assembly analysis only and can be found in the tab
 
 **A**
 
-.. image:: images/portal/Contig1-v5.png
+.. image:: images/portal/contig1-v5.png
 
 **B**
 
-.. figure:: images/portal/Contig2-v5.png
+.. figure:: images/portal/contig2-v5.png
 
     Interactive contig viewer for localised visualisation of functional annotation per contig. A) The main page contains a table of contigs with annotations, length and coverage. Text search and tickboxes allow users to search for functional annotations by method. B) Hover over each coding sequence to see functional annotation with external links, and protein length for that region.
 
@@ -263,7 +263,7 @@ Finding taxonomic information about runs on the MGnify website
 
 Taxonomic analysis of runs within projects on the `MGnify website <https://www.ebi.ac.uk/metagenomics/>`__ can be accessed by selecting the 'Taxonomic analysis' tab found toward the top of any run page (see Figure 7 below).
 
-.. figure:: images/portal/taxonomy.PNG
+.. figure:: images/portal/taxonomy.png
 
     A 'Taxonomic analysis' tab can be found towards the top of each run page. Selecting this tab brings up a page displaying the taxonomic results displayed as an interactive Krona plot.
 
@@ -277,7 +277,7 @@ Files available to download on the MGnify website
 
 The full data sets used to generate the graphs, along with a host of additional data and intermediate files can be downloaded for further analysis by clicking the ‘Download’ tab, found towards the top of the page.
 
-.. figure:: images/portal/Download_1-v5.png
+.. figure:: images/portal/download_1-v5.png
 
     The Download tab is organised into sections: ‘Sequence data’, ‘Functional analysis’ (not available in the case of amplicon runs), 'Pathways and Systems' (available only for assemblies), ‘Taxonomic analysis SSU’, 'Taxonomic analysis LSU', 'Taxonomic analysis ITS' (available for amplicon only) and 'non-coding RNAs' (will only exist if any non coding RNAs are identified).
 
@@ -316,7 +316,7 @@ Summary files
 --------------------
 In addition to the output files for individual runs, described above, MGnify provides a number of summary files available via the 'Analysis summary' tab on the project page (Figure 9 below). They summarize the counts per feature across all runs of a :term:`study` and therefore provide an easy way to identify patterns. The summary files are split between functional (not available for amplicon-only study) and taxonomy sections.
 
-.. figure:: images/portal/summary.PNG
+.. figure:: images/portal/summary.png
 
     The 'Analysis summary' tab is organised in 2 sections: ‘Functional analysis for the project’ and ‘Taxonomic analysis for the project’ (the former is not available in the case of amplicon runs).
 
@@ -330,7 +330,7 @@ Text search
 ^^^^^^^^^^^
 The Search tool is underpinned by `EBI search <https://www.ebi.ac.uk/ebisearch/overview.ebi>`_  and accessible via any MGnify page (Figure 11 below).
 
-.. figure:: images/portal/search.PNG
+.. figure:: images/portal/search.png
 
     The 'Text search' can be accessed using the button located on the MGnify banner. The search space can be restricted by free-text using the 'Search' field below the header of this page.
 
