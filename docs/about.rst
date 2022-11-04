@@ -25,7 +25,7 @@ What does MGnify offer
 Funding
 -------
 Current funding:
-MGnify currently receives funding support from: the European Union’s Horizon 2020 Research and Innovation programme (817729 and 824087); the Biotechnology and Biological Sciences Research Council (BB/R015228/1, BB/S009043/1 and BB/N018354/1); ELIXIR, the research infrastructure for Life-Science data; and European Molecular Biology Laboratory (EMBL) core funds.
+MGnify currently receives funding support from: the European Union’s Horizon 2020 Research and Innovation programme (817729, 862923, and 952914) and Research Infrastructures programme (824087); the Biotechnology and Biological Sciences Research Council (BB/S009043/1, BB/T000902/1, BB/V01868X/1, and BB/W002965/1); ELIXIR, the research infrastructure for Life-Science data; EMBL – FNR (CORE International); and European Molecular Biology Laboratory (EMBL) core funds.
 
 Previous funding:
 MGnify was initiated with institutional funding from EMBL. It gratefully acknowledges previous funding received from the Biotechnology and Biological Sciences Research Council (BB/M011755/1 and BB/I02612X/1), the European Union’s Horizon 2020 Research and Innovation programme (676559 and 654008), Innovate UK (102513) and the European Union’s Seventh Framework Programme for Research (287589).
@@ -44,7 +44,8 @@ MGnify v5.0
 -------
 Contact
 -------
-If you would like to get in touch, please contact us using the `helpdesk <metagenomics-help@ebi.ac.uk>`_. We will respond as quickly as possible, but bear in mind that we do not have a member of staff dedicated to running the helpdesk service.
+
+If you would like to get in touch, please contact us using the `helpdesk <https://www.ebi.ac.uk/about/contact/support/metagenomics>`_. We will respond as quickly as possible, but bear in mind that we do not have a member of staff dedicated to running the helpdesk service.
 
    **Please, check our** :ref:`FAQs <faq>`. **prior to contacting us.**
 
@@ -55,3 +56,9 @@ News and updates
 -----------------
 
 If you would like to keep up to date with developments within MGnify, please follow us on Twitter (`@MGnifyDB <https://twitter.com/MGnifyDB>`_).
+
+--------------
+Service status
+--------------
+
+The service `status page <https://status.mgnify.org/>_` lists any known issues and outages.
