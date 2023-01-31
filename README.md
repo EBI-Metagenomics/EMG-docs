@@ -1,3 +1,8 @@
+# !Documentation source moved!
+This documentation resource is now built from Markdown source material, in [a new repository](https://github.com/ebi-metagenomics/notebooks).
+
+---
+
 [![Documentation Status](https://readthedocs.org/projects/emg-docs/badge/?version=latest)](https://emg-docs.readthedocs.io/en/latest/?badge=latest)
 
 # Documentation for [MGnify: the EBI Metagenomics resource](https://www.ebi.ac.uk/metagenomics)
