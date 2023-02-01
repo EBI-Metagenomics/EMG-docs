@@ -31,8 +31,14 @@ import os
 extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.autosectionlabel',
-    'sphinx.ext.extlinks'
+    'sphinx.ext.extlinks',
+    'sphinx_reredirects'
 ]
+
+redirects = {
+    "*": "https://docs.mgnify.org/src/docs/$source.html",
+    "index.html": "https://docs.mgnify.org"
+}
 
 if 'spelling' in sys.argv:
     extensions.append("sphinxcontrib.spelling")

@@ -8,6 +8,10 @@
 MGnify documentation
 ==============================
 
+
+.. hint::
+   The MGnify documentation has been migrated to `docs.mgnify.org <https://docs.mgnify.org>`_. Please update your bookmarks.
+
 .. toctree::
    :maxdepth: 3
    :caption: Contents:
